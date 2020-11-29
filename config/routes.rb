@@ -276,6 +276,7 @@ Loomio::Application.routes.draw do
   get 'polls'                              => 'application#index', as: :polls
   get 'explore'                            => 'groups#index',      as: :explore
   get 'profile'                            => 'application#index', as: :profile
+  get 'profile/availability'               => 'application#index'
   get 'contact'                            => 'application#index', as: :contact
   get 'email_preferences'                  => 'application#index', as: :email_preferences
   get 'apps/registered'                    => 'application#index'

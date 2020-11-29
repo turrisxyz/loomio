@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_24_183328) do
+ActiveRecord::Schema.define(version: 2020_11_28_213032) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -133,6 +133,18 @@ ActiveRecord::Schema.define(version: 2020_11_24_183328) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["string"], name: "index_blacklisted_passwords_on_string", using: :hash
+  end
+
+  create_table "calendar_events", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "uid"
+    t.string "title"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.index ["end_at"], name: "index_calendar_events_on_end_at"
+    t.index ["start_at"], name: "index_calendar_events_on_start_at"
+    t.index ["uid"], name: "index_calendar_events_on_uid", unique: true
+    t.index ["user_id"], name: "index_calendar_events_on_user_id"
   end
 
   create_table "cohorts", id: :serial, force: :cascade do |t|

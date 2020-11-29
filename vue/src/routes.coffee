@@ -4,6 +4,7 @@ import ExplorePage from './components/explore/page.vue'
 import ThreadPage from './components/thread/page.vue'
 import StrandPage from './components/strand/page.vue'
 import ProfilePage from './components/profile/page.vue'
+import AvailabilityPage from './components/availability/page.vue'
 import PollPage from './components/poll/page.vue'
 import PollFormPage from './components/poll/form_page.vue'
 
@@ -77,6 +78,7 @@ export default new Router
     {path: '/inbox', component: InboxPage },
     {path: '/explore', component: ExplorePage},
     {path: '/profile', component: ProfilePage},
+    {path: '/profile/availability', component: AvailabilityPage},
     {path: '/contact', component: ContactPage},
     {path: '/email_preferences', component: EmailSettingsPage },
     {path: '/p/:key/edit', component: PollFormPage },
