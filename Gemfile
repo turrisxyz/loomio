@@ -50,6 +50,7 @@ gem "griddler-mailin", github: 'loomio/griddler-mailin'
 gem 'activerecord-import', '1.0.7'
 gem 'discriminator', '~> 0.1.1'
 gem 'icalendar'
+gem 'icalendar-recurrence'
 gem 'rack-attack'
 gem 'bootsnap', require: false
 gem 'redis-objects'
