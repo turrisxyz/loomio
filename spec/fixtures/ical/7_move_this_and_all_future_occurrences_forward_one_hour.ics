@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Pacific/Auckland
+X-LIC-LOCATION:Pacific/Auckland
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+1200
+TZOFFSETTO:+1300
+TZNAME:NZDT
+DTSTART:19700927T020000
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+1300
+TZOFFSETTO:+1200
+TZNAME:NZST
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Pacific/Auckland:20201205T160000
+DTEND;TZID=Pacific/Auckland:20201205T170000
+RRULE:FREQ=DAILY
+DTSTAMP:20201201T221835Z
+ORGANIZER;CN=Robert Guthrie:mailto:rob@enspiral.com
+UID:4f96qlo9hu1ootum7hrp3ou42e@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=greg@loomio.org;X-NUM-GUESTS=0:mailto:greg@loomio.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Robert Guthrie;X-NUM-GUESTS=0:mailto:rob@enspiral.com
+X-MICROSOFT-CDO-OWNERAPPTID:-684351428
+CREATED:20201201T221635Z
+DESCRIPTION:I'm changing this event to repeat every day\n\n-::~:~::~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nPl
+ ease do not edit this section of the description.\n\nView your event at htt
+ ps://calendar.google.com/calendar/event?action=VIEW&eid=NGY5NnFsbzlodTFvb3R
+ 1bTdocnAzb3U0MmUgZ3JlZ0Bsb29taW8ub3Jn&tok=MTYjcm9iQGVuc3BpcmFsLmNvbTc2YjkxM
+ jIwNWJlMTEyNjc5NGZhZDJkNjgxZjVkZjVkYTk1MTI1MWM&ctz=Pacific%2FAuckland&hl=en
+ &es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20201201T221833Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:spec repeating event
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
