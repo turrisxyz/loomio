@@ -138,13 +138,35 @@ ActiveRecord::Schema.define(version: 2020_11_28_213032) do
   create_table "calendar_events", force: :cascade do |t|
     t.integer "user_id"
     t.string "uid"
-    t.string "title"
+    t.string "dtstart"
+    t.string "dtend"
+    t.datetime "dtstamp"
+    t.datetime "created"
+    t.datetime "last_modified"
+    t.integer "sequence", default: 0, null: false
+    t.string "recurrence_id"
+    t.string "rrule"
+    t.string "exdate", array: true
+    t.string "rdate", array: true
+    t.string "summary"
+    t.string "description"
+    t.string "location"
+    t.string "organizer"
+    t.string "status"
+    t.boolean "transp"
+    t.string "ical"
+    t.index ["sequence"], name: "index_calendar_events_on_sequence"
+    t.index ["uid"], name: "index_calendar_events_on_uid"
+    t.index ["user_id"], name: "index_calendar_events_on_user_id"
+  end
+
+  create_table "calendar_occurrences", force: :cascade do |t|
+    t.integer "calendar_event_id"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.index ["end_at"], name: "index_calendar_events_on_end_at"
-    t.index ["start_at"], name: "index_calendar_events_on_start_at"
-    t.index ["uid"], name: "index_calendar_events_on_uid", unique: true
-    t.index ["user_id"], name: "index_calendar_events_on_user_id"
+    t.index ["calendar_event_id"], name: "index_calendar_occurrences_on_calendar_event_id"
+    t.index ["end_at"], name: "index_calendar_occurrences_on_end_at"
+    t.index ["start_at"], name: "index_calendar_occurrences_on_start_at"
   end
 
   create_table "cohorts", id: :serial, force: :cascade do |t|

@@ -1,27 +1,35 @@
-
+require 'icalendar/recurrence'
 module CalendarService
-  def self.import_events(file)
-    events = Icalendar::Event.parse(open(url)).map do |event|
+  def self.import(file, user_id)
+    events = Icalendar::Event.parse(file).map do |event|
       CalendarEvent.new(
         uid: event.uid,
         user_id: user_id,
-        title: event.summary,
-        start_at: event.dtstart,
-        end_at: event.dtend,
+        dtstamp: event.dtstamp,
+        created: event.created,
+        last_modified: event.last_modified,
         sequence: event.sequence,
-        recurrence_id: event.recurrence_id,
         summary: event.summary,
+        description: event.description,
+        location: event.location,
         status: event.status,
-        tranps: (event.transp == "TRANSPARENT"),
+        transp: (event.transp == "TRANSPARENT"),
         ical: event.to_ical
       )
     end
-    CalendarEvent.import events, on_duplicate_key_ignore: true
-  end
 
-  def generate_occurances
-    CalendarEvent.find_each do |calendar_event|
-      calendar_event
+    ids = CalendarEvent.import(events, on_duplicate_key_ignore: true).ids
+
+    max = 5.years.from_now
+    CalendarEvent.where(id: ids).each do |calendar_event|
+      CalendarOccurrence.where(calendar_event_id: calendar_event.id).delete_all
+      min = calendar_event.parsed.dtstart
+      occurrences = calendar_event.parsed.occurrences_between(min, max).map do |o|
+        CalendarOccurrence.new(start_at: o.start_time,
+                               end_at: o.end_time,
+                               calendar_event_id: calendar_event.id)
+      end
+      CalendarOccurrence.import(occurrences)
     end
   end
 end
