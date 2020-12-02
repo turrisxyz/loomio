@@ -28,11 +28,13 @@ class AddCalendarEvents < ActiveRecord::Migration[5.2]
 
     create_table :calendar_occurrences do |t|
       t.integer :calendar_event_id
+      t.string   :uid
       t.datetime :start_at
       t.datetime :end_at
     end
 
     add_index :calendar_occurrences, :calendar_event_id
+    add_index :calendar_occurrences, :uid
     add_index :calendar_occurrences, :start_at
     add_index :calendar_occurrences, :end_at
   end

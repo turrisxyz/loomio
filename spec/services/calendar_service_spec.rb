@@ -43,8 +43,40 @@ describe 'Generating CalendarOccurrences' do
     expect(CalendarOccurrence.second.start_at).to eq Time.zone.parse("2020-12-03 02:00:00")
     expect(CalendarOccurrence.second.end_at).to eq Time.zone.parse("2020-12-03 03:00:00")
   end
-  #
-  # it 'imports a recurring event with exdates' do
+
+  it 'cancel one occurrence of repeating event' do
+    user = create :user
+    file = File.open(Rails.root.join('spec/fixtures/ical/3_repeat_each_wednesday.ics'))
+    CalendarService.import(file, user.id)
+    file = File.open(Rails.root.join('spec/fixtures/ical/4_change_to_repeat_daily.ics'))
+    CalendarService.import(file, user.id)
+    file = File.open(Rails.root.join('spec/fixtures/ical/5_cancel_one_occurrence_of_repeating_event.ics'))
+    CalendarService.import(file, user.id)
+    expect(CalendarEvent.count).to eq 3
+    expect(CalendarOccurrence.first.start_at).to eq Time.zone.parse("2020-12-02 02:00:00")
+    expect(CalendarOccurrence.first.end_at).to eq Time.zone.parse("2020-12-02 03:00:00")
+    expect(CalendarOccurrence.second.start_at).to eq Time.zone.parse("2020-12-04 02:00:00")
+    expect(CalendarOccurrence.second.end_at).to eq Time.zone.parse("2020-12-04 03:00:00")
+  end
+
+  it 'move one occurrence back one hour' do
+    user = create :user
+    file = File.open(Rails.root.join('spec/fixtures/ical/3_repeat_each_wednesday.ics'))
+    CalendarService.import(file, user.id)
+    file = File.open(Rails.root.join('spec/fixtures/ical/4_change_to_repeat_daily.ics'))
+    CalendarService.import(file, user.id)
+    file = File.open(Rails.root.join('spec/fixtures/ical/5_cancel_one_occurrence_of_repeating_event.ics'))
+    CalendarService.import(file, user.id)
+    file = File.open(Rails.root.join('spec/fixtures/ical/6_move_one_occurrence_back_one_hour.ics'))
+    CalendarService.import(file, user.id)
+    expect(CalendarEvent.count).to eq 4
+    expect(CalendarOccurrence.first.start_at).to eq Time.zone.parse("2020-12-02 02:00:00")
+    expect(CalendarOccurrence.first.end_at).to eq Time.zone.parse("2020-12-02 03:00:00")
+    expect(CalendarOccurrence.second.start_at).to eq Time.zone.parse("2020-12-04 01:00:00")
+    expect(CalendarOccurrence.second.end_at).to eq Time.zone.parse("2020-12-04 02:00:00")
+  end
+
+
   # end
   #
   # it 'imports a recurring event with some occurences moved' do

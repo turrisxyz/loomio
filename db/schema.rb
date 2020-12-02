@@ -162,11 +162,13 @@ ActiveRecord::Schema.define(version: 2020_11_28_213032) do
 
   create_table "calendar_occurrences", force: :cascade do |t|
     t.integer "calendar_event_id"
+    t.string "uid"
     t.datetime "start_at"
     t.datetime "end_at"
     t.index ["calendar_event_id"], name: "index_calendar_occurrences_on_calendar_event_id"
     t.index ["end_at"], name: "index_calendar_occurrences_on_end_at"
     t.index ["start_at"], name: "index_calendar_occurrences_on_start_at"
+    t.index ["uid"], name: "index_calendar_occurrences_on_uid"
   end
 
   create_table "cohorts", id: :serial, force: :cascade do |t|
