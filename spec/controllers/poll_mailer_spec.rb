@@ -101,7 +101,7 @@ describe Dev::PollsController do
     end
 
     it "#{poll_type} poll_closing_soon_with_vote email" do
-      next unless poll_template.voters_review_responses
+      next unless poll_template.notify_on_closing_soon == 3
       get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, email: true}
       expect_subject("poll_mailer.header.poll_closing_soon")
       expect_element('.poll-mailer-common-summary')
@@ -109,7 +109,7 @@ describe Dev::PollsController do
     end
 
     it "anonymous #{poll_type} poll_closing_soon_with_vote email" do
-      next unless poll_template.voters_review_responses
+      next unless poll_template.notify_on_closing_soon == 3
       get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, anonymous: true, email: true}
       expect_subject("poll_mailer.header.poll_closing_soon")
       expect_element('.poll-mailer-common-summary')
@@ -120,7 +120,8 @@ describe Dev::PollsController do
     end
 
     it "hide_results #{poll_type} poll_closing_soon_with_vote email" do
-      next unless poll_template.voters_review_responses
+      next unless poll_template.notify_on_closing_soon == 3
+      puts 'hi there'
       get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, hide_results_until_closed: true, email: true}
       expect_subject("poll_mailer.header.poll_closing_soon")
       expect_text('.poll-mailer__vote', "You voted:")

@@ -597,6 +597,13 @@ ActiveRecord::Schema.define(version: 2021_02_17_084522) do
     t.boolean "require_minimum_stance_choices", default: false, null: false
     t.boolean "require_can_respond_maybe", default: false, null: false
     t.string "sort_options", default: ["newest_first", "oldest_first", "undecided_first"], null: false, array: true
+    t.string "title", default: "", null: false
+    t.string "details"
+    t.string "details_format", limit: 10, default: "md", null: false
+    t.boolean "anonymous", default: false, null: false
+    t.boolean "multiple_choice", default: false, null: false
+    t.boolean "hide_results_until_closed", default: false, null: false
+    t.integer "notify_on_closing_soon", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_poll_templates_on_group_id"

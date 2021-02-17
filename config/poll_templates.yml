@@ -12,6 +12,7 @@ proposal:
   can_remove_options:      true
   must_have_options:       false
   require_stance_choices:  true
+  notify_on_closing_soon:  3
   can_vote_anonymously:    true
   single_choice:           true
   sort_options:
@@ -31,7 +32,7 @@ count:
   must_have_options:      true
   can_remove_options:     true
   require_stance_choices: true
-  can_vote_anonymously:    true
+  can_vote_anonymously:   true
   single_choice:          true
   sort_options:
     - newest_first

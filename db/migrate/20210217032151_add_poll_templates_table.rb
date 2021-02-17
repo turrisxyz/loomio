@@ -24,6 +24,14 @@ class AddPollTemplatesTable < ActiveRecord::Migration[5.2]
       t.boolean :require_minimum_stance_choices, null: false, default: false
       t.boolean :require_can_respond_maybe, null: false, default: false
       t.string :sort_options, array: true, default: ['newest_first', 'oldest_first', 'undecided_first'], null: false
+
+      t.string :title, null: false, default: ''
+      t.string :details
+      t.string :details_format, limit: 10, default: "md", null: false
+      t.boolean :anonymous, null: false, default: false
+      t.boolean :multiple_choice, null: false, default: false
+      t.boolean :hide_results_until_closed, null: false, default: false
+      t.integer :notify_on_closing_soon, default: 0, null: false
       t.timestamps
     end
     add_index :poll_templates, :group_id
