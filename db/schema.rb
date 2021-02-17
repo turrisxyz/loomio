@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_16_004805) do
+ActiveRecord::Schema.define(version: 2021_02_17_032151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -571,6 +571,32 @@ ActiveRecord::Schema.define(version: 2021_02_16_004805) do
     t.integer "priority", default: 0, null: false
     t.jsonb "score_counts", default: {}, null: false
     t.index ["poll_id"], name: "index_poll_options_on_poll_id"
+  end
+
+  create_table "poll_templates", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "poll_type", null: false
+    t.string "chart_type", null: false
+    t.string "material_icon", default: "mdi-thumbs-up-down", null: false
+    t.integer "group_id"
+    t.string "poll_options", default: [], null: false, array: true
+    t.boolean "translate_option_name", default: false, null: false
+    t.boolean "can_add_options", default: false, null: false
+    t.boolean "can_remove_options", default: false, null: false
+    t.boolean "must_have_options", default: false, null: false
+    t.boolean "require_stance_choices", default: false, null: false
+    t.boolean "can_vote_anonymously", default: false, null: false
+    t.boolean "has_variable_score", default: false, null: false
+    t.boolean "has_poll_options", default: false, null: false
+    t.boolean "require_all_choices", default: false, null: false
+    t.boolean "require_dots_per_person", default: false, null: false
+    t.boolean "require_max_score", default: false, null: false
+    t.boolean "require_minimum_stance_choices", default: false, null: false
+    t.boolean "require_can_respond_maybe", default: false, null: false
+    t.string "sort_options", default: ["newest_first", "oldest_first", "undecided_first"], null: false, array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_poll_templates_on_group_id"
   end
 
   create_table "poll_unsubscriptions", id: :serial, force: :cascade do |t|

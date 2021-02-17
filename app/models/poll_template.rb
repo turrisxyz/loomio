@@ -1,0 +1,2 @@
+class PollTemplate < ApplicationRecord
+end
