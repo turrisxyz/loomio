@@ -35,7 +35,6 @@ module Boot
           isAvailable:       TranslationService.available?,
           supportedLangs:    AppConfig.translate_languages
         },
-        pollTemplates:     AppConfig.poll_templates,
         pollTypes:         AppConfig.poll_types,
         pollColors:        AppConfig.colors,
         webhookEventKinds: AppConfig.webhook_event_kinds,

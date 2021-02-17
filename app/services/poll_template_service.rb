@@ -1,7 +1,9 @@
 class PollTemplateService
   def self.seed_database!
+    id = 0
     YAML.load_file(Rails.root.join("config", "poll_templates.yml")).each_pair do |poll_type, config|
       PollTemplate.create(
+        id: id += 1,
         name: I18n.t("poll_types.#{poll_type}"),
         poll_type: poll_type,
         chart_type: config['chart_type'],

@@ -16,14 +16,15 @@ class Slack::PollSerializer < Slack::BaseSerializer
   end
 
   def additional_attachments
-    return unless poll.active? && !poll.is_single_vote?
-    poll.poll_options.map do |option|
-      {
-        color:      option.color,
-        title:      option.display_name,
-        title_link: slack_link_for(poll, poll_option_id: option.id, grant_membership: true)
-      }
-    end
+    # return unless poll.active? && !poll.is_single_vote?
+    # poll.poll_options.map do |option|
+    #   {
+    #     color:      option.color,
+    #     title:      option.display_name,
+    #     title_link: slack_link_for(poll, poll_option_id: option.id, grant_membership: true)
+    #   }
+    # end
+    nil
   end
 
   def last_attachment
@@ -32,14 +33,15 @@ class Slack::PollSerializer < Slack::BaseSerializer
   end
 
   def actions
-    return unless poll.active? && poll.is_single_vote?
-    poll.poll_options.map do |option|
-      {
-        name: option.name,
-        text: option.display_name,
-        type: :button
-      }
-    end
+    # return unless poll.active? && poll.is_single_vote?
+    # poll.poll_options.map do |option|
+    #   {
+    #     name: option.name,
+    #     text: option.display_name,
+    #     type: :button
+    #   }
+    # end
+    nil
   end
 
   def text_options

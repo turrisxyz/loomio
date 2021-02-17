@@ -24,18 +24,32 @@ class Poll < ApplicationRecord
                     :pending_emails,
                     :minimum_stance_choices,
                     :can_respond_maybe,
-                    :deanonymize_after_close,
                     :max_score
 
-  TEMPLATE_FIELDS = %w(material_icon translate_option_name can_vote_anonymously
-                       can_add_options can_remove_options author_receives_outcome
-                       must_have_options chart_type has_option_icons
-                       has_variable_score voters_review_responses
-                       dates_as_options required_custom_fields has_option_score_counts
-                       require_stance_choices require_all_choices prevent_anonymous
-                       poll_options_attributes experimental has_score_icons).freeze
+  TEMPLATE_FIELDS = %w(
+    material_icon
+    translate_option_name
+    can_vote_anonymously
+    can_add_options
+    can_remove_options
+    author_receives_outcome
+    must_have_options
+    chart_type
+    has_option_icons
+    has_variable_score
+    voters_review_responses
+    dates_as_options
+    required_custom_fields
+    has_option_score_counts
+    require_stance_choices
+    require_all_choices
+    prevent_anonymous
+    poll_options_attributes
+    experimental
+    has_score_icons
+  ).freeze
   TEMPLATE_FIELDS.each do |field|
-    define_method field, -> { AppConfig.poll_templates.dig(self.poll_type, field) }
+    define_method field, -> { PollTemplate.find_by(poll_type: poll_type).send(field) }
   end
 
   include Translatable
@@ -91,7 +105,7 @@ class Poll < ApplicationRecord
                       events.kind           = 'poll_closing_soon')", recency_threshold)
   end
 
-  validates :poll_type, inclusion: { in: AppConfig.poll_templates.keys }
+  validates :poll_type, inclusion: { in: PollTemplate::POLL_TYPES }
   validates :details, length: {maximum: Rails.application.secrets.max_message_length }
 
   validate :poll_options_are_valid
@@ -308,10 +322,6 @@ class Poll < ApplicationRecord
 
   def closed?
     !!closed_at
-  end
-
-  def is_single_vote?
-    AppConfig.poll_templates.dig(self.poll_type, 'single_choice') && !self.multiple_choice
   end
 
   def meeting_score_tallies

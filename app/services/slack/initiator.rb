@@ -58,7 +58,7 @@ class ::Slack::Initiator
   end
 
   def poll_types
-    AppConfig.poll_templates.keys.map(&:to_sym)
+    PollTemplate::POLL_TYPES
   end
 
   def target_group
