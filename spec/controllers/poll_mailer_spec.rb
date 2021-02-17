@@ -4,7 +4,9 @@ require_relative './mailer_helpers'
 
 describe Dev::PollsController do
   render_views
-  PollTemplate::POLL_TYPES.each do |poll_type|
+  PollTemplate.all.each do |poll_template|
+    poll_type = poll_template.poll_type
+
     it "#{poll_type} created email" do
       get :test_poll_scenario, params: {scenario: 'poll_created', poll_type: poll_type, email: true}
       expect_text('.poll-mailer__subject', "invited you to")
@@ -98,28 +100,27 @@ describe Dev::PollsController do
       expect_text('.poll-mailer__vote', "Please respond")
     end
 
-    # TODO consider iteratnig over actual poll templates i guess
-    # it "#{poll_type} poll_closing_soon_with_vote email" do
-    #   next unless AppConfig.poll_templates.dig(poll_type, 'voters_review_responses')
-    #   get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, email: true}
-    #   expect_subject("poll_mailer.header.poll_closing_soon")
-    #   expect_element('.poll-mailer-common-summary')
-    #   expect_text('.poll-mailer__vote', "You voted:")
-    # end
-    #
-    # it "anonymous #{poll_type} poll_closing_soon_with_vote email" do
-    #   next unless AppConfig.poll_templates.dig(poll_type, 'voters_review_responses')
-    #   get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, anonymous: true, email: true}
-    #   expect_subject("poll_mailer.header.poll_closing_soon")
-    #   expect_element('.poll-mailer-common-summary')
-    #   expect_text('.poll-mailer__vote', "You voted:")
-    #   expect_text('.poll-mailer-common-responses', "Responses")
-    #   expect_text('.poll-mailer-common-responses', "Anonymous")
-    #   expect_no_element('.poll-mailer-common-undecided')
-    # end
+    it "#{poll_type} poll_closing_soon_with_vote email" do
+      next unless poll_template.voters_review_responses
+      get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, email: true}
+      expect_subject("poll_mailer.header.poll_closing_soon")
+      expect_element('.poll-mailer-common-summary')
+      expect_text('.poll-mailer__vote', "You voted:")
+    end
+
+    it "anonymous #{poll_type} poll_closing_soon_with_vote email" do
+      next unless poll_template.voters_review_responses
+      get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, anonymous: true, email: true}
+      expect_subject("poll_mailer.header.poll_closing_soon")
+      expect_element('.poll-mailer-common-summary')
+      expect_text('.poll-mailer__vote', "You voted:")
+      expect_text('.poll-mailer-common-responses', "Responses")
+      expect_text('.poll-mailer-common-responses', "Anonymous")
+      expect_no_element('.poll-mailer-common-undecided')
+    end
 
     it "hide_results #{poll_type} poll_closing_soon_with_vote email" do
-      next unless AppConfig.poll_templates.dig(poll_type, 'voters_review_responses')
+      next unless poll_template.voters_review_responses
       get :test_poll_scenario, params: {scenario: 'poll_closing_soon_with_vote', poll_type: poll_type, hide_results_until_closed: true, email: true}
       expect_subject("poll_mailer.header.poll_closing_soon")
       expect_text('.poll-mailer__vote', "You voted:")

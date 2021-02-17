@@ -32,8 +32,8 @@ class PollOption < ApplicationRecord
   def display_name(zone: nil)
     if poll.dates_as_options
       format_iso8601_for_humans(name, zone || poll.time_zone)
-    elsif poll.poll_options_attributes.any?
-      name.humanize
+    elsif poll.translate_option_name
+      I18n.t("poll_#{poll.poll_type}_options.#{name}")
     else
       name
     end

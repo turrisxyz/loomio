@@ -16,6 +16,7 @@ class PollTemplateService
         require_stance_choices: config.fetch('require_stance_choices', false),
         can_vote_anonymously: config.fetch('can_vote_anonymously', false),
         has_variable_score: config.fetch('has_variable_score', false),
+        dates_as_options: config.fetch('dates_as_options', false),
         has_poll_options: config.fetch('has_poll_options', false),
         require_all_choices: config.fetch('require_all_choices', false),
         require_dots_per_person: config.fetch('required_custom_fields', []).include?('dots_per_person'),

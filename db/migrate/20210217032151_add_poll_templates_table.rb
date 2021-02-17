@@ -14,6 +14,9 @@ class AddPollTemplatesTable < ActiveRecord::Migration[5.2]
       t.boolean :require_stance_choices, null: false, default: false
       t.boolean :can_vote_anonymously, null: false, default: false
       t.boolean :has_variable_score, null: false, default: false
+      t.boolean :has_option_score_counts, null: false, default: false
+      t.boolean :has_option_icons, null: false, default: false
+      t.boolean :dates_as_options, null: false, default: false
       t.boolean :has_poll_options, null: false, default: false
       t.boolean :require_all_choices, null: false, default: false
       t.boolean :require_dots_per_person, null: false, default: false

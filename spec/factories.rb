@@ -255,7 +255,7 @@ FactoryBot.define do
     details { "with a description" }
     association :author, factory: :user
     poll_option_names { %w(apple banana orange) }
-    custom_fields { { dots_per_person: 8 } }
+    dots_per_person { 8 }
     created_at { 2.days.ago }
     notify_on_closing_soon { "voters" }
     closing_at { 5.days.from_now }
@@ -267,7 +267,7 @@ FactoryBot.define do
     details { "with a description" }
     association :author, factory: :user
     poll_option_names { ['01-01-2015'] }
-    custom_fields { { can_respond_maybe: false } }
+    can_respond_maybe { false }
     created_at { 2.days.ago }
     notify_on_closing_soon { "voters" }
     closing_at { 5.days.from_now }
@@ -279,7 +279,7 @@ FactoryBot.define do
     details { "with a description" }
     association :author, factory: :user
     poll_option_names { %w(apple banana orange) }
-    custom_fields { { minimum_stance_choices: 2 } }
+    minimum_stance_choices { 2 }
     created_at { 2.days.ago }
     notify_on_closing_soon { "voters" }
     closing_at { 5.days.from_now }

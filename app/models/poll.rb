@@ -39,17 +39,15 @@ class Poll < ApplicationRecord
     has_variable_score
     voters_review_responses
     dates_as_options
-    required_custom_fields
     has_option_score_counts
     require_stance_choices
     require_all_choices
     prevent_anonymous
-    poll_options_attributes
     experimental
     has_score_icons
   ).freeze
   TEMPLATE_FIELDS.each do |field|
-    define_method field, -> { PollTemplate.find_by(poll_type: poll_type).send(field) }
+    define_method field, -> { poll_template.send(field) }
   end
 
   include Translatable
@@ -62,6 +60,7 @@ class Poll < ApplicationRecord
 
   belongs_to :discussion
   belongs_to :group, class_name: "Group"
+  belongs_to :poll_template
 
   enum notify_on_closing_soon: {nobody: 0, author: 1, undecided_voters: 2, voters: 3}
 
@@ -105,7 +104,6 @@ class Poll < ApplicationRecord
                       events.kind           = 'poll_closing_soon')", recency_threshold)
   end
 
-  validates :poll_type, inclusion: { in: PollTemplate::POLL_TYPES }
   validates :details, length: {maximum: Rails.application.secrets.max_message_length }
 
   validate :poll_options_are_valid
@@ -147,6 +145,14 @@ class Poll < ApplicationRecord
   define_counter_cache(:versions_count) { |poll| poll.versions.count}
 
   delegate :locale, to: :author
+
+  def poll_type
+    poll_template.poll_type
+  end
+
+  def poll_type=(type)
+    self.poll_template = PollTemplate.find_by(poll_type: type)
+  end
 
   def user_id
     author_id
@@ -424,7 +430,7 @@ class Poll < ApplicationRecord
   end
 
   def prevent_added_options
-    if (self.poll_options.map(&:name) - template_poll_options).any?
+    if (self.poll_options.map(&:name) - poll_template.poll_options).any?
       self.errors.add(:poll_options, I18n.t(:"poll.error.cannot_add_options"))
     end
   end
@@ -448,13 +454,14 @@ class Poll < ApplicationRecord
     end
   end
 
-  def template_poll_options
-    Array(poll_options_attributes).map { |o| o['name'] }
-  end
-
   def require_custom_fields
-    Array(required_custom_fields).each do |field|
-      errors.add(field, I18n.t(:"activerecord.errors.messages.blank")) if custom_fields[field].nil?
+    %w[dots_per_person
+       max_score
+       minimum_stance_choices
+       can_respond_maybe].each do |field|
+      if poll_template.send("require_#{field}") && self.send(field).nil?
+        errors.add(field, I18n.t(:"activerecord.errors.messages.blank"))
+      end
     end
   end
 end

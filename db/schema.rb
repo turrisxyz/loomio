@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_17_032151) do
+ActiveRecord::Schema.define(version: 2021_02_17_084522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -587,6 +587,9 @@ ActiveRecord::Schema.define(version: 2021_02_17_032151) do
     t.boolean "require_stance_choices", default: false, null: false
     t.boolean "can_vote_anonymously", default: false, null: false
     t.boolean "has_variable_score", default: false, null: false
+    t.boolean "has_option_score_counts", default: false, null: false
+    t.boolean "has_option_icons", default: false, null: false
+    t.boolean "dates_as_options", default: false, null: false
     t.boolean "has_poll_options", default: false, null: false
     t.boolean "require_all_choices", default: false, null: false
     t.boolean "require_dots_per_person", default: false, null: false
@@ -619,7 +622,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_032151) do
     t.datetime "updated_at"
     t.integer "discussion_id"
     t.string "key", null: false
-    t.string "poll_type", null: false
+    t.string "poll_type"
     t.jsonb "stance_data", default: {}
     t.integer "voters_count", default: 0, null: false
     t.boolean "multiple_choice", default: false, null: false
@@ -645,6 +648,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_032151) do
     t.boolean "specified_voters_only", default: false, null: false
     t.integer "notify_on_closing_soon", default: 0, null: false
     t.string "content_locale"
+    t.integer "poll_template_id", null: false
     t.index ["author_id"], name: "index_polls_on_author_id"
     t.index ["discussion_id"], name: "index_polls_on_discussion_id"
     t.index ["group_id"], name: "index_polls_on_group_id"
