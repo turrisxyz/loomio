@@ -53,7 +53,7 @@ export default
   span(v-if="!poll.datesAsOptions()")
     v-avatar(tile :size="size" v-if='poll.hasOptionIcons()')
       img(:src="'/img/' + optionImages[pollOption.name] + '.svg'", :alt='optionName')
-    span.body-2(v-if='!poll.hasOptionIcons()')
+    span(v-if='!poll.hasOptionIcons()')
       span {{ optionName }}
       mid-dot(v-if="poll.pollType == 'poll' && poll.multipleChoice")
       span(v-if="!hideScore && poll.hasVariableScore()")
