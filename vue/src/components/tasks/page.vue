@@ -24,9 +24,7 @@ export default
 
   methods:
     toggleDone: (task) ->
-      # task.done = !task.done
-      console.log "toggling task done", task
-
+      task.toggleDone()
 
 </script>
 

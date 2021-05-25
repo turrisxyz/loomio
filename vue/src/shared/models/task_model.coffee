@@ -8,3 +8,9 @@ export default class TaskModel extends BaseModel
 
   relationships: ->
     @belongsToPolymorphic('record')
+
+  toggleDone: ->
+    if @done
+      @remote.postMember(@id, 'mark_as_not_done')
+    else
+      @remote.postMember(@id, 'mark_as_done')
