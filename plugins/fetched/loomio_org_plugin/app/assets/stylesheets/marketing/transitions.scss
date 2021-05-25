@@ -1,0 +1,10 @@
+.slogan-transition-enter-active {
+  transition: all .25s ease;
+}
+.slogan-transition-leave-active {
+  transition: all .25s ease;
+}
+.slogan-transition-enter, .slogan-transition-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

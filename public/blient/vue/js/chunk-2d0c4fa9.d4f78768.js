@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c4fa9"],{"3cad":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=r;var o={lastWeek:function(e){switch(e.getUTCDay()){case 6:return"'το προηγούμενο' eeee 'στις' p";default:return"'την προηγούμενη' eeee 'στις' p"}},yesterday:"'χθες στις' p",today:"'σήμερα στις' p",tomorrow:"'αύριο στις' p",nextWeek:"eeee 'στις' p",other:"P"};function r(e,t,n,r){var a=o[e];return"function"===typeof a?a(t,n,r):a}e.exports=t.default}}]);
+//# sourceMappingURL=chunk-2d0c4fa9.d4f78768.js.map

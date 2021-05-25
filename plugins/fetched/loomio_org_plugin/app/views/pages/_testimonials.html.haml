@@ -1,0 +1,15 @@
+%section.inner--landing.testimonials
+  %h2.text-h4.my-8.text-center= t('marketing.loomio_solves_real_problems')
+  .viewport-l-row.justify-space-between
+    .d-flex.flex-column.james.align-center
+      = image_tag 'new_marketing/james_bloemendal_crop.jpg', loading: :lazy, alt: "Photo of James Bloemendal"
+      %blockquote.text-decoration-none= t(:'marketing.james_bloemendal_quote_html')
+      .person= t(:'marketing.james_bloemendal_title')
+    .d-flex.flex-column.manon.align-center
+      = image_tag 'new_marketing/manon_cuille_crop.png', loading: :lazy, alt: "Photo of Manon Cuille"
+      %blockquote.text-decoration-none= t(:"marketing.manon_cuille_quote_html")
+      .person= t(:"marketing.manon_cuille_title")
+    .d-flex.flex-column.paul.align-center
+      = image_tag 'new_marketing/paul_martin_crop.png', loading: :lazy, alt: "Photo of Paul Martin"
+      %blockquote.text-decoration-none= t(:'marketing.paul_martin_quote_html')
+      .person= t(:'marketing.paul_martin_title')

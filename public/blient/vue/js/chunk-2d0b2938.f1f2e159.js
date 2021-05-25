@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b2938"],{2565:function(e,n){const a=[{br:{reactions:{slight_smile:"Plijet on",heart:"Karout a ran",laughing:"Farsus eo",clap:"Stlakadegoù",hugging:"Pok",sunglasses:"Trankil",wink:"Serr-lagad",nerd:"Speredeg",relieved:"Disammet",worried:"Nec'het"},common:{action:{like:"Plijet on"}}}}];e.exports=a.length<=1?a[0]:a}}]);
+//# sourceMappingURL=chunk-2d0b2938.f1f2e159.js.map

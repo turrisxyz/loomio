@@ -1,0 +1,98 @@
+%main.main--landing{role: "main"}
+  %section.inner--landing.hero-section--landing
+    .viewport-l-row
+      .flex-column
+        %h1.hero-text--landing
+          Keep your team engaged
+          %span.nobr="while working"
+          from home.
+        %p.mt-1.pr-4
+          Discuss, decide and collaborate online. Free your organization from
+          %span.nobr="chaotic email chains"
+          and distracting instant messaging.
+        %p.mt-3.mb-1
+          %a.mr-2.btn--primary--landing{href: "/start_group", target: "_blank"}= "Try Loomio for free"
+        %p
+          %small
+            = surround 'Already using Loomio? ', '.' do
+              %a{href: "/users/sign_in"}= "Sign in"
+      .gutter-large
+      .flex-column
+        .hero-image--landing.remote-users
+          = image_tag 'new_marketing/remote-loomio-users.png', loading: :lazy, alt: 'Wokers participating remotely on Loomio'
+
+
+  .divider
+
+  %section.narrow--landing.mt-16.mb-16
+    %h2= "A place for your organization’s serious discussions"
+    %p= "With Loomio, people participate on the web, email or mobile, in their own time. Discussions stay productive and on topic. When you're ready to make a decision, get feedback, or move from talk to action, Loomio’s polling tools are at your fingertips."
+
+  .contrast-panel
+    %section.inner--landing.pt-8.pb-8
+      %h2.mt6= "Get the best out of your team with Loomio’s effective decision tools"
+      .viewport-l-row
+        .flex-column
+          %ul.ticks--landing
+            %li
+              %strong
+                Time poll:
+              Choose a date for your event that suits everyone
+            %li
+              %strong
+                Proposal:
+              Find out what your group thinks about a course of action
+            %li
+              %strong
+                Check:
+              Count how many people have completed a task, or ask for volunteers
+            %li
+              %strong
+                Rank choices:
+              Prioritise among options
+          %p
+            All decisions are
+            %strong="automatically recorded"
+            %span.nobr="for you to refer to later."
+        .gutter-large
+        .flex-column
+          .decision-tools-image--landing
+            = image_tag 'landing/decision-types.png', loading: :lazy
+
+  %section.inner--landing.testimonials
+    .viewport-l-row.justify-space-between
+      .flex-column.manon
+        = image_tag 'new_marketing/manon_cuille_crop.png', loading: :lazy
+        %blockquote= "“Loomio offers a sense of centralized community even though group members are spread across the country.”"
+        .person= "Manon Cuillé"
+        .position
+          Head of Citizen Mobilization,
+          %a{href: "https://blog.loomio.org/2019/07/30/catalyzing-the-zero-waste-movement-in-france/"}= "Zero Waste France"
+      .flex-column.james
+        = image_tag 'new_marketing/james_bloemendal_crop.jpg', loading: :lazy
+        %blockquote= "“Loomio has led to better decisions, higher engagement, fewer meetings, and faster implementation.”"
+        .person= "James Bloemendal"
+        .position
+          Product Manager,
+          %a{href: "https://blog.loomio.org/2019/11/14/creating-the-workplace-of-the-future/"}= "Ian Martin Group, Canada"
+      .flex-column.paul
+        = image_tag 'new_marketing/paul_martin_crop.png', loading: :lazy
+        %blockquote= "“We run our entire loan assessment process through Loomio, saving many hours we would otherwise need to spend in meetings.”"
+        .person= "Paul Martin"
+        .position
+          Director,
+          %a{href: "https://blog.loomio.org/2019/06/19/funding-community-renewable-projects/"}= "Low Carbon Society, UK"
+
+  .divider
+
+  %section.narrow--landing.mt-14.mb-16
+    %h2= "Take a quick tour"
+    .iframe-container.iframe-border--landing
+      = render 'pages/demo'
+
+  %section.action-panel
+    %section.inner--landing.pt-14.pb-16
+      %h1= "Ready to engage your team?"
+      .d-flex.justify-center.mb-8
+        %a.mr-2.btn--primary--action--landing{href: "/start_group", target: "_blank"}= "Try Loomio for free"
+        %a.btn--secondary--action--landing{href: "/contact"}= "Talk to sales"

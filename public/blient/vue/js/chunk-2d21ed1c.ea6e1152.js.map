@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///../config/locales/client.hi.yml"],"names":["doc","module","exports","length"],"mappings":"iGAAA,MAAMA,EAAM,CAAC,CAAE,GAAK,KACpBC,EAAOC,QAAUF,EAAIG,QAAU,EAAIH,EAAI,GAAKA","file":"../../blient/vue/js/chunk-2d21ed1c.ea6e1152.js","sourcesContent":["const doc = [({\"hi\":({})})];\nmodule.exports = doc.length <= 1 ? doc[0] : doc;"],"sourceRoot":""}

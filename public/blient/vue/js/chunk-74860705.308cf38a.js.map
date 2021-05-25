@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///../config/locales/client.af.yml"],"names":["doc","module","exports","length"],"mappings":"oGAAA,MAAMA,EAAM,CAAC,CAAE,GAAK,KACpBC,EAAOC,QAAUF,EAAIG,QAAU,EAAIH,EAAI,GAAKA","file":"../../blient/vue/js/chunk-74860705.308cf38a.js","sourcesContent":["const doc = [({\"af\":({})})];\nmodule.exports = doc.length <= 1 ? doc[0] : doc;"],"sourceRoot":""}

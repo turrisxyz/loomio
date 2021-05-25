@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b97c4"],{"32c2":function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=p;var n={lastWeek:"'지난' eeee p",yesterday:"'어제' p",today:"'오늘' p",tomorrow:"'내일' p",nextWeek:"'다음' eeee p",other:"P"};function p(e,t,o,p){return n[e]}e.exports=t.default}}]);
+//# sourceMappingURL=chunk-2d0b97c4.04a9f910.js.map

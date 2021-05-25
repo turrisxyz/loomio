@@ -1,0 +1,161 @@
+// inner margin default of 128px horizontal
+
+.inner {
+  margin: 0px 128px;
+  @media screen and (max-width: $viewport-m) {
+    margin: 0px 24px;
+  }
+}
+
+// .ma-auto {
+//   margin: auto;
+// }
+// .my-auto {
+//   margin-top: auto;
+//   margin-bottom: auto;
+// }
+// .mx-auto {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .mt-auto {
+//   margin-top: auto;
+// }
+// .mb-auto {
+//   margin-bottom: auto;
+// }
+// .ml-auto {
+//   margin-left: auto;
+// }
+// .mr-auto {
+//   margin-right: auto;
+// }
+//
+// .pa-auto {
+//   padding: auto;
+// }
+// .py-auto {
+//   padding-top: auto;
+//   padding-bottom: auto;
+// }
+// .px-auto {
+//   padding-left: auto;
+//   padding-right: auto;
+// }
+// .pt-auto {
+//   padding-top: auto;
+// }
+// .pb-auto {
+//   padding-bottom: auto;
+// }
+// .pl-auto {
+//   padding-left: auto;
+// }
+// .pr-auto {
+//   padding-right: auto;
+// }
+//
+// @for $i from 1 through 16 {
+//   .ma-#{$i} {
+//     margin: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .mx-#{$i} {
+//     margin-left: #{$i*4}px !important;
+//     margin-right: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .my-#{$i} {
+//     margin-top: #{$i*4}px !important;
+//     margin-bottom: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .mt-#{$i} {
+//     margin-top: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .mb-#{$i} {
+//     margin-bottom: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .mr-#{$i} {
+//     margin-right: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .ml-#{$i} {
+//     margin-left: #{$i*4}px !important;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .pa-#{$i} {
+//     padding: #{$i*4}px !important;
+//   }
+// }
+//
+// // px
+// @for $i from 1 through 16 {
+//   .px-#{$i} {
+//     padding-left: #{$i*4}px;
+//     padding-right: #{$i*4}px;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .py-#{$i} {
+//     padding-top: #{$i*4}px;
+//     padding-bottom: #{$i*4}px;
+//   }
+// }
+//
+// // pl
+// @for $i from 1 through 16 {
+//   .pl-#{$i} {
+//     padding-left: #{$i*4}px;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .pr-#{$i} {
+//     padding-right: #{$i*4}px;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .pt-#{$i} {
+//     padding-top: #{$i*4}px;
+//   }
+// }
+//
+// @for $i from 1 through 16 {
+//   .pb-#{$i} {
+//     padding-bottom: #{$i*4}px;
+//   }
+// }
+
+$max-widths: 40px, 50px, 80px, 100px, 128px, 200px, 256px, 300px, 400px, 500px, 800px, 1024px, 1280px;
+$min-widths: 40px, 50px, 80px, 100px, 128px, 200px, 300px, 256px, 300px, 400px, 500px, 800px, 1024px, 1280px;
+
+@each $size in $max-widths {
+  .max-width-#{$size} {
+    max-width: $size;
+  }
+}
+
+@each $size in $min-widths {
+  .min-width-#{$size} {
+    min-width: $size;
+  }
+}

@@ -1,0 +1,22 @@
+ga_IE:
+  plan_names:
+    free: Saor in aisce
+  pricing_page:
+    upgrade: Uasghrádaigh
+  pricing:
+    lets_talk: "B"
+    find_out_more: "Cuir tuilleadh eolais air"
+    services: "Seirbhísí"
+  marketing:
+    get_started: Tosaigh
+    pricing: Praghsáil
+  navigation:
+    help: Cabhair
+    login: Síniú isteach
+    start_group: Cuir baicle ar bun
+  titles:
+    home: An clár cinn
+  subscriptions:
+    organization: Eagraíocht
+  landing:
+    try_loomio: Bain triail as Loomio

@@ -1,0 +1,79 @@
+%main{role: "main"}
+
+  .d-flex.py-16.justify-center.align-center
+    .viewport-l-row.inner.max-width-1280px
+      .flex-column
+        %span.body-xlarge.boldish.text--blue.mb-4= t(:"bcorp.title_html")
+        %span.body.text--blue= t(:"bcorp.subtitle_html")
+      .flex-column.justify-center.align-center
+        = image_tag 'new_marketing/loomio_originals_01.png', class: 'loomio-hill mt-6 pr-8 ml-4', loading: :lazy
+
+  .d-flex.full-screen.justify-center.bg-orange-pattern.py-16
+    .viewport-l-row.inner.justify-center.align-center
+      .flex-column.flex-2.viewport-l-o1.mt-12
+        .iframe-container.min-width-300px
+          =render 'pages/demo'
+      .gutter-xlarge.viewport-l-o2
+      .flex-column.flex-1.viewport-l-o3.need-loomio
+        %span.text--white.body-large.boldish.mt-6= t(:"bcorp.new_level_decision")
+        %span.text--white.body.mt-6= t(:"bcorp.building_blocks")
+        %a.btn--white--group-start.body.clickable.mt-12.text--orange{href: "/start_group", target: "_blank"}= t(:"bcorp.try_loomio_for_free")
+
+  .d-flex.full-screen.justify-center.align-center.bg-orange-pattern.py-16
+    .viewport-l-row.inner.max-width-1280px.align-center.justify-center
+      .flex-column.flex-1.viewport-l-o1.justify-center.align-center
+        = image_tag 'new_marketing/loomio_hands_stars.png', class: 'rounded-image mb-8', loading: :lazy
+        %span.text--white.boldish.body-larger.mb-8.text-center= t(:"bcorp.collaborate_purposefully")
+        %span.text--white.body.text-center= t(:"bcorp.into_action")
+      .gutter-large.viewport-l-o2
+      .flex-column.flex-1.viewport-l-o3.justify-center.align-center
+        = image_tag 'new_marketing/loomio_speech_bubbles.png', class: 'rounded-image mb-8', loading: :lazy
+        %span.text--white.boldish.body-larger.mb-8.text-center= t(:"bcorp.engage")
+        %span.text--white.body.text-center= t(:"bcorp.share")
+      .gutter-large.viewport-l-o3
+      .flex-column.flex-1.viewport-l-o4.justify-center.align-center
+        = image_tag 'new_marketing/loomio_file_cabinet.png', class: 'rounded-image mb-8', loading: :lazy
+        %span.text--white.boldish.body-larger.mb-8.text-center= t(:"bcorp.keep")
+        %span.text--white.body.text-center.pb-8= t(:"bcorp.preserve")
+
+  .d-flex.full-screen.justify-center.align-center.bg-blue-pattern.py-16
+    .viewport-l-row.inner.max-width-1280px
+      .flex-column.flex-1.viewport-l-o3.align-center.justify-center
+        %span.text--white.body-large.boldish.mt-6= t(:"bcorp.transparent")
+        %span.text--white.body.mt-6= t(:"bcorp.easy_to_share")
+        %span.text--white.body.mt-6= t(:"bcorp.all_discussions")
+      .gutter-xlarge.viewport-l-o2
+      .flex-column.flex-2.viewport-l-o1.align-center.justify-center
+        = image_tag 'new_marketing/company_transparency_form.gif', class: 'b-corp-form-image', loading: :lazy
+
+  .d-flex.full-screen.justify-center.align-center.bg-blue-pattern.py-16
+    .viewport-l-row.inner.max-width-1280px
+      .flex-column.flex-2.viewport-l-o1
+        = image_tag 'new_marketing/worker_empowerment_form.gif', class: 'b-corp-form-image', loading: :lazy
+      .gutter-xlarge.viewport-l-o2
+      .flex-column.flex-1.viewport-l-o3
+        %span.text--white.body-large.boldish.mt-6= t(:"bcorp.true_accountability")
+        %span.text--white.body.mt-6= t(:"bcorp.establish")
+        %span.text--white.body.mt-6= t(:"bcorp.facilitation_tools")
+
+  .d-flex.full-screen.justify-center.py-16
+    .viewport-l-row.inner.max-width-1280px
+      .flex-column.justify-center.align-center.viewport-l-o1
+        = image_tag 'new_marketing/loomio_high_five.gif', class: 'high-five-image', loading: :lazy
+      .flex-column.justify-center.mx-8.viewport-l-o2
+        %span.text--blue.body.mt-6= t(:"bcorp.better_world")
+        %span.text--blue.body.mt-6= t(:"bcorp.time_to_up")
+        %a.btn--primary.body.mt-12.clickable{href: "/start_group", target: "_blank"}= t(:'marketing.get_started_today')
+
+  .flex-column.justify-center.bg-orange-pattern.py-16
+    .inner
+      .flex-column.align-center.justify-center
+        .flex-column.align-center.justify-center.max-width-1024px
+          %span.text--white.body-large.boldish.mt-6= t(:"bcorp.real_example")
+          %span.text--white.body.mt-6= t(:"bcorp.cogo")
+      .flex-column
+        .iframe-container.mt-12
+          %iframe{ src: "https://www.youtube.com/embed/lOUm0qpgDAA", frameborder: "0" }
+      .flex-column.align-center.justify-center
+        %span.text--white.body-larger.mt-6= t(:"bcorp.like_what_you_saw")
+        %a.btn--white--group-start.body.clickable.mt-12.text--orange{href: "/start_group", target: "_blank"}= t(:"bcorp.try_loomio_now")

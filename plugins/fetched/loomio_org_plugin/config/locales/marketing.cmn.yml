@@ -1,0 +1,19 @@
+cmn:
+  subscription_levels:
+    free: 免费
+  plan_names:
+    free: 免费
+    trial: 试用
+  pricing_page:
+    upgrade: 升级
+  pricing:
+    find_out_more: "找出更多"
+  navigation:
+    help: 帮助
+    start_group: 建立新群组
+    home: 主页
+    privacy: 隐私
+  titles:
+    home: 首页
+  subscriptions:
+    organization: 组织

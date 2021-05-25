@@ -1,0 +1,8 @@
+.pricing--pay-frequency-btns.d-flex.align-center.justify-space-around.mx-auto.my-8{style: 'max-width: 400px'}
+  %a.elevation-1{class: ((@pay == 'annually') ? 'btn--blue' : 'btn'), href: '?pay=annually'}
+    = t(:'pricing.pay_annually')
+  or
+  %a.elevation-1{class: ((@pay == 'monthly') ? 'btn--blue' : 'btn'), href: '?pay=monthly'}
+    = t(:'pricing.pay_monthly')
+- if @pay == 'monthly'
+  %p.font-italic.text-center= t(:'pricing.pay_annually_and_save')

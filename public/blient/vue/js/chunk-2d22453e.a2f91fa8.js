@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22453e"],{e052:function(n,o){const e=[{ur_PK:{group_page:{options:{email_settings:"ایمیل ترجیحات"}}}}];n.exports=e.length<=1?e[0]:e}}]);
+//# sourceMappingURL=chunk-2d22453e.a2f91fa8.js.map

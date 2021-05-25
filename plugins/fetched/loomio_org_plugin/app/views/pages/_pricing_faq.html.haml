@@ -1,0 +1,9 @@
+%section.pricing--faq.inner--landing.mb-12.px-8
+  - topics = %w[is_there_training payment_methods credit_card_required_for_trial what_currency will_i_get_receipt non_profit_discount am_i_community can_i_upgrade_to_pro i_have_a_discount_code who_owns_the_data where_is_loomio_org_hosted can_we_trust_you what_support_for_pro can_I_have_my_own_server refunds_policy is_it_secure deletion_policy]
+  %h2.text-h4.my-8.text-center= t('faq.title')
+  - topics.each do |topic|
+    %h3.text-h6.my-4=t("faq.#{topic}.question")
+    - if I18n.exists?("faq.#{topic}.answer")
+      %p=t("faq.#{topic}.answer")
+    - else
+      =raw t("faq.#{topic}.answer_html")

@@ -1,0 +1,36 @@
+el:
+  subscription_levels:
+    free: Δωρεάν
+  plan_names:
+    free: Δωρεάν
+  subscription_success_modal:
+    sign_off: ❤️  από την ομάδα του Loomio.
+  pricing_page:
+    upgrade: Αναβάθμιση
+    choose_plan: Επιλέξτε πλάνο
+  pricing:
+    unlimited_members: "Μέλη χωρίς περιορισμό"
+    lets_talk: "Ας μιλήσουμε!"
+    find_out_more: "Μάθετε περισσότερα"
+    services: "Υπηρεσίες"
+  marketing:
+    social_enterprise: Κοινωνική επιχειρηματικότητα
+    pricing: Τιμολόγηση
+    slack_integration: Ενσωμάτωση στο Slack
+    data_export: Εξαγωγή δεδομένων
+  bcorp:
+    try_loomio_for_free: Δοκιμάστε το Loomio δωρεάν
+  navigation:
+    help: Βοήθεια
+    sign_in: Είσοδος
+    start_group: Δημιουργία ομάδας
+  titles:
+    new_tab: Ανοίγει σε νέα καρτέλα
+    pricing: Σελίδα τιμολόγησης
+    contact: Φόρμα επικοινωνίας
+    sign_in: Φόρμα σύνδεσης
+    terms_of_service: Σελίδα όρων χρήσης
+    translation: Οδηγός μετάφρασης
+    home: Κεντρική σελίδα
+  landing:
+    try_loomio: Δοκιμάστε το Loomio

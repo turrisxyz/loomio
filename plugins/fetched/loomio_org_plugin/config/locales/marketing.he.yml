@@ -1,0 +1,32 @@
+he:
+  subscription_levels:
+    free: חינם
+    gold: זהב
+    pro: פרו
+    plus: פלוס
+  plan_names:
+    free: חינם
+    trial: ניסיון
+    small-monthly: קטן (חודשי)
+    small-yearly: קטן (שנתי)
+    medium-monthly: בינוני (חודשי)
+    medium-yearly: בינוני (שנתי)
+  pricing_page:
+    upgrade: שדרג
+  pricing:
+    services: "שירותים"
+  marketing:
+    social_enterprise: יזמות חברתית
+    pricing: תמחור
+  navigation:
+    help: עזרה
+    sign_in: התחבר
+    start_group: פתח קבוצה
+    privacy: פרטיות
+  titles:
+    home: דף הבית
+  subscriptions:
+    organization: ארגון
+    active: פעיל
+  landing:
+    try_loomio: נסו את Loomio

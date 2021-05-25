@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d210c18"],{b8f2:function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=p;var n={lastWeek:"'గత' eeee p",yesterday:"'నిన్న' p",today:"'ఈ రోజు' p",tomorrow:"'రేపు' p",nextWeek:"'తదుపరి' eeee p",other:"P"};function p(e,t,o,p){return n[e]}e.exports=t.default}}]);
+//# sourceMappingURL=chunk-2d210c18.eb4442a2.js.map

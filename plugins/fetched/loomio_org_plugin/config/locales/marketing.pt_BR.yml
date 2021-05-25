@@ -1,0 +1,122 @@
+pt_BR:
+  subscription_levels:
+    free: Grátis
+    gold: Ouro
+    pro: Pro
+    plus: Extra
+    community: Comunidade
+  plan_names:
+    free: Grátis
+    trial: Período de Teste
+    small-monthly: Pequeno (mensal)
+    small-yearly: Pequeno (anual)
+    medium-monthly: Médio (mensal)
+    medium-yearly: Médio (anual)
+    large-monthly: Grande (mensal)
+    large-yearly: Grande (anual)
+    standard-loomio-plan: Ouro (mensal)
+    standard-plan-yearly: Ouro (anual)
+    pro-loomio-plan: Pro (mensal)
+    pro-plan-yearly: Pro (anual)
+    plus-plan: Plus (mensal)
+    plus-plan-yearly: Plus (anual)
+    was-gift: Não pago
+  subscription_success_modal:
+    heading: Obrigada por atualizar!
+    receipt: Você receberá um e-mail com um link para o portal de cobrança, onde você pode alterar, atualizar ou cancelar sua assinatura e acessar o histórico das declarações.
+    sign_off: ❤️ do time Loomio.
+    return_to_loomio: Retornar ao Loomio
+  premium_feature:
+    premium_feature: Funcionalidade Ouro
+  export_group_data_link:
+    download_group_data_export: Relatório do grupo (XLS ou HTML)
+  member_emails_button:
+    show_member_emails: Mostrar emails de membros
+    helptext: Os administradores em grupos de um plano de ouro ou acima podem visualizar os endereços de e-mail dos membros do grupo
+  pricing_page:
+    upgrade: Assinar um plano
+    choose_plan: Escolha um plano
+  pricing:
+    unlimited_members: "Membros ilimitados"
+    private_host: "Servidor particular"
+    lets_talk: "Vamos conversar!"
+    find_out_more: "Descubra mais"
+    services: "Serviços"
+  marketing:
+    social_enterprise: Empreendimento social
+    get_started: Começar
+    pricing: Preço
+    free_trial: Teste grátis
+    slack_integration: Integração com o Slack
+    data_export: Exportação de dados
+    we_respect_your_privacy: Respeitamos sua privacidade e nunca venderemos seus dados ou colocaremos anúncios publicitários no Loomio.
+  private_host:
+    title: "Servidor privado Loomio"
+    pricex_html: '<strong>%{price}</strong> / ano'
+    price_per_user: Inclui até 1000 usuários. Precisa de mais usuários? Fale conosco.
+    unlimited_groups: Grupos ilimitados
+    description: Sua própria instância do Loomio, customizada para atender às demandas da sua organização, gerenciada pelo Loomio
+    custom_domain_and_brand: Seu próprio domínio, marca, logotipo e paleta de cores
+    private_database: Banco de dados e armazenamento de arquivos privados
+    hosted_in_aws: Hospedado no servidor AWS de sua escolha
+    single_sign_on_support: Suporte a Single Sign On (SSO)
+    use_your_own_analytics: Use seu próprio Google Analytics ou desative-o
+    disable_feartres_or_rewrite_text: Desabilite funções ou edite textos do aplicativo
+    customisation_additional_cost: Configuração de Single Sign On e outras funcionalidades pode incorrer em custos adicionais
+    active_users_are: Usuários ativos são pessoas interagindo no Loomio duas ou mais vezes ao mês
+    prices_in_us_dollars: Preços em dólares estadunidenses, mais taxas e impostos onde aplicável
+    contact_us: Contate-nos para iniciar
+  navigation:
+    about_us: Sobre nós
+    blog: Blog
+    community: Comunidade
+    features: Funcionalidades
+    resources: Recursos
+    resources_dropdown: Lista de recursos
+    resources_submenu: Submenu de recursos
+    header_menu_label: Menu cabeçalho
+    case_studies: Estudos de caso
+    help: Ajuda
+    guides_and_tips: "Guias e dicas"
+    developers: Desenvolvedores
+    coop_handbook: Manual colaborativo
+    learn: Aprenda
+    about: Sobre
+    pricing: Preço
+    partners: Parceiros
+    contact: Contato
+    login: Login
+    sign_in: Entrar
+    start_group: Iniciar grupo
+    home: Início
+    terms_of_service: Termos de Serviço
+    privacy: Privacidade
+    gdpr: Adequação à GDPR
+    translation: Tradução
+    newsletter: Boletim informativo
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio não foi criado por, é afiliado, ou apoiado por Slack Technologies, Inc.
+    loomio_school: Escola Loomio
+    company_handbook: Documentação da cooperativa Loomio
+  titles:
+    new_tab: Abre em uma nova guia
+    start_group: Formulário para iniciar grupo
+    about_us: Página sobre nós
+    pricing: Página sobre preços
+    contact: Formulário de contato
+    sign_in: Formulário de entrada
+    terms_of_service: Página dos termos de serviço
+    privacy: Página sobre privacidade
+    translation: Guia de tradução
+    home: Início
+  loomio_org:
+    golden_feature: Funcionalidade Ouro
+    slogan: Tomar uma decisão sem se reunir
+    description: Loomio ajuda grupos a tomarem decisões melhores, coletivamente e online
+  subscriptions:
+    organization: Organização
+    active: Ativo
+  landing:
+    try_loomio: Experimente Loomio
+    check_description: "Conte quantas pessoas completaram uma tarefa, ou convide voluntários"

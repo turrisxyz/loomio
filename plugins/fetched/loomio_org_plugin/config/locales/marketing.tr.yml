@@ -1,0 +1,23 @@
+tr:
+  subscription_levels:
+    free: Bedava
+  plan_names:
+    free: Bedava
+    trial: Deneme
+  pricing_page:
+    upgrade: Yükselt
+  pricing:
+    lets_talk: "Haydi konu!"
+    find_out_more: "Daha fazlasını bul"
+    services: "Hizmetler"
+  marketing:
+    social_enterprise: Sosyal girişim
+    pricing: Fiyatlandırma
+  navigation:
+    help: Yardım
+  titles:
+    home: Ana sayfa
+  subscriptions:
+    organization: Organizasyon
+  landing:
+    try_loomio: Loomio'yu deneyin

@@ -1,0 +1,79 @@
+ru:
+  subscription_levels:
+    free: Бесплатная
+    gold: Голд
+    pro: Про
+    plus: Плюс
+  plan_names:
+    free: Бесплатная
+    trial: Пробная
+    small-monthly: Небольшая (раз в месяц)
+    small-yearly: Небольшая (раз в год)
+    medium-monthly: Средняя (раз в месяц)
+    medium-yearly: Средняя (раз в год)
+    large-monthly: Крупная (раз в месяц)
+    large-yearly: Крупная (раз в год)
+    standard-loomio-plan: Голд (раз в месяц)
+    standard-plan-yearly: Голд (раз в год)
+    pro-loomio-plan: Про (раз в месяц)
+    pro-plan-yearly: Про (раз в год)
+    plus-plan: Плюс (раз в месяц)
+    plus-plan-yearly: Плюс (раз в год)
+  subscription_success_modal:
+    heading: Спасибо за обновление!
+    sign_off: ❤️ от команды Loomio.
+    return_to_loomio: Назад в Loomio
+  export_group_data_link:
+    download_group_data_export: Отчёт группы (XLS или HTML)
+  member_emails_button:
+    show_member_emails: Показать электронные адреса участников
+    helptext: Администраторы в группах с планом "Голд" или выше могут видеть электронные адреса всех участников в группе
+  pricing_page:
+    upgrade: Обновить
+  pricing:
+    private_host: "Частная база"
+    find_out_more: "Узнать больше"
+    services: "Услуги"
+  marketing:
+    buy_now: Купи сейчас
+    social_enterprise: Социально-ориентированные предприятия
+    pricing: Цены
+    one_dollar: "$1"
+    per_month_per_person: в месяц, за человека
+    free_trial: Бесплатная пробная версия
+    slack_integration: Slack интеграция
+    four_dollars: "$4"
+    we_want_to_help: Посмотреть наши ставки для волонтеров
+    apply_now: Применить сейчас
+    minimum_10_dollars: Минимум 10$ в месяц
+  private_host:
+    pricex_html: '<strong>%{price}</strong> / год'
+    unlimited_groups: Неограниченные группы
+  navigation:
+    about_us: О нас
+    blog: Блог
+    help: Помощь
+    pricing: Цены
+    partners: Партнеры
+    contact: Контакты
+    login: Логин
+    home: Главная
+    terms_of_service: Условия использования
+    privacy: Конфиденциальность
+    gdpr: Совместимый с GDPR
+    translation: Перевод
+    newsletter: Новостная рассылка
+    twitter: Twitter
+    facebook: Facebook
+  titles:
+    translation: Руководство по переводу
+    home: Домашняя страница
+  subscriptions:
+    organization: Организация
+    small_upto: Малый - до 50 человек
+    medium_upto: Средний - до 500 человек
+    large_upto: Большой - от 5000 человек
+    active: Активный
+    expired: Окончившийся
+  landing:
+    try_loomio: Попробуйте Loomio

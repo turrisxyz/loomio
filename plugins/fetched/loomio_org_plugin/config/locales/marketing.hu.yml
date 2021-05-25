@@ -1,0 +1,148 @@
+hu:
+  subscription_levels:
+    free: Ingyenes
+    gold: Arany
+    pro: Pro
+    plus: Plusz
+    community: Közösség
+  plan_names:
+    free: Ingyenes
+    trial: Próba
+    small-monthly: Kicsi (havonta)
+    small-yearly: Kicsi (évente)
+    medium-monthly: Közepes (havonta)
+    medium-yearly: Közepes (évente)
+    large-monthly: Nagy (havonta)
+    large-yearly: Nagy (évente)
+    standard-loomio-plan: Arany (havonta)
+    standard-plan-yearly: Arany (évente)
+    pro-loomio-plan: Pro (havonta)
+    pro-plan-yearly: Pro (évente)
+    plus-plan: Plusz (havonta)
+    plus-plan-yearly: Plusz (évente)
+    was-paid: Örökség
+    was-gift: Kifizetetlen
+  subscription_success_modal:
+    heading: Köszönöm a frissítést!
+    receipt: E-mailt kap a számlázási portálra mutató hivatkozással, ahol megváltoztathatja, frissítheti vagy törölheti előfizetését, és hozzáférhet a nyilatkozat előzményeinek.
+    sign_off: ❤️ a Loomio csapattól.
+    return_to_loomio: Vissza a Loomio-hoz
+  premium_feature:
+    premium_feature: Arany funkció
+  export_group_data_link:
+    download_group_data_export: Csoportos jelentés (XLS vagy HTML)
+  member_emails_button:
+    show_member_emails: Mutasd a tagok e-mailjeit
+    helptext: Az aranytervvel vagy annál magasabb csoportokkal rendelkező rendszergazdák megtekinthetik csoportjaik e-mail címét
+  pricing_page:
+    more_subscription_help_html: Lásd az <a href="%{url}"> help.loomio.org </a> webhelyet, ahol további információkat talál az árakról és az előfizetés kezeléséről.
+    upgrade: frissítés
+  pricing:
+    private_host: "Magán házigazda"
+    lets_talk: "Beszéljünk!"
+    find_out_more: "Tudjon meg többet"
+    services: "Szolgáltatások"
+    pay_monthly: "Havi fizetés"
+    pay_annually: "Fizetni évente"
+  marketing:
+    mission_driven: Küldetésvezérelt vállalat
+    social_enterprise: Társadalmi vállalkozás
+    start_a_group_for_free: Indítson el egy csoportot ingyen
+    get_started: Fogj neki
+    pricing: Árazás
+    free_trial: Ingyenes próbaverzió
+    we_respect_your_privacy: Tiszteletben tartjuk az Ön személyes adatait, és soha nem adjuk el az Ön adatait, és nem tesszük hirdetésbe a Loomio-t.
+  bcorp:
+    collaborate_purposefully: Szándékosan működjön együtt
+    keep: Nyilvántartást vezet
+  private_host:
+    title: "Loomio magán házigazda"
+    pricex_html: '<strong>% {ár} </ített / év'
+    price_per_user: 1000 felhasználót tartalmaz. Több felhasználóra van szüksége? Beszéljünk.
+    unlimited_groups: Korlátlan csoportok
+    description: A saját loomio példánya, amelyet testreszabott a szervezet igényeinek kielégítésére, amelyet a Loomio vezet.
+    custom_domain_and_brand: Saját domain név, márka, logó és színpaletta
+    private_database: Privát adatbázis és fájltárolás
+    hosted_in_aws: Az Ön által választott AWS adatközpontban üzemel
+    single_sign_on_support: Egyszeri bejelentkezés (SSO) támogatás
+    use_your_own_analytics: Használja saját Google elemzését, vagy kapcsolja ki
+    disable_feartres_or_rewrite_text: Tilos letiltani a funkciókat vagy újraírni a szöveget az alkalmazáson belül
+    customisation_additional_cost: Az egyszeri bejelentkezés és a szolgáltatás konfigurálása további költségeket vonhat maga után
+    active_users_are: Az aktív felhasználók olyan emberek, akik havonta legalább két alkalommal foglalkoznak a Loomio-val.
+    prices_in_us_dollars: Az árak dollárban vannak megadva, plusz forgalmi adó, ha van.
+    contact_us: Vegye fel velünk az indulást
+  navigation:
+    about_us: Rólunk
+    blog: blog
+    community: Közösség
+    features: Jellemzők
+    resources: Erőforrások
+    resources_dropdown: Erőforrások legördülő menü
+    resources_submenu: Erőforrások almenü
+    header_menu_label: Fejléc menü
+    case_studies: Esettanulmányok
+    help: Segítség
+    guides_and_tips: "Útmutatók és tippek"
+    developers: Fejlesztők
+    coop_handbook: Co-op kézikönyv
+    learn: Tanul
+    about: Ról ről
+    pricing: Árazás
+    partners: partnerek
+    contact: Kapcsolatba lépni
+    login: Belépés
+    sign_in: Bejelentkezés
+    start_group: Csoport indítása
+    home: itthon
+    terms_of_service: Szolgáltatás feltételei
+    privacy: Magánélet
+    gdpr: A GDPR megfelelés
+    translation: Fordítás
+    newsletter: Hírlevél
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: A Loomio nem a Slack Technologies, Inc. által létrehozott, kapcsolt, vagy támogatott
+    loomio_school: Loomio iskola
+    company_handbook: Vállalati kézikönyv
+  titles:
+    new_tab: Új lapon nyílik meg
+    start_group: Kezdje a csoport űrlapját
+    about_us: Magunkról oldal
+    pricing: Árképzési oldal
+    contact: Kapcsolatfelvételi űrlap
+    sign_in: Jelentkezzen be az űrlapon
+    terms_of_service: Szolgáltatási feltételek oldal
+    privacy: Adatvédelmi oldal
+    translation: Fordítási útmutató
+    home: Főoldal
+  loomio_org:
+    golden_feature: Arany funkció
+    slogan: Döntéseket hozhat ülések nélkül
+    description: A Loomio segíti az emberek csoportjait, együtt, online módon
+  subscriptions:
+    organization: Szervezet
+    current_plan: Jelenlegi terv
+    upgrade_your_org: Frissítse szervezetét
+    which_plan: Melyik tervet szeretnéd?
+    small_upto: Kicsi - legfeljebb 50 fő
+    medium_upto: Közepes - akár 500 ember
+    large_upto: Nagy - akár 5000 ember
+    group_too_big: A csoportodnak túl sok tagja van ehhez a tervhez
+    pay_monthly: Havi fizetés
+    pay_yearly: Fizetni évente
+    upgrade_to_small_monthly: Havi fizetés
+    small_monthly_price: 'Havonta 49 USD'
+    upgrade_to_small_yearly: Frissítsen Kisre, és fizetjen évente
+    small_yearly_price: 'Évente 490 USD (98 USD megtakarítás)'
+    upgrade_to_medium_monthly: Frissítsen közepes szintre, és fizetjen havonta
+    medium_monthly_price: 'Havonta 149 USD'
+    upgrade_to_medium_yearly: Frissítsen közepes szintre és fizessen évente
+    medium_yearly_price: 'Évente 1490 USD (298 USD megtakarítás)'
+    upgrade_to_large_monthly: Frissítsen nagyra, és fizetjen havonta
+    large_monthly_price: 'Havonta 449 USD'
+    upgrade_to_large_yearly: Frissítsen nagyra és fizetjen évente
+    large_yearly_price: 'Évente 4490 USD (898 USD megtakarítás)'
+    active: Elérhető
+  landing:
+    try_loomio: Próbáld ki a Loomio-t
+    check_description: "Számold meg, hogy hány ember fejezte be a feladatot, vagy keress jelentkezőket"

@@ -1,0 +1,333 @@
+pl:
+  subscription_levels:
+    free: Darmowy
+    gold: Złoty
+    pro: Pro
+    plus: Plus
+    community: Społeczność
+  plan_names:
+    free: Darmowy
+    trial: Wersja próbna
+    small-monthly: Mały (miesięcznie)
+    small-yearly: Mały (rocznie)
+    medium-monthly: Średni (miesięcznie)
+    medium-yearly: Średni (rocznie)
+    large-monthly: Duży (miesięcznie)
+    large-yearly: Duży (rocznie)
+    standard-loomio-plan: Złoty (miesięcznie)
+    standard-plan-yearly: Złoty (rocznie)
+    pro-loomio-plan: Pro (miesięcznie)
+    pro-plan-yearly: Pro (rocznie)
+    plus-plan: Plus (miesięcznie)
+    plus-plan-yearly: Plus (rocznie)
+    was-paid: Dziedzictwo
+    was-gift: Niezapłacony
+    pp-basic-monthly: Podstawowy miesięczny
+    pp-basic-annual: Podstawowy roczny
+    pp-pro-annual: Pro roczny
+    pp-pro-monthly: Pro miesięczny
+    pp-community-annual: Roczna Wspólnota
+  subscription_success_modal:
+    heading: Dziękujemy za aktualizację!
+    receipt: Otrzymasz wiadomość e-mail z linkiem do portalu rozliczeniowego, w którym możesz zmienić, uaktualnić lub anulować subskrypcję i uzyskać dostęp do historii wyciągów.
+    sign_off: ❤️ od zespołu Loomio.
+    return_to_loomio: Wróć do Loomio
+  premium_feature:
+    premium_feature: Złota funkcja
+  export_group_data_link:
+    download_group_data_export: Raport grupy (XLS lub HTML)
+  member_emails_button:
+    show_member_emails: Pokaż adresy e-mail członków
+    helptext: Administratorzy grup złotych lub wyższych mogą przeglądać adresy e-mail członków swoich grup
+  community_applications:
+    title: Zgłoszenie do społeczności i wolontariatu
+    get_a_group_html: |
+        Potrzebujesz grupy, aby kontynuować. Kliknij tutaj, aby <a href="/start_new" target="_blank">założyć grupę</a>, a następnie załaduj ponownie tę stronę.
+    choose_group: Wybierz swoją grupę
+    help_html: |
+        <p>Kiedy klikniesz poniższy przycisk "Zatwierdź", zostaniesz przekierowany do strony, na której możesz nabyć plan społecznościowy dla Twojej grupy.</p>
+        <p>Nie nadzorujemy tego formularza, więc jeśli masz jakiekolwiek pytania lub chcesz dokonać zakupu w późniejszym terminie, prosimy o <a href="/contact" target="_blank">kontakt z nami</a>.</p>
+  pricing_page:
+    rates_for_member_funded_orgs: Specjalne stawki dla grup społecznych i wolontariackich
+    more_subscription_help_html: Odwiedź <a href="%{url}">help.loomio.org</a>, aby uzyskać więcej informacji na temat zarządzania cenami i subskrypcjami.
+    volunteer_sign_in_html: Aby ubiegać się o nasz Plan Wolontariatu i Społeczności, musisz być<a href="/dashboard" target="_blank">zalogowany</a> i należeć do <a href="/start_group">grupy</a>. Załaduj stronę ponownie po zalogowaniu.
+    manage: Zarządzaj
+    upgrade: Aktualizuj
+  non_profit_pricing:
+    mark_johnston_quote: "\"Loomio jest doskonałym narzędziem pozwalającym na prowadzenie rozproszonych (w czasie i miejscu) dyskusji i podejmowanie decyzji oraz zapewniającym repozytorium dla podjętych już decyzji.\""
+    mark_johnston_title: "Mark Johnston, Vancouver Community Lab"
+    main_pricing_page: "Zobacz główny cennik"
+  pricing:
+    loomio_active: "Loomio plan Aktywny"
+    loomio_enterprise: "Loomio plan Biznesowy"
+    us_dollar: "US$"
+    per_month: "/miesiąc"
+    per_year: "/rok"
+    10_active_users: "Obejmuje 10 aktywnych użytkowników"
+    unlimited_discussions: "Nieograniczone dyskusje i decyzje "
+    unlimited_subgroups: "Nielimitowane podgrupy"
+    integrate_slack: "Możliwość połączenia ze Slack oraz Microsoft Teams"
+    sso: "Pojedyncze logowanie (SAML)"
+    additional_users_3_dollars: "Dodatkowi użytkownicy $3 od osoby"
+    get_in_touch_to_discuss: "Bądź w kontakcie i uzyskaj dostęp do:"
+    private_host: "bycia prywatnym gospodarzem"
+    white_label: "Biała etykieta/ produkt sprzedawany pod marką dystrybutora"
+    custom_domain: "Nazwy domeny niestandardowej"
+    custom_data_center: "niestandardowego centrum danych"
+    very_large_groups: "tworzenia bardzo dużych grup"
+    lets_talk: "Porozmawiajmy!"
+    excludes_sales_tax: "Ceny nie zawierają podatku od sprzedaży (jeśli dotyczy)"
+    find_out_more: "Dowiedz się więcej"
+    apply_here: "Aplikuj tutaj"
+    services: "Usługi"
+    services_definition: "Dostarczamy usługi, które pomogą Ci uporać się z bardziej złożonymi współpracami:"
+    training: "Pakiety szkoleniowe i webinary"
+    pay_monthly: "Płać co miesiąc"
+    pay_annually: "Płać rocznie"
+  marketing:
+    buy_now: Kup Teraz
+    next_step: "Kolejny krok w drodze do współpracy:"
+    slogan_html: |
+        Wszyscy
+        <transition name="slogan-transition" mode="out-in">
+        <span class="text--black" v-if="num == 0" key="inclusive">usłyszeli.</span>
+        <span class="text--black" v-if="num == 1" key="better" display="none">przejmują się.</span>
+        <span class="text--black" v-if="num == 2" key="quality" display="none">zadbali.</span>
+        <span class="text--black" v-if="num == 3" key="timely" display="none">ufają.</span>
+        </transition>
+    collaborate: Współpracuj i podejmuj lepsze decyzje z Loomio
+    get_started_today: Rozpocznij już dziś za darmo
+    tired_of_infinite: "Zmęczony niekończącą wymianą wiadomości e-mail i przydługimi spotkaniami, które zdają się nigdy nie zakończyć podjęciem grupowej decyzji czy rezultatem? "
+    sounds_like_you_need: "Brzmi, jakbyś potrzebował Loomio: platformy do współpracy zupełnie zmieniającej sposób, w jaki grupy podejmują decyzje, omawiają pomysły i współpracują online. Pożegnaj się z nudnymi spotkaniami oraz wiadomościami e-mail zapychającymi skrzynkę pocztową i wypróbuj narzędzie do podejmowania decyzji Loomio za darmo!"
+    how_about_a_real_example: "Co powiesz na prawdziwy przykład? "
+    make_a_decision_right_now: Podejmij decyzję już teraz
+    change_our_current_website_host: "Organizujemy konferencję; terminy i miejsce spotkania zostaną potwierdzone później"
+    integrates_with: 'Łączy się z '
+    mission_driven: Napędzana misją firma
+    open_source: Otwarte oprogramowanie
+    worker_owned: Spółdzielnia pracownicza
+    social_enterprise: 'Przedsiębiorstwo społeczne '
+    proud_supporters: Dumni zwolennicy społeczności na całym świecie
+    key_software: Oprogramowanie wspierające wiele organizacji współpracujących
+    learn_more: 'Dowiedz się o nas więcej '
+    paul_martin_quote_html: '<a href="https://blog.loomio.org/2019/06/19/funding-community-renewable-projects/" target="_blank">"Zarządzamy całym procesem szacowania kredytu poprzez Loomio, oszczędzając wiele godzin, które w przeciwnym razie musielibyśmy spędzić na spotkaniach."</a>'
+    paul_martin_title: "— Paul Martin, Director, Low Carbon Society, Wielka Brytania"
+    paul_martin_bio: 'The Low Carbon Society jest grupą wspierającą i inwestującą w innowacyjne projekty energii odnawialnej w Kornwalii w Wielkiej Brytanii '
+    manon_cuille_quote_html: '<a href="https://blog.loomio.org/2019/07/30/catalyzing-the-zero-waste-movement-in-france/" target="blank">"Loomio daje poczucie zjednoczenia społeczności, mimo że członkowie grupy są rozproszeni po całym kraju."</a>'
+    manon_cuille_title: "— Manon Cuillé, Szef Mobilizacji Obywateli, Zero Waste Francja"
+    manon_cuille_bio: 'Zero Waste France to organizacja non-profit, skupiająca lokalne grupy w całej Francji, poświęcające się praktykowaniu i zachęcaniu do życia w stylu zero-waste. Użyli Loomio do organizacji ponad 2,000 wydarzeń. '
+    james_bloemendal_quote_html: '<a target="_blank" href="https://blog.loomio.org/2019/11/14/creating-the-workplace-of-the-future/"> "Loomio doprowadziło do lepszych decyzji, większego zaangażowania, mniejszej ilości spotkań i szybszych realizacji."</a>'
+    james_bloemendal_title: "James Bloemendal, menadżer produktu, Ian Martin Group, Kanada"
+    james_bloemendal_bio: Ian Martin Group to firma rekrutacyjna, która używa technologii wiodących do oceny osobowości/kultury/umiejętności, aby wiedzieć, gdzie mogą rozwinąć swoją karierę.
+    start_a_group_for_free: Załóż grupę za darmo
+    get_started: Rozpocznij
+    pricing: Cennik
+    james_bloemendal_pricing_quote: '"Dzięki Loomio podejmujemy lepsze i bardziej inkluzywne decyzje przy mniejszej liczbie spotkań."'
+    james_bloemendal_pricing_title: "— James Bloemendal, menadżer produktu, Ian Martin Group"
+    basic_plan: Plan podstawowy
+    one_dollar: "$1"
+    per_month_per_person: miesięcznie, za osobę
+    per_month_per_active_user: miesięcznie, za aktywnego użytkownika
+    per_year_per_active_user: rocznie, za aktywnego użytkownika
+    per_year_per_person_html: na <strong>rok</strong>, za osobę
+    free_trial: Bezpłatna wersja próbna
+    start_free_trial: 'Rozpocznij bezpłatną wersję próbną '
+    basic_plan_includes: Plan podstawowy zawiera
+    unlimited_threads: Nielimitowane wątki i decyzje
+    enhanced_facilitation: Ulepszone narzędzia ułatwiające
+    slack_integration: Połączone ze Slack
+    email_support: Wsparcie klientów i szkolenia
+    data_export: 'Eksport danych '
+    pro_plan: Plan Pro
+    four_dollars: "$4"
+    pro_plan_includes: Plan Pro zawiera
+    all_basic_plan_features: Wszystkie podstawowe funkcje planu
+    ms_teams_integration: Połączenie z MS Teams
+    onelogin_integration: Połączenie z OneLogin
+    priority_support_html: <b>Priorytetowe</b> wsparcie
+    setup_support: Wsparcie ustawień
+    training: Szkolenia dla klientów
+    16_percent_off: Płać rocznie i zdobądź 2 miesiące za darmo
+    prices_in_usd: Ceny w USD, plus podatek od sprzedaży, jeśli dotyczy
+    need_something_more_html: Potrzebujesz czegoś innego? <a href="/contact" target="_blank">Skontaktuj się z nami</a>
+    happy_to_offer: Jesteśmy szczęśliwi mogąc zaoferować Ci specjalną stawkę!
+    we_want_to_help: Zobacz nasze stawki dla wolontariuszy
+    we_respect_your_privacy: Szanujemy Twoją prywatność i nigdy nie sprzedamy Twoich danych ani nie umieścimy reklam w Loomio.
+    we_believe: 'Wierzymy w Twoją pracę! Oto oferta specjalna. '
+    looking_good: Dobrze wyglądacie, wolontariusze!
+    volunteer_plan: Plan wolontariacki i społecznościowy
+    apply_now: Aplikuj teraz
+    volunteer_plan_includes: "Plan wolontariacki i społecznościowy zawiera:"
+    must_apply_via: Grupy muszą aplikować poprzez formularz wolontariusza.
+    minimum_10_dollars: Minimum $10 miesięcznie
+    minimum_40_dollars: Minimum $40 miesięcznie
+    minimum_10_dollars_per_year: Minimum $10 rocznie
+    have_group_apply_now: Aplikuj teraz, jeśli już posiadasz grupę
+    jody: Jody Connor
+    jody_reason: Myślę, że ta opinia jest świetna, ale martwię się, że nie mamy środków, aby to zrealizować.
+    mary: Mary O'Keefe
+    mary_reason: 'Przepraszam zespole, nie będzie mnie w tym czasie, ale będę zadowolony jeśli podejmiecie decyzję beze mnie. '
+    greg: Greg Kan
+    greg_reason: Tak - myślę, że to dobry sposób, aby wnieść swój wkład i okazać nasze wsparcie.
+    rob: Rob Guthrie
+    rob_reason: Jestem tym bardzo podekscytowany. Wykorzystaj możliwości nawiązywania kontaktów!
+    eager_for_more: Masz ochotę na więcej?
+    active_plan: Plan Aktywny
+    webhook_integrations: Integracje Webhook (Slack, MS Teams, Mattermost, Zapier i więcej)
+    sso_support: SAML logowania pojedynczego
+    active_plan_includes: Plan Aktywny zawiera
+    thirty_dollars: "$30"
+    per_month: miesięcznie
+    per_year: rocznie
+    includes_first_10: Obejmuje 10 aktywnych użytkowników
+    subsequent_users: $3 za dodatkowego aktywnego użytkownika
+    what_is_active_user: Przeczytaj więcej o tym, jak funkcjonuje nasze rozliczanie
+    three_dollars: "$3"
+    per_active_user_per_month: 'za aktywnego użytkownika miesięcznie '
+    thirty_dollars_minimum: "minimum $30 na miesiąc"
+  bcorp:
+    title_html: |
+        Jak moja firma może być <img src="/assets/new_marketing/bcorp_b.png" class="b-corp-b-image">bardziej B-Corp?
+    title: Jak moja firma może być bardziej B-Corp?
+    subtitle_html: |
+        <span class="boldish text--orange">Loomio</span> to aplikacja do zbiorowego podejmowania decyzji, która pomaga w stosowaniu praktyk w zakresie <span class="boldish">przejrzystości</span> i <span class="boldish">odpowiedzialności</span> w Twojej firmie, a także pomaga w wypełnianiu kwestionariusza oceny wpływu B.
+    new_level_decision: Nowy poziom podejmowania decyzji
+    building_blocks: Narzędzia ułatwiające Loomio to elementy składowe tysięcy różnych procesów zarządzania, które mogą wspierać Twoją podróż B.
+    collaborate_purposefully: Współpracuj celowo
+    into_action: Zamień dyskusję w czyn i uwzględnij cichych, różnorodnych i oddalonych od siebie ludzi
+    engage: Przyciągnij wielu udziałowców
+    share: Dziel się swoimi decyzjami i kluczowymi dyskusjami nawet z osobami niebędącymi udziałowcami
+    keep: Prowadź rejestr
+    preserve: Przechowuj pełen rejestr uczestnictwa i decyzji w celu późniejszych analiz
+    transparent: Przejrzyste zarządzanie
+    easy_to_share: Dzięki Loomio łatwo jest dzielić się swoim procesem decyzyjnym - i zapraszać różne strony, nawet osoby niebędące udziałowcami, do kluczowych rozmów.
+    all_discussions: Wszystkie dyskusje, raporty dotyczące wpływów oraz ogólne wskaźniki wydajności na wszechstronnej i łatwej do zrozumienia platformie.
+    true_accountability: Prawdziwa odpowiedzialność
+    establish: Ustanawiaj procesy i rytmy współpracy, dzięki którym Twoi pracownicy będą mogli łatwo przekonać się, w jaki sposób mogą dokonać rzeczywistych zmian w swoim środowisku pracy i jaki pozytywny wpływ na świat wywiera ich wysiłek.
+    facilitation_tools: Narzędzia ułatwiające Loomio pomagają podejmować duże i małe decyzje. Cokolwiek, od makro 10-letnich strategii po mikro codzienne decyzje, wszystkie w odrębnych podgrupach, łatwe do sprawdzenia i udostępnienia.
+    better_world: Czy Twoi pracownicy czują, że czynią świat lepszym? Czy Twoja społeczność jest świadoma wpływu, jaki generujesz w jej imieniu?
+    time_to_up: Czy nadszedł czas, aby ulepszyć Twoją umiejętność podejmowania decyzji?
+    try_loomio_for_free: Wypróbuj Loomio za darmo
+    real_example: Szukasz prawdziwego przykładu?
+    cogo: 'Conscious Consumers (obecna nazwa CoGo) to przedsiębiorstwo społeczne, które używa Loomio do kierowania zarządzaniem firmą w taki sposób, który odzwierciedla jej ideały. '
+    like_what_you_saw: Podoba ci się to, co zobaczyłeś?
+    try_loomio_now: Wypróbuj Loomio teraz
+  private_host:
+    title: "Host prywatny Loomio"
+    pricex_html: '<strong>%{price}</strong>/ rok'
+    price_per_user: Zawiera 1000 użytkowników. Potrzebujesz więcej użytkowników? Porozmawiajmy.
+    unlimited_groups: Nielimitowane grupy
+    description: 'Twój własny przykład Loomio, dostosowany by sprostać potrzebom Twojej organizacji, zarządzany przez Loomio. '
+    custom_domain_and_brand: Twoja własna nazwa domeny, marka, logo i paleta kolorów.
+    private_database: Prywatna baza danych i miejsce przechowywania danych
+    hosted_in_aws: Prowadzone w wybranym przez Ciebie centrum danych AWS
+    single_sign_on_support: Pomoc w jednorazowym logowaniu (SSO)
+    use_your_own_analytics: Skorzystaj z analityki Google lub wyłącz ją
+    disable_feartres_or_rewrite_text: Wyłącz funkcje lub przepisz tekst za pomocą aplikacji
+    customisation_additional_cost: Pojedyncze logowanie i konfiguracja funkcji mogą spowodować naliczenie dodatkowych kosztów
+    active_users_are: Aktywni użytkownicy to osoby korzystające z Loomio przynajmniej dwa razy w miesiącu.
+    prices_in_us_dollars: Ceny w USD, plus podatek od sprzedaży, jeśli dotyczy.
+    contact_us: Skontaktuj się z nami, aby rozpocząć
+  navigation:
+    about_us: 'O nas '
+    blog: Blog
+    community: Społeczność
+    features: 'Funkcje '
+    resources: Zasoby
+    resources_dropdown: Zasoby rozwijane
+    resources_submenu: Podmenu zasobów
+    header_menu_label: Menu nagłówka
+    case_studies: Studia przypadku
+    customer_stories: 'Historie klientów '
+    help: Pomoc
+    help_center: Centrum pomocy
+    guides_and_tips: "Przewodniki i wskazówki"
+    developers: Deweloperzy
+    coop_handbook: Podręcznik współpracy
+    learn: Ucz się
+    about: O
+    pricing: Cennik
+    partners: Partnerzy
+    contact: Kontakt
+    login: Login
+    sign_in: Zaloguj się
+    start_group: Rozpocznij grupę
+    home: Strona główna
+    terms_of_service: Warunki korzystania z usługi
+    privacy: Prywatność
+    gdpr: Zgodność z RODO
+    translation: Tłumaczenie
+    news: Nowości
+    newsletter: Newsletter
+    twitter: Twitter
+    facebook: Facebook
+    trademark_statement: © 2020 Loomio Cooperative Limited. Wszystkie prawa zastrzeżone. "Loomio" jest zarejestrowanym znakiem towarowym Loomio Cooperative Limited.
+    not_slack: Loomio nie jest stworzone, powiązane ani wspierane przez Slack Technologies, Inc.
+    loomio_school: Szkoła Loomio
+    company_handbook: Regulamin firmy
+    explore: Przeglądaj
+  titles:
+    new_tab: Otwiera się w nowej karcie
+    start_group: Rozpocznij formularz grupowy
+    about_us: O nas
+    pricing: Cennik
+    contact: Formularz kontaktowy
+    sign_in: Formularz logowania
+    terms_of_service: Strona z warunkami korzystania z usługi
+    privacy: Strona dotycząca prywatności
+    translation: Przewodnik po tłumaczeniach
+    home: Strona główna
+  loomio_org:
+    golden_feature: Złota funkcja
+    slogan: Podejmuj decyzje bez spotykania się
+    description: 'Loomio pomaga grupom ludzi wspólnie podejmować decyzje, online '
+  subscriptions:
+    plan: plan
+    organization: Organizacja
+    current_plan: Obecny plan
+    upgrade_your_org: Uaktualnij swoją organizację
+    upgrade_group_html: Aktualizuj <strong>%{name}</strong>
+    which_plan: Który plan wybierasz?
+    small_upto: Mały- do 50 ludzi
+    medium_upto: Średni- do 500 ludzi
+    large_upto: Duży- do 5000 ludzi
+    group_too_big: Twoja grupa ma zbyt wielu uczestników dla tego planu
+    pay_monthly: Płać co miesiąc
+    pay_yearly: Płać raz w roku
+    upgrade_to_small_monthly: Płać co miesiąc
+    small_monthly_price: '$49 za miesiąc'
+    upgrade_to_small_yearly: Zmień na Mały i płać raz w roku
+    small_yearly_price: '$490 na rok (oszczędzasz $98)'
+    upgrade_to_medium_monthly: Zmień na Średni i płać raz w miesiącu
+    medium_monthly_price: '$149 na miesiąc'
+    upgrade_to_medium_yearly: Zmień na Średni i płać raz w roku
+    medium_yearly_price: '$1490 na rok (oszczędzasz $298)'
+    upgrade_to_large_monthly: Zmień na Duży i płać raz w miesiącu
+    large_monthly_price: '$449 na miesiąc'
+    upgrade_to_large_yearly: Zmień na Duży i płać raz w roku
+    large_yearly_price: '$4490 na rok (oszczędzasz $898)'
+    active: Aktywny
+    expired: Wygasł
+    trialing: Trialing
+  landing:
+    better_decisions: "Loomio pomaga Twojej grupie wspólnie podejmować lepsze decyzje"
+    discuss_decide: "Dyskutuj, decyduj i współpracuj online. Uwolnij swoją organizację od nudnych spotkań i niekończących się wiadomości e-mail."
+    try_loomio: Wypróbuj Loomio
+    watch_demo: Zobacz demo
+    already_using_loomio_html: "Korzystasz już z Loomio? <a href='/users/sign_in'> Zaloguj się </a>"
+    serious_discussions: "Miejsce na poważne dyskusje Twojej organizacji"
+    own_time: "Dzięki Loomio ludzie w dowolnym momencie uczestniczą w dyskusji z poziomu przeglądarki, skrzynki e-mailowej lub z telefonu komórkowego. Dyskusje pozostają na temat, a Loomio pasuje do różnych formatów i stylów dyskusji."
+    polling_tools: "Jeśli jesteś gotowy podjąć decyzję, otrzymać feedback lub przejść od słów do czynów, narzędzia do przeprowadzania ankiet Loomio są na wyciągnięcie ręki. "
+    decision_tools: "Wydobądź to, co najlepsze w Twoim zespole wraz ze skutecznymi narzędziami do podejmowania decyzji Loomio"
+    time_poll: "Ankieta dotycząca daty spotkania:"
+    time_poll_description: "Wybierz datę dla Twojego wydarzenia, która będzie wszystkim pasować"
+    proposal: "Propozycja:"
+    proposal_description: "Dowiedz się, co Twoja grupa sądzi o sposobie działania "
+    check: "Sprawdź:"
+    check_description: "Policz ilu ludzi ukończyło zadanie lub zapytaj o wolontariuszy"
+    rank_choices: "Wybory rankingowe:"
+    rank_choices_description: "Uszereguj opcje pod względem ważności"
+    learn_more: "Dowiedz się więcej o narzędziach do podejmowania decyzji Loomio"
+    quick_tour: "Obejrzyj krótką prezentację"
+    ready_to_engage: "Gotowy/a zachęcić Twój zespół?"
+    talk_to_sales: "Porozmawiaj z działem sprzedaży"

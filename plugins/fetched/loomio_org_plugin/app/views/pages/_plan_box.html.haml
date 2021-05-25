@@ -1,0 +1,56 @@
+.price-box.d-flex.flex-column{class: (plan[:level] == :starter ? 'primary' : nil)}
+  %h2= t("subscription_levels.#{plan[:level]}")
+  .pa-4.mb-auto
+    .text-h4.text-center.font-weight-medium<
+      $#{plan[:price]}
+      - if plan[:group] == 'monthly'
+        = t(:'pricing.per_month')
+      - if plan[:group] == 'annual'
+        = t(:'pricing.per_year')
+    - if plan[:group] == 'community'
+      %p.text-center=t(:'pricing.one_time_payment')
+    - if plan[:group] == 'monthly'
+      .text-body-1.font-italic.text-center.pt-2
+        = t(:'pricing.save_x_pay_annually_html', amount: plan[:savings])
+    %ul.ticks--pricing.mt-4
+      - plan[:benefits].each do |benefit|
+        %li= t("pricing.#{benefit}")
+
+  - if plan[:level] == :community && button != :start_trial
+    .pa-2
+      %p
+        %b= t('marketing.for_volunteers_only')
+      %p= t('marketing.volunteer_groups_are')
+      %label
+        %input.mb-0#communitycheckbox{type: :checkbox}
+        %span= t('community_applications.declaration')
+
+  .text-center
+    - if @group&.subscription&.assistance_required?
+      %a.mr-2.elevation-2{class: 'btn--primary--landing', href: '/contact'}= t('common.contact_us')
+    - else
+      - if plan[:level] == :nonprofit
+        %p=t(:'pricing.nonprofits_only')
+      - current_plan = @group&.subscription&.plan
+      - classes = []
+      - classes.push plan_key
+      - classes.push plan[:level]
+      - classes.push 'btn--primary--landing' if plan[:level] == :starter
+      - classes.push 'btn--secondary--action--landing' if plan[:level] != :starter
+      - if current_plan == plan_key
+        %span= t('subscriptions.current_plan')
+      - else
+        - if button == :buy_now
+          - classes.push 'buy-now-btn'
+          - link = SubscriptionService.psp_url(@group, current_user, plan_key)
+          - text = 'marketing.buy_now'
+        - elsif button == :change_plan
+          - classes.push 'change-plan-btn'
+          - link = "/upgrade/#{@group.id}/preview_change?plan=#{plan_key}"
+          - text = 'pricing_page.preview_change'
+        - else
+          - classes.push 'start-trial-btn'
+          - link = '/start_group'
+          - text = 'marketing.start_free_trial'
+        %a.mr-2.elevation-2{class: classes, href: link}= t(text)
+        #confirm-to-continue.text-caption{style: 'display: none'} Please confirm to continue

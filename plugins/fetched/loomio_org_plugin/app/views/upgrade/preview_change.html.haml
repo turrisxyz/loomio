@@ -1,0 +1,26 @@
+%main.main--landing{role: "main"}
+  %section.inner--landing
+    %h1.text-h4.my-8.text-center= t(:"subscriptions.change_your_plan")
+  .inner.my-8.text-center
+    %h2.text-h6= @group.name
+
+  .inner
+    .d-flex.flex-column.align-center
+      %p= t 'subscriptions.change_plan_page.change_plan_to', name: t("plan_names.#{params[:plan]}")
+      .my-8
+        %p= t 'subscriptions.change_plan_page.preview_of_charges'
+        %table
+          - %w[plan_price credit_on_current_plan balance_in_cents prorated_adjustment_in_cents credit_applied_in_cents amount_due credit_remaining].each do |name|
+            - next if (name == 'credit_on_current_plan') and (@migration[name] >= 0)
+            - next if %w[balance_in_cents prorated_adjustment_in_cents payment_due_in_cents credit_applied_in_cents credit_remaining].include?(name) and  (@migration[name] == 0)
+            %tr{class: %w[payment_due_in_cents amount_due].include?(name) ? 'font-weight-bold' : nil}
+              %td.text-left= t("subscriptions.change_plan_page.#{name}")
+              -# %td.text-left= name
+              %td.pl-4.text-right
+                = "$#{sprintf("%.2f", @migration[name].to_f/100)}"
+
+      %p=raw t('subscription_success_modal.got_questions_then_contact_us_html')
+      - if @subscription.owner.present? && @subscription.owner_id != current_user.id
+        = t('subscriptions.change_plan_page.owner_required', name: @subscription.owner.email)
+      - else
+        = button_to t('subscriptions.change_plan_page.accept_and_proceed'), "/upgrade/#{@group.id}/change", {method: :post, params: {plan: params[:plan]}, class: 'btn--blue elevation-2'}

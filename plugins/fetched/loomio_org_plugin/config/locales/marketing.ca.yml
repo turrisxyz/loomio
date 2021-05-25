@@ -1,0 +1,44 @@
+ca:
+  subscription_levels:
+    free: Gratuït
+  plan_names:
+    free: Gratuït
+    trial: Prova
+  pricing_page:
+    upgrade: Actualitza
+  pricing:
+    find_out_more: "Coneix més"
+    services: "Serveis"
+  marketing:
+    social_enterprise: Acció social
+    pricing: Preus
+  navigation:
+    about_us: Nosaltres
+    blog: Bloc
+    resources: Recursos
+    case_studies: Casos d'estudi
+    help: Ajuda
+    guides_and_tips: "Guies i consells"
+    developers: Desenvolupadors
+    coop_handbook: Cooperació
+    about: Quant a
+    pricing: Preus
+    contact: Contacte
+    login: Entra
+    sign_in: Inicia la sessió
+    start_group: Crea un grup
+    home: Inici
+    terms_of_service: Termes del servei
+    privacy: Privacitat
+    translation: Traducció
+    newsletter: Butlletí
+    twitter: Twitter
+    facebook: Facebook
+  titles:
+    new_tab: S'obre en una nova pestanya
+    home: Pàgina d'inici
+  subscriptions:
+    organization: Organització
+  landing:
+    try_loomio: Prova Loomio
+    check_description: "Compta quants usuaris han completat una tasca o demana voluntaris"

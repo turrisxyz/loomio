@@ -1,0 +1,199 @@
+de:
+  subscription_levels:
+    free: Basis
+    gold: Gold
+    pro: Pro
+    plus: Plus
+    nonprofit: Pro Nonprofit
+    starter: Starter
+    community: Community
+  plan_names:
+    free: Basis
+    trial: Testphase
+    small-monthly: Klein (monatlich)
+    small-yearly: Klein (jährlich)
+    medium-monthly: Mittel (monatlich)
+    medium-yearly: Mittel (jährlich)
+    large-monthly: Groß (monatlich)
+    large-yearly: Groß (jährlich)
+    standard-loomio-plan: Gold (monatlich)
+    standard-plan-yearly: Gold (jährlich)
+    pro-loomio-plan: Pro (monatlich)
+    pro-plan-yearly: Pro (jährlich)
+    plus-plan: Plus (monatlich)
+    plus-plan-yearly: Plus (jährlich)
+    was-paid: Legat
+    was-gift: Unbezahlt
+    pp-basic-monthly: Basis monatlich
+    pp-basic-annual: Basis jährlich
+    pp-pro-annual: Pro monatlich
+    pp-pro-monthly: Pro jährlich
+    pp-community-annual: Community jährlich
+  subscription_success_modal:
+    heading: Danke für's Upgraden!
+    receipt: Du wirst eine E-mail mit dem Link zum Portal erhalten, auf dem du deinen Beitrag ändern, kündigen, upgraden und deinen Rechnungsverlauf abrufen kannst.
+    sign_off: ♥ vom Loomio-Team
+    return_to_loomio: Zurück zu Loomio
+  premium_feature:
+    premium_feature: Gold-Feature
+  export_group_data_link:
+    download_group_data_export: Gruppen-Bericht (XLS oder HTML)
+  member_emails_button:
+    show_member_emails: E-mail-Adressen von Mitglieder anzeigen
+    helptext: 'Administratoren für Gruppen mit einem Goldplan oder höher können die E-mail-Adressen ihrer Gruppenmitglieder sehen. '
+  community_applications:
+    title: 'Community & Freiwilligen Bewerbung '
+    get_a_group_html: |
+        Um fortzufahren brauchst du eine Gruppe. Um eine <a href="/start_new" target="_blank">Gruppe zu starten</a> klicke hier und aktualisiere dann die Seite.
+    choose_group: Wähle deine Gruppe
+  pricing_page:
+    rates_for_member_funded_orgs: Sonderpreise für Community- und Freiwilligengruppen
+    more_subscription_help_html: 'Siehe <a href="%{url}">help.loomio.org</a>für mehr Informationen zu Preisen und Abonnementverwaltung. '
+    manage: 'Verwalten '
+    upgrade: Upgrade
+    change_plan: Preisplan ändern
+  pricing:
+    private_host: "Privater Server"
+    lets_talk: "Lasst uns reden!"
+    find_out_more: "Mehr erfahren"
+    services: "Dienste"
+    pay_monthly: "Monatlich zahlen"
+    pay_annually: "Jährlich zahlen"
+  marketing:
+    buy_now: 'Jetzt kaufen '
+    next_step: "Der nächste Schritt auf deiner Reise zu einer besseren Zusammenarbeit:"
+    slogan_html: |
+        Alle
+        <transition name="slogan-transition" mode="out-in">
+        <span class="text--black" v-if="num == 0" key="inclusive">werden gehört.</span>
+        <span class="text--black" v-if="num == 1" key="better" display="none">kümmern sich.</span>
+        <span class="text--black" v-if="num == 2" key="quality" display="none">werden beachtet.</span>
+        <span class="text--black" v-if="num == 3" key="timely" display="none">vertrauen sich.</span>
+        </transition>
+    collaborate: 'Arbeitet gemeinsam und trefft bessere Entscheidungen mit Loomio. '
+    get_started_today: Jetzt kostenlos loslegen
+    tired_of_infinite: "Genug von unendlichen E-Mail-Konversationen und ziellosen Meetings, die keine wirklichen  Gruppenentscheidungen oder Ergebnisse bringen?"
+    sounds_like_you_need: "Dann könnte Loomio eine gute Wahl sein: Eine Kollaborationsplattform, die die Art und Weise, wie Gruppen Entscheidungen treffen, online diskutieren und zusammenarbeiten, grundlegend revolutioniert. Lass all die nervtötenden Meetings und ellenlangen E-Mail-Konversationen hinter dir und probiere Loomio jetzt kostenlos aus!"
+    how_about_a_real_example: "Wie wär's mit einem Praxisbeispiel?"
+    make_a_decision_right_now: Triff hier und jetzt eine Entscheidung
+    change_our_current_website_host: "Wir organisieren die Konferenz, Veranstaltungsdatum und -ort müssen noch festgelegt werden."
+    integrates_with: Integrierbar mit
+    mission_driven: Ein Unternehmen mit einer sinnstiftenden Mission
+    open_source: 'Open-Source-Software '
+    worker_owned: Kooperative im Eigentum der MitarbeiterInnen
+    social_enterprise: Sozial ausgerichtetes Unternehmen
+    proud_supporters: 'Wir unterstützen Communities in der ganzen Welt '
+    key_software: Die Software hinter vielen kollaborativen Organisationen
+    learn_more: Mehr erfahren
+    start_a_group_for_free: Kostenlos eine Gruppe erstellen
+    get_started: Loslegen
+    pricing: Preise
+    james_bloemendal_pricing_quote: '"Mit Loomio beziehen wir alle Team-Mitglieder mit ein und kommen zu besseren Entscheidungen, und das mit wesentlich weniger Meetings."'
+    james_bloemendal_pricing_title: "— James Bloemendal, Produktmanager, Ian Martin Group"
+    basic_plan: Basis-Tarif
+    per_month_per_person: monatlich, pro Person
+    free_trial: 'Kostenlos testen '
+    ms_teams_integration: MS-Teams-Integration
+    onelogin_integration: OneLogin-Integration
+    priority_support_html: <b>Premium</b>-Support
+    prices_in_usd: Preise in US$, zuzüglich Umsatzsteuer sofern maßgeblich.
+    need_something_more_html: Du benötigst ein spezielles Angebot? <a href="/contact" target="_blank">Nimm Kontakt mit uns auf</a>
+    we_respect_your_privacy: 'Wir respektieren deine Privatsphäre und werden nie deine Daten an Drittanbieter verkaufen oder Werbung auf Loomio schalten. '
+    minimum_10_dollars: Mindestens $10 monatlich
+    minimum_40_dollars: Mindestens $40 pro Monat
+    eager_for_more: Mehr erfahren?
+  bcorp:
+    collaborate_purposefully: 'Effektiv zusammenarbeiten '
+    keep: 'Alles aufgezeichnet '
+    try_loomio_for_free: Probiere Loomio kostenlos aus
+  private_host:
+    title: "Loomio privater Host"
+    pricex_html: '<strong>%{price}</strong>/Jahr'
+    price_per_user: 'Beinhaltet 1000 Nutzer. Brauchst du mehr? Lass uns reden. '
+    unlimited_groups: Unbegrenzte Gruppen
+    description: Deine eigene Loomio-Server, die auf die Anforderungen Ihrer Organisation zugeschnitten ist und von Loomio verwaltet wird.
+    custom_domain_and_brand: Dein eigener Domain- Name, Marke, Logo und Farbpalette
+    private_database: Private Datenbank und Dateispeicher
+    hosted_in_aws: In ein AWS-Rechenzentrum deiner Wahl gehostet
+    single_sign_on_support: Unterstützt Single Sign On (SSO)
+    use_your_own_analytics: 'Verwende deine eigenen Google-Analytics oder deaktiviere sie '
+    disable_feartres_or_rewrite_text: Deaktiviere Funktionen oder schreibe den App-Text neu
+    customisation_additional_cost: Einzelanmeldungen (Single Sign On) und die Konfiguration von Funktionen können zusätzliche Kosten verursachen
+    active_users_are: Aktive Nutzer sind Nutzer, die Loomio zwei- oder mehrmals pro Monat nutzen.
+    prices_in_us_dollars: Preise in US$, zuzüglich Umsatzsteuer sofern maßgeblich.
+    contact_us: Kontaktiere uns, um loszulegen
+  navigation:
+    about_us: Über uns
+    blog: Blog
+    community: 'Community '
+    features: Eigenschaften
+    resources: Arbeitsmaterialien
+    resources_dropdown: Dropdown-Liste für Arbeitsmaterialien
+    resources_submenu: Arbeitsmaterialien-Untermenü
+    header_menu_label: Hauptmenu
+    case_studies: Fallstudien
+    help: Hilfe
+    guides_and_tips: "Guide & Tipps"
+    developers: Entwickler
+    coop_handbook: Co-op Handbuch
+    learn: Lernen
+    about: Über
+    pricing: Preise
+    partners: Partner
+    contact: Kontakt
+    login: Login
+    sign_in: einloggen
+    start_group: Gruppe erstellen
+    home: Home
+    terms_of_service: Nutzungsbedingungen
+    privacy: Datenschutz
+    gdpr: Einhaltung der DSGVO
+    translation: Übersetzung
+    newsletter: Newsletter
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio wird nicht von Slack Technologies, Inc. erstellt, angegliedert oder unterstützt.
+    loomio_school: Loomio Schule
+    company_handbook: Unternehmenshandbuch
+  titles:
+    new_tab: Öffnet sich in einem neuem Tab
+    start_group: Gruppenformular starten
+    about_us: Über uns Seite
+    pricing: Preisseite
+    contact: Kontaktformular
+    sign_in: Anmeldeformular
+    terms_of_service: Nutzungsbedingungen Seite
+    privacy: Datenschutzseite
+    translation: Übersetzungs-Anleitung
+    home: Startseite
+  loomio_org:
+    golden_feature: Gold-Feature
+    slogan: Entscheidungen ohne Meetings treffen
+    description: Loomio hilft Gruppen, Entscheidungen online zu treffen
+  subscriptions:
+    organization: Organisation
+    current_plan: Jetziger Tarif
+    upgrade_your_org: Deine Organisation upgraden
+    which_plan: Welchen Tarif möchtest du?
+    small_upto: Klein - bis zu 50 Personen
+    medium_upto: Medium - bis zu 500 Personen
+    large_upto: Groß - bis zu 5000 Personen
+    group_too_big: 'Deine Gruppe ist leider zu Groß für diesen Tarif. '
+    pay_monthly: Monatlich zahlen
+    pay_yearly: Jährlich zahlen
+    upgrade_to_small_monthly: Monatlich zahlen
+    small_monthly_price: '$49 pro Monat'
+    upgrade_to_small_yearly: Zu Small upgraden und jährliche zahlen
+    small_yearly_price: '$490 pro Jahr (du sparst $98)'
+    upgrade_to_medium_monthly: Zu Medium upgraden und monatlich zahlen
+    medium_monthly_price: '$149 pro Monat'
+    upgrade_to_medium_yearly: Zu Medium upgraden und jährlich zahlen
+    medium_yearly_price: '$1490 pro Jahr (du sparst $298)'
+    upgrade_to_large_monthly: Zu Groß upgraden und monatlich zahlen
+    large_monthly_price: '$449 pro Monat'
+    upgrade_to_large_yearly: Zu Groß upgraden und jährlich zahlen
+    large_yearly_price: '$4490 pro Jahr (du sparst $898)'
+    active: Aktiv
+  landing:
+    try_loomio: Loomio ausprobieren
+    check_description: "Zähle die Anzahl der Personen, die eine Aufgabe erledigt haben oder suche nach Freiwilligen für eine Aufgabe"

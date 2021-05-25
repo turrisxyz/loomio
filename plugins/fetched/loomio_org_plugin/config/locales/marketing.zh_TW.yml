@@ -1,0 +1,122 @@
+zh_TW:
+  subscription_levels:
+    free: 免費
+    gold: 黃金
+    pro: 專業
+    plus: 增強
+    nonprofit: 專業非營利
+    starter: 入門
+    community: 社群
+  plan_names:
+    free: 免費
+    trial: 試用
+    small-monthly: 小（每月）
+    small-yearly: 小（每年）
+    medium-monthly: 中（每月）
+    medium-yearly: 中（每年）
+    large-monthly: 大（每月）
+    large-yearly: 大（每年）
+    standard-loomio-plan: 黃金（每月）
+    standard-plan-yearly: 黃金（每年）
+    pro-loomio-plan: 專業（每月）
+    pro-plan-yearly: 專業（每年）
+    plus-plan: 加強（每月）
+    plus-plan-yearly: 加強（每年）
+  subscription_success_modal:
+    heading: 感謝升級！
+    receipt: 您將會收到一封帶有付費入口連結的電子郵件，您可以在那裡變更、升級或是取消您的訂閱，以及存取帳單歷史。
+    sign_off: 來自 Loomio 團隊的 ❤️。
+  premium_feature:
+    premium_feature: 黃金功能
+  export_group_data_link:
+    download_group_data_export: 群組報告（XLS 或 HTML）
+  member_emails_button:
+    show_member_emails: 顯示成員電子郵件
+    helptext: 黃金計畫或是更高階的群組管理員可以看到他們群組成員的電子郵件
+  pricing_page:
+    upgrade: 升級
+    change_plan: 變更方案
+    choose_plan: 選擇方案
+  pricing:
+    unlimited_members: "無限的成員"
+    private_host: "私人主機"
+    lets_talk: "讓我們說說話！"
+    find_out_more: "詳細瞭解"
+    services: "服務"
+  marketing:
+    buy_now: 立刻購買
+    social_enterprise: 社會企業
+    get_started: 入門
+    pricing: 價格
+    slack_integration: Slack 整合
+    data_export: 資料匯出
+  private_host:
+    title: "Loomio 私人主機"
+    pricex_html: '<strong>%{price}</strong>／年'
+    price_per_user: 包含 1000 個使用者。需要更多使用者？我們來談談吧。
+    unlimited_groups: 無限制的群組
+    description: 您自己的 Loomio 實體，可自訂為符合您組織的需求，由 Loomio 管理。
+    custom_domain_and_brand: 您自己的域名、品牌、圖示與調色盤
+    private_database: 私人資料庫與檔案儲存空間
+    hosted_in_aws: 託管在您選擇的 AWS 資料中心
+    single_sign_on_support: 單一登入 (SSO) 支援
+    use_your_own_analytics: 使用您自己的 Google analytics 或是將其關閉
+    disable_feartres_or_rewrite_text: 停用功能或在應用程式內重寫文字
+    customisation_additional_cost: 單一登入與功能設定可能會需要額外的費用
+    active_users_are: 活躍使用者是每個月登入兩次或更多的人。
+    prices_in_us_dollars: 價格均以美元顯示，再加上銷售稅（若適用的話）。
+    contact_us: 聯絡我們以開始
+  navigation:
+    about_us: 關於我們
+    blog: 部落格
+    community: 社群
+    features: 特色
+    resources: 資源
+    resources_dropdown: 資源下拉選單
+    resources_submenu: 資源子選單
+    header_menu_label: 標題選單
+    case_studies: 案例探討
+    help: 教學文件
+    guides_and_tips: "指南與提示"
+    developers: 開發者
+    coop_handbook: 協作手冊
+    learn: 學習
+    about: 關於
+    pricing: 價格
+    partners: 夥伴
+    contact: 聯絡我們
+    login: 登入
+    sign_in: 登入
+    start_group: 啟動群組
+    home: 主畫面
+    terms_of_service: 服務條款
+    privacy: 隱私權
+    gdpr: 符合 GDPR 標準
+    translation: 翻譯
+    newsletter: 電子報
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio 並不是由 Slack 科技公司建立或是其關係企業，也並非由其支援。
+    loomio_school: Loomio 學院
+    company_handbook: 公司手冊
+  titles:
+    new_tab: 在新分頁中開啟
+    start_group: 建立新群組表單
+    about_us: 「關於我們」頁面
+    pricing: 「價格」頁面
+    contact: 聯絡表單
+    sign_in: 登入表單
+    terms_of_service: 「服務條款」頁面
+    privacy: 「隱私權」頁面
+    translation: 翻譯指南
+    home: 首頁
+  loomio_org:
+    golden_feature: 黃金功能
+    slogan: 沒有會議就做出決定
+    description: Loomio 協助群組可以在線上共同做出決策
+  subscriptions:
+    organization: 組織
+    active: 活躍
+  landing:
+    try_loomio: 試試 Loomio
+    check_description: "計算完成工作的人數，或是徵求志願者"

@@ -1,0 +1,100 @@
+!!!
+%html{'lang' => current_user.locale}
+  %head
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54BPKP5');
+    %meta{charset: "UTF-8"}
+    -# = inline_stylesheet 'marketing'
+    = stylesheet_link_tag 'marketing'
+    %title= t("marketing.#{controller_name}.#{action_name}", default: "Loomio - #{t(:"loomio_org.slogan")}")
+    %meta{:content => t(:"loomio_org.description"), :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "Loomio - #{t(:"loomio_org.slogan")}", :property => "og:title"}/
+    %meta{:content => "457851034283863", :property => "fb:app_id"}/
+    %link{rel: "shortcut icon", href: AppConfig.theme[:icon_src]}/
+    -# %link{href: "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", rel: "stylesheet"}/
+
+  %body
+    %header.pt-2.pb-3.landing-header
+      .inner--landing.viewport-m-row.align-center.justify-space-between{role: 'navigation'}
+        .d-flex.align-center.mt-2
+          %a{href: "/?fontpage"}
+            = image_tag 'landing/loomio-logo-white.png', class: 'nav-logo', alt: "Loomio"
+        .d-flex.align-center.justify-space-between.nav-link-text--header.mt-2
+          %a.mr-6.text--white{href: "https://help.loomio.org/"}= t(:"navigation.resources")
+          %a.mr-6.text--white{href: "https://blog.loomio.org/"}= t(:"navigation.blog")
+          %a.mr-6.text--white{href: "/pricing"}= t(:"navigation.pricing")
+          - if current_user.is_logged_in?
+            %a.text--white{href: "/dashboard"}= t(:"dashboard_page.aria_label")
+          - else
+            %a.text--white{href: "/users/sign_in/"}= t(:"navigation.sign_in")
+            %a.ml-6.btn--landing--header{href: "/start_group", target: "_blank"}= t(:"marketing.start_free_trial")
+
+    = yield
+
+    %footer.footer--landing.pt-16
+      .inner.viewport-m-row.justify-space-between
+        .flex-column
+          .footer--logo
+            = image_tag 'marketing/loomio-logo-80h.png', loading: :lazy
+        .flex-column
+          %h2= "Product"
+          %ul
+            %li
+              %a{href: '/dashboard'}= t :'navigation.sign_in'
+            %li
+              %a{href: '/pricing', target: '_blank'}= t :'navigation.pricing'
+            %li
+              %a{href: '/privacy', target: '_blank'}= t :'navigation.privacy'
+            %li
+              %a{href: "https://blog.loomio.org/categories/customer-stories/", target: '_blank'}= t :'navigation.customer_stories'
+        .flex-column
+          %h2= "Resources"
+          %ul
+            %li
+              %a{href: "https://help.loomio.org/", target: '_blank'}= t :'navigation.help_center'
+            %li
+              %a{href: "https://blog.loomio.org/categories/news/", target: '_blank'}= t :'navigation.news'
+            %li
+              %a{href: 'https://twitter.com/Loomio', target: '_blank', title: t(:"titles.new_tab")}= t :'navigation.twitter'
+            %li
+              %a{href: "https://www.loomio.org/community", target: '_blank'}= t :'navigation.community'
+            %li
+              %a{href: "https://github.com/loomio/loomio/", target: "_blank"}= t :'navigation.developers'
+        .flex-column
+          %h2= "Company"
+          %ul
+            %li
+              %a{href: '/contact'}= t :'navigation.contact'
+            %li
+              %a{href: 'https://help.loomio.org/en/about'}= t :'navigation.about_us'
+            %li
+              %a{href: 'https://loomio.coop/', target: '_blank'}= t :'navigation.company_handbook'
+            %li
+              %a{href: '/terms_of_service', target: '_blank'}= t :'navigation.terms_of_service'
+            %li
+              %a{href: '/gdpr', target: '_blank'}= t :'navigation.gdpr'
+      %section.footer__trademark--landing.pt-2.mt-16.pb-2
+        .inner
+          %p= t :'navigation.trademark_statement'
+          %p= t :'navigation.not_slack'
+
+    = javascript_include_tag 'angular_ahoy'
+    = render 'application/matomo'
+    :javascript
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+         for(let registration of registrations) {
+          registration.unregister()
+        } })
+
+        caches.keys().then(function(cacheNames) {
+          cacheNames.forEach(function(cacheName) {
+            caches.delete(cacheName);
+          });
+        });
+      }

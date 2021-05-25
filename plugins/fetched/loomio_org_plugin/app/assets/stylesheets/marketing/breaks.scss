@@ -1,0 +1,27 @@
+.break {
+  display: block;
+  border: 0;
+  padding: 0;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 2em;
+  margin-top: 2em;
+  opacity: .7;
+}
+
+.break__long-orange {
+  height: 10px;
+  width: 30%;
+  border-bottom: 3px solid $primary-color;
+  // @extend .break;
+  // background-image: image-url("marketing/long-line-orange.png");
+
+}
+
+// .break__long-blue {
+//   @extend .break;
+//   margin: 2em 20%;
+//   opacity: .5;
+//   background-image: image-url("marketing/long-line-blue.png");
+// }

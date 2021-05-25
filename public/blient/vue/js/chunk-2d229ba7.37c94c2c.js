@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d229ba7"],{df4c:function(e,a){const o=[{pt_PT:{current_plan_button:{upgrade:"Upgrade"},error_page:{forbidden:"Não tem permissão para o fazer."},discussion_form:{privacy_label:"Privacidade"},group_page:{options:{email_settings:"Preferências de Email"}}}}];e.exports=o.length<=1?o[0]:o}}]);
+//# sourceMappingURL=chunk-2d229ba7.37c94c2c.js.map

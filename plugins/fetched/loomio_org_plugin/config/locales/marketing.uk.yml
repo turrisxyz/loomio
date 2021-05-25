@@ -1,0 +1,148 @@
+uk:
+  subscription_levels:
+    free: Безкоштовний
+    gold: Золотий
+    pro: Професійний
+    plus: Плюс
+    community: Спільнота
+  plan_names:
+    free: Безкоштовний
+    trial: Пробний
+    small-monthly: Малий (щомісяця)
+    small-yearly: Малий (щорічно)
+    medium-monthly: Середній (щомісяця)
+    medium-yearly: Середній (щорічно)
+    large-monthly: Великий (щомісяця)
+    large-yearly: Великий (щорічно)
+    standard-loomio-plan: Золотий (щомісяця)
+    standard-plan-yearly: Золотий (щорічно)
+    pro-loomio-plan: Професійний (щомісяця)
+    pro-plan-yearly: Професійний (щорічно)
+    plus-plan: Плюс (щомісяця)
+    plus-plan-yearly: Плюс (щорічно)
+  subscription_success_modal:
+    heading: Дякуємо за оновлення плану!
+    receipt: Електронною поштою ви отримаєте посилання на клієнтський портал, де ви можете змінити, оновити або скасувати підписку, та переглянути історії платежів.
+    sign_off: З ❤️  від команди Loomio.
+    return_to_loomio: Повернутись до Loomio
+  premium_feature:
+    premium_feature: Можливості Золотого плану
+  export_group_data_link:
+    download_group_data_export: Звіт для групи (XLS або HTML)
+  member_emails_button:
+    show_member_emails: Показувати електронні адреси учасників
+    helptext: Адміністратори груп золотого плану або вище можуть переглядати адреси електронної пошти членів своїх груп
+  pricing_page:
+    upgrade: Оновити
+    choose_plan: Вибрати план
+  pricing:
+    unlimited_members: "Необмежена кількість учасників"
+    private_host: "Власний хостинг"
+    lets_talk: "Звертайтесь!"
+    find_out_more: "Дізнатись більше"
+    services: "Сервiси"
+    pay_monthly: "Оплата щомісяця"
+    pay_annually: "Оплата щорічно"
+  marketing:
+    mission_driven: Компанія, керована місією
+    social_enterprise: Соціальне підприємство
+    start_a_group_for_free: Створити групу безкоштовно
+    get_started: Розпочати
+    pricing: Ціни
+    slack_integration: Інтеграція зі Slack
+    data_export: Експорт даних
+    we_respect_your_privacy: Ми поважаємо вашу конфіденційність і ніколи не будемо продавати ваші дані та не будемо розміщувати рекламу в Loomio.
+  bcorp:
+    collaborate_purposefully: Співпрацюйте цілеспрямовано
+    keep: Ведіть протокол
+  private_host:
+    title: "Власний хостинг Loomio"
+    pricex_html: '<strong>%{price}</strong> / на рік'
+    price_per_user: Включає 1000 користувачів. Потрібно більше користувачів? Давай поговоримо.
+    unlimited_groups: Необмежена кількість груп
+    description: Ваш власний екземпляр Loomio, налаштований під потреби вашої організації, керований Loomio.
+    custom_domain_and_brand: Власне доменне ім'я, бренд, логотип та кольорова палітра
+    private_database: Приватні база даних та файлове сховище
+    hosted_in_aws: Розміщені у вибораному вами центрі обробки даних AWS
+    single_sign_on_support: Підтримка єдиного входу (SSO)
+    use_your_own_analytics: Використовуйте власну аналітику Google або вимкніть її
+    disable_feartres_or_rewrite_text: Вимкнути окремі функції або переписати текст програми
+    customisation_additional_cost: Єдиний вхід (SSO) та налаштування функцій можуть викликати додаткові витрати
+    active_users_are: Активні користувачі - люди, які взаємодіять з Loomio два або більше разів на місяць.
+    prices_in_us_dollars: Ціни вказані в доларах США, плюс податок на продаж, там де він використовується.
+    contact_us: Зв'яжіться з нами, щоб розпочати
+  navigation:
+    about_us: Про нас
+    blog: Блог
+    community: Спільнота
+    features: Можливості
+    resources: Ресурси
+    resources_dropdown: Вчпадаюче меню ресурсів
+    resources_submenu: Підменю ресурсів
+    header_menu_label: Головне меню
+    case_studies: Вивчення досвіду
+    help: Допомога
+    guides_and_tips: "Гіди та поради"
+    developers: Розробникам
+    coop_handbook: Посібник з кооперації
+    learn: Додатково
+    about: Про
+    pricing: Ціни
+    partners: Партнери
+    contact: Контакти
+    login: Увійти
+    sign_in: Увійти
+    start_group: Створити групу
+    home: Додому
+    terms_of_service: Умови надання послуг
+    privacy: Конфіденційність
+    gdpr: 'Відповідає нормам GDPR '
+    translation: Переклад
+    newsletter: Новини
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio не створена, не пов'язана та не підтримується Slack Technologies, Inc.
+    loomio_school: Школа Loomio
+    company_handbook: Довідник компанії
+  titles:
+    new_tab: Відкрити в новій вкладці
+    start_group: Створити форму для групи
+    about_us: Сторінка Про нас
+    pricing: Сторінка цін
+    contact: Форма для зв'язку
+    sign_in: Форма входу
+    terms_of_service: Сторінка умов обслуговування
+    privacy: Сторінка умов конфіденційністі
+    translation: Інструкція з перекладу
+    home: На головну
+  loomio_org:
+    golden_feature: Можливості Золотого плану
+    slogan: Приймати рішення без засідань
+    description: Loomio допомагає групі людей приймати рішення разом, онлайн
+  subscriptions:
+    organization: Організація
+    current_plan: Поточний план
+    upgrade_your_org: Оновити план для організації
+    which_plan: Який план ви обираєте?
+    small_upto: Малий - до 50 людей
+    medium_upto: Середній - до 500 людей
+    large_upto: Великий - до 5000 людей
+    group_too_big: Ваша група має занадто багато учасників для цього плану
+    pay_monthly: Оплата щомісяця
+    pay_yearly: Оплата щорічно
+    upgrade_to_small_monthly: Оплата щомісяця
+    small_monthly_price: '$49 на місяць'
+    upgrade_to_small_yearly: Оновити до Малого та сплачувати щорічно
+    small_yearly_price: '$490 щорічно (економія $98)'
+    upgrade_to_medium_monthly: Оновити до Середнього та сплачувати щомісяця
+    medium_monthly_price: '$149 на місяць'
+    upgrade_to_medium_yearly: Оновити до Середнього та сплачувати щорічно
+    medium_yearly_price: '$1490 щорічно (економія $298)'
+    upgrade_to_large_monthly: Оновити до Великого та сплачувати щомісяця
+    large_monthly_price: '$449 на місяць'
+    upgrade_to_large_yearly: Оновити до Великого та сплачувати щорічно
+    large_yearly_price: '$4490 щорічно (економія $898)'
+    active: Активні
+  landing:
+    try_loomio: Спробуйте Loomio
+    check_description: "Порахуйте, скільки людей виконали завдання, або зверніться в пошуках волонтерів"

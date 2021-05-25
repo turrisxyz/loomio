@@ -1,0 +1,18 @@
+sl:
+  pricing_page:
+    upgrade: Nadgradi
+  pricing:
+    find_out_more: "Preberi več"
+    services: "Storitve"
+  marketing:
+    social_enterprise: Socialno podjetje
+    pricing: Cene
+  navigation:
+    help: Pomoč
+    privacy: Zasebnost
+  titles:
+    home: Domača stran
+  subscriptions:
+    organization: Organizacija
+  landing:
+    try_loomio: Preizkusi Loomio

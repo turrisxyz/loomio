@@ -1,0 +1,251 @@
+it:
+  subscription_levels:
+    free: Gratis
+    gold: Gold
+    pro: Pro
+    plus: Plus
+    nonprofit: Pro senza scopo di lucro
+    starter: Starter
+    community: Comunità
+  plan_names:
+    free: Gratis
+    trial: Prova
+    small-monthly: Piccolo (mensile)
+    small-yearly: Piccolo (annuale)
+    medium-monthly: Medio (mensile)
+    medium-yearly: Medio (annuale)
+    large-monthly: Grande (mensile)
+    large-yearly: Grande (annuale)
+    standard-loomio-plan: Dorato (mensile)
+    standard-plan-yearly: Dorato (annuale)
+    pro-loomio-plan: Pro (mensile)
+    pro-plan-yearly: Pro (annuale)
+    plus-plan: Plus (mensile)
+    plus-plan-yearly: Plus (annuale)
+    was-paid: Eredità
+    was-gift: Non pagato
+    pp-basic-monthly: Basico mensile
+    pp-basic-annual: Basico annuale
+    pp-pro-annual: Pro annuale
+    pp-pro-monthly: Pro mensile
+    pp-community-annual: Comunità annuale
+    ap-active-monthly: Utente attivo mensile
+    ap-active-annual: Utente attivo annuale
+    2021-starter-monthly: Loomio Starter mensile
+    2021-pro-monthly: Loomio Pro annuale
+    2021-nonprofit-monthly: Loomio Pro senza scopo di lucro
+    2021-starter-annual: Loomio Starter annuale
+    2021-pro-annual: Loomio Pro
+    2021-nonprofit-annual: Loomio Pro senza scopo di lucro annuale
+    2021-community-lifetime: Vita della comunità Loomio
+  subscription_success_modal:
+    heading: Grazie per aver aggiornato!
+    receipt: Riceverai una email con un link al nostro sito di fatturazione, dove potrai cambiare, aggiornare o cancellare il tuo abbonamento ed accedere ai dati storici.
+    sign_off: ❤️ dal team di Loomio.
+    return_to_loomio: Torna a Loomio
+  premium_feature:
+    premium_feature: Funzionalità Gold
+  export_group_data_link:
+    download_group_data_export: Report del gruppo (XLS o HTML)
+  member_emails_button:
+    show_member_emails: Mostra le email dei membri
+    helptext: Gli amministratori di gruppi con piano gold o superiore possono vedere gli indirizzi email dei membri dei loro gruppi
+  community_applications:
+    title: Richiesta per comunità ed organizzazioni di volontariato
+    declaration: "Confermo che questo è un gruppo di comunità di volontari"
+    get_a_group_html: |
+        Hai bisogno di un gruppo per continuare. Clicchi qui per <a href="/start_new" target="_blank">iniziare un gruppo</a>, poi ricarica questa pagina.
+    eligible_html: |
+        <h2>Il tuo gruppo è idoneo?</h2>
+        <p>Gruppi volontari della comunità non hanno personale retribuito e sono supportati da membri che danno il loro tempo per raggiungere uno scopo sociale o ambientale.</p>
+        <p>Siamo ansiosi di aiutarti a fare ancora di più!</p>
+    choose_group: Scegli il tuo gruppo
+    help_html: |
+        <p>Quando fai clic su "Invia" di seguito, sarai portato a una pagina in cui puoi acquistare un piano della community per il tuo gruppo.</p>
+        </p>Non monitoriamo questo modulo, quindi se hai domande o desideri acquistare in un secondo momento, ti preghiamo di<a href="/contact" target="_blank">contattarci</a>.</p>
+  pricing_page:
+    rates_for_member_funded_orgs: Tariffe speciali per gruppi di comunità e volontari
+    manage: Controlla
+    upgrade: Aggiorna
+    change_plan: Cambia di piano
+    choose_plan: Scegli un'offerta
+  non_profit_pricing:
+    mark_johnston_quote: "\"Loomio è lo strumento perfetto per consentire la discussione distribuita (ora e luogo) e il processo decisionale e fornire un repository per le decisioni che sono state prese.\""
+  pricing:
+    simple_html: "Un prezzo, indipendentemente dalle dimensioni del tuo gruppo."
+    pay_annually_and_save: "Paga annualmente e risparmia fino al 33%!"
+    loomio_active: "Loomio Attivo"
+    loomio_enterprise: "Loomio Enterprise"
+    us_dollar: "US$"
+    per_month: "/mese"
+    per_year: "/anno"
+    monthly: "mensile"
+    annually: "annuale"
+    10_active_users: "Include 10 utenti attivi"
+    one_time_payment: "Pagamento una volta sola"
+    lifetime_subscription: "Abbonamento a vita"
+    unlimited_members: "Membri illimitati"
+    unlimited_discussions: "Discussioni e decisioni illimitate"
+    unlimited_subgroups: "Sottogruppi illimitati"
+    dedicated_expert: Esperto loomio dedicato
+    implementation_support: Sostegno all'attuazione
+    nonprofits_only: "Disponibile solo per il non profit"
+    integrate_slack: "integra Slack e Microsoft Teams"
+    training_webinars: Webinar di formazione online
+    199_credit: Credito di $ 199 per un altro gruppo
+    premium_features_coming_soon: Funzionalità premium (in arrivo)
+    sso: "Single Sign-On (SAML)"
+    30_day_free_trial: "Prova gratuita di 30 giorni"
+    additional_users_3_dollars: "Utenti aggiuntivi $ 3 ciascuno"
+    get_in_touch_to_discuss: "Mettiti in contatto per discutere:"
+    private_host: "Host privato"
+    white_label: "Etichetta bianca"
+    custom_domain: "Nome di dominio personalizzato"
+    custom_data_center: "Data center personalizzato"
+    very_large_groups: "Gruppi molto grandi"
+    lets_talk: "Parliamone!"
+    excludes_sales_tax: "I prezzi escludono l'IVA (se applicabile)"
+    not_profits: "Senza scopo di lucro"
+    find_out_more: "Cerca altro"
+    volunteer_groups: "Gruppo di comunità di volontari?"
+    volunteer_groups_definition: "Abbiamo una tariffa speciale per i gruppi della comunità senza personale retribuito."
+    see_our_volunteer_pricing: "Vedi il nostro piano di gruppo della community"
+    apply_here: "Candidarsi qui"
+    services: "Servizi"
+    services_definition: "Forniamo servizi per aiutarti ad affrontare collaborazioni più complesse:"
+    training: "Pacchetti di formazione e webinar"
+    priority_support: "Assistenza clienti prioritaria"
+    pay_monthly: "Paga mensilmente"
+    pay_annually: "Paga annualmente"
+  marketing:
+    pages:
+      pricing: Prezzi loomio
+    upgrade:
+      show: Piani di Loomio
+    buy_now: Compra ora
+    loomio_solves_real_problems: Loomio aiuta i gruppi a risolvere problemi reali
+    next_step: "Il prossimo passo nel tuo viaggio verso la collaborazione:"
+    slogan_html: |
+        Tutti
+        <transition name="slogan-transition" mode="out-in">
+        <span class="text--black" v-if="num == 0" key="inclusive">vanno ascoltati.</span>
+        <span class="text--black" v-if="num == 1" key="better" display="none">si interessano.</span>
+        <span class="text--black" v-if="num == 2" key="quality" display="none">si impegnano.</span>
+        <span class="text--black" v-if="num == 3" key="timely" display="none">si fidano.</span>
+        </transition>
+    collaborate: Collaborate e prendete migliori decisioni con Loomio
+    get_started_today: Iniziate subito gratis
+    tired_of_infinite: "Siete stanchi di infinite catene di email e di lunghi incontri dal vivo che non sembrano mai portare il gruppo ad una decisione o ad un risultato?"
+    sounds_like_you_need: "Sembra che abbiate bisogno di Loomio: una piattaforma di collaborazione che trasforma radicalmente il modo con cui i gruppi prendono decisioni, discutono idee e collaborano online. Date addio ai noiosi incontri ed alle caselle di email piene  e provate gratis gli strumenti di decisione di Loomio! "
+    how_about_a_real_example: "Volete un esempio reale?"
+    make_a_decision_right_now: Prendete subito una decisione
+    change_our_current_website_host: "Vogliamo ospitare una conferenza; data e luogo verranno confermate dopo"
+    integrates_with: 'Si integra con '
+    mission_driven: Una azienda guidata da un obiettivo
+    open_source: Software libero
+    worker_owned: Cooperativa gestita dai lavoratori
+    social_enterprise: Impresa sociale
+    proud_supporters: Orgogliosi sostenitori delle comunità di tutto il mondo
+    key_software: Il software retrostante molte organizzazioni collaborative
+    learn_more: Impara di più su di noi
+    paul_martin_bio: La Low Carbon Society è un gruppo che sostiene e investe in progetti innovativi di energia rinnovabile in Cornovaglia, Regno Unito
+    manon_cuille_bio: Zero Waste France è un'organizzazione no profit che ha gruppi locali in tutta la Francia, dedicata a praticare ed incoraggiare uno stile di vita a spreco zero. Hanno usato Loomio per organizzare oltre 2.000 eventi.
+    james_bloemendal_bio: Il Ian Martin Group è una società di reclutamento del personale che utilizza una tecnologia all'avanguardia con valutazioni di personalità / cultura / abilità per collegare persone ad aziende in cui possano far crescere le proprie carriere.
+    start_a_group_for_free: 'Crea un gruppo gratis '
+    get_started: Inizia
+    pricing: Prezzi
+    james_bloemendal_pricing_quote: '"Con Loomio prendiamo decisioni migliori e più inclusive con meno riunioni."'
+    james_bloemendal_pricing_title: "— James Bloemendal, Product Manager, Ian Martin Group"
+    basic_plan: Piano di base
+    one_dollar: "$1"
+    per_month_per_person: al mese, a persona
+    per_month_per_active_user: al mese, per utente attivo
+    per_year_per_active_user: all'anno, per utente attivo
+    per_year_per_person_html: all'<strong>anno</strong>, a persona
+    free_trial: Prova gratuita
+    start_free_trial: Inizia la prova gratuita
+    basic_plan_includes: Il piano di base include
+    unlimited_threads: Thread e decisioni illimitati
+    enhanced_facilitation: Strumenti di facilitazione avanzati
+    slack_integration: Integrazione con Slack
+    email_support: Assistenza clienti e formazione
+    data_export: Esportazione dati
+    pro_plan: Piano pro
+    four_dollars: "4$"
+    pro_plan_includes: Il piano Pro include
+    all_basic_plan_features: Tutte le funzionalità del piano di base
+    ms_teams_integration: Integrazione di MS Teams
+    onelogin_integration: 'Integrazione con OneLogin '
+    priority_support_html: Sostegno <b>prioritario</b>
+    setup_support: Supporto dell'installazione
+    training: Formazione per i clienti
+    jody: Maria Rossetti
+    jody_reason: Penso che il sentimento sia grandioso, ma sono preoccupato che non abbiamo le risorse per realizzarlo.
+    mary: Simona Ghedini
+    mary_reason: Scusate squadra, sarò via in quel momento, ma felice per tutti voi che possiate decidere senza di me.
+    greg: Mario Bianchi
+    greg_reason: Sì, penso che questo sia un buon modo per contribuire e mostrare il nostro supporto.
+    rob: Roberto Cambi
+    rob_reason: Sono molto eccitato per questo. Approfittiamo delle opportunità di networking!
+    eager_for_more: Volete di più?
+    includes_first_10: Include 10 utenti attivi
+  private_host:
+    title: "Hosting privato di Loomio"
+    pricex_html: '<strong>%{price}</strong> / anno'
+    price_per_user: Include 1000 utenti. Hai bisogno di più utenti? Parliamone.
+    unlimited_groups: Gruppi illimitati
+  navigation:
+    about_us: Chi siamo
+    blog: Blog
+    community: Comunità
+    features: Funzionalità
+    resources: Risorse
+    resources_dropdown: Menu a discesa delle risorse
+    resources_submenu: Sottomenu delle risorse
+    header_menu_label: Menu dell'intestazione
+    case_studies: Casi di studio
+    help: Aiuto
+    guides_and_tips: "Guide & suggerimenti"
+    developers: Sviluppatori
+    coop_handbook: Manuale della cooperativa
+    learn: Impara
+    about: Chi siamo
+    pricing: Prezzi
+    partners: Partners
+    contact: Contatto
+    login: Accesso
+    sign_in: Iscriviti
+    start_group: Crea un gruppo
+    home: Home
+    terms_of_service: Termini di servizio
+    privacy: Privacy
+    gdpr: Conformità alla GDPR
+    translation: Traduzione
+    newsletter: Newsletter
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio non è creato, affiliato o supportato da Slack Technologies, Inc.
+    loomio_school: Loomio school
+    company_handbook: Manuale aziendale
+  titles:
+    new_tab: Apri in una nuova finestra
+    start_group: Formulario per la creazione di un gruppo
+    about_us: Chi siamo
+    pricing: Prezzi
+    contact: Contatti
+    sign_in: Formulario di autenticazione
+    terms_of_service: Termini di servizio
+    privacy: Privacy
+    translation: Guida alle traduzioni
+    home: Home page
+  loomio_org:
+    golden_feature: Funzionalità Gold
+    slogan: Prendere decisioni senza incontri
+  subscriptions:
+    organization: Organizzazione
+    pay_monthly: Paga mensilmente
+    pay_yearly: Paga annualmente
+    upgrade_to_small_monthly: Paga mensilmente
+    active: Attivo
+  landing:
+    try_loomio: Prova Loomio

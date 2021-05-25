@@ -1,0 +1,47 @@
+cs:
+  plan_names:
+    free: Bezplatný
+  pricing_page:
+    upgrade: Zdokonalená verze
+  pricing:
+    unlimited_members: "Neomezeně členů"
+    lets_talk: "Promluvme si!"
+    find_out_more: "Zjistěte více"
+    services: "Služby"
+  marketing:
+    social_enterprise: Sociální podnik
+    get_started: Začít
+    pricing: Ceník
+    slack_integration: Integrace se Slack
+  navigation:
+    blog: Blog
+    resources: Zdroje
+    resources_dropdown: Rozbalovací seznam zdrojů
+    resources_submenu: Podmenu zdrojů
+    case_studies: Případové studie
+    help: Nápověda
+    guides_and_tips: "Průvodci a tipy"
+    developers: Vývojáři
+    about: O nás
+    pricing: Ceník
+    contact: Kontakt
+    login: Přihlášení
+    sign_in: Přihlásit se
+    start_group: Vytvořit skupinu
+    home: Domů
+    terms_of_service: Podmínky použití
+    privacy: Soukromí
+    translation: Překlad
+    newsletter: Zpravodaj
+    twitter: Twitter
+    facebook: Facebook
+    not_slack: Loomio není vytvořeno, přidruženo nebo podporováno společností Slack Technologies, Inc.
+    loomio_school: Škola Loomio
+  titles:
+    new_tab: Otevřít na nové záložce
+    terms_of_service: Podmínky použití
+    privacy: Ochrana osobních údajů
+    translation: Překladatelská příručka
+    home: Domovská stránka
+  landing:
+    try_loomio: Vyzkoušejte Loomio

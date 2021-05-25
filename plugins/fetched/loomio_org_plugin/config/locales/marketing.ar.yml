@@ -1,0 +1,258 @@
+ar:
+  subscription_levels:
+    free: مجاني
+    gold: ذهب
+    pro: خبير
+    plus: اضافي
+    community: المجتمع
+  plan_names:
+    free: مجاني
+    trial: محاكمة
+    small-monthly: 'ضغير(شهري) '
+    small-yearly: 'ضغير (سنوي) '
+    medium-monthly: 'متوسط (شهري) '
+    medium-yearly: 'متوسط (سنوي) '
+    large-monthly: 'كبير (شهري) '
+    large-yearly: 'كبير (سنوي) '
+    standard-loomio-plan: 'ذهب (شهري) '
+    standard-plan-yearly: ذهب (سنوي)
+    pro-loomio-plan: 'محترف (شهري) '
+    pro-plan-yearly: 'محترف (سنوي) '
+    plus-plan: 'اضافي (شهري) '
+    plus-plan-yearly: 'اضافي (سنوي) '
+    was-paid: ميراث
+    was-gift: غير مدفوع
+    pp-basic-monthly: 'اساسي في الشهر '
+    pp-basic-annual: اساسي في السنة
+    pp-pro-annual: 'سنوي محترف '
+    pp-pro-monthly: شهري محترف
+    pp-community-annual: المجتمع السنوي
+  subscription_success_modal:
+    heading: 'شكرا على الترقية! '
+    receipt: ستتلقى بريدًا إلكترونيًا يحتوي على رابط إلى بوابة الفواتير ، حيث يمكنك تغيير اشتراكك أو ترقيته أو إلغائه والوصول إلى سجل كشف الحساب.
+    sign_off: ❤️من فريق loomio
+    return_to_loomio: 'العودة إلى Loomio '
+  premium_feature:
+    premium_feature: ميزة الذهب
+  export_group_data_link:
+    download_group_data_export: 'تقرير المجموعة (XLS او HTML) '
+  member_emails_button:
+    show_member_emails: 'إظهار رسائل البريد الإلكتروني للأعضاء '
+    helptext: يمكن للمسؤولين في مجموعات خطة ذهبية أو أعلى عرض عناوين البريد الإلكتروني لأعضاء مجموعتهم
+  community_applications:
+    title: تطبيق المجتمع والتطوع
+    get_a_group_html: |
+        أنت بحاجة إلى مجموعة للمتابعة. اضعط هنا <a href="/start_new" target="_blank">لبدء1لبدء المجموعة </a>، ثم اعد تحميل هذه الصفحة.
+    choose_group: 'اختر مجموعتك '
+  pricing_page:
+    rates_for_member_funded_orgs: أسعار خاصة لمجموعات المجتمع والتطوع
+    more_subscription_help_html: ازر<a href="%{url}">help.loomio.org</a>للمزيد من المعلومات حول إدارة التسعير والاشتراك.
+    volunteer_sign_in_html: 'للتقدم بطلب للحصول على خطة التطوع والمجتمع ، يجب أن تكون <a href="/dashboard" target="_blank">مشتركًا في</a> وتنتمي إلى <a href="/start_group">مجموعة</a> .  أعد تحميل هذه الصفحة بمجرد تسجيل الدخول. '
+    manage: يدير
+    upgrade: تحديث
+  pricing:
+    services: "الخدمات"
+    pay_monthly: "الدفع الشهري "
+    pay_annually: "الدفع السنوي "
+  marketing:
+    buy_now: اشتري الآن
+    next_step: "الخطوة التالية في رحلة تعاونك:"
+    slogan_html: |
+        الجميع
+        <transition name="slogan-transition" mode="out-in">
+        <span class="text--black" v-if="num == 0" key="inclusive">سمع</span>
+        <span class="text--black" v-if="num == 1" key="better" display="none">يهتم. </span>
+        <span class="text--black" v-if="num == 2" key="quality" display="none">يهتم لاجل</span>
+        <span class="text--black" v-if="num == 3" key="timely" display="none">ثقة. </span>
+        </transition>
+    collaborate: تعاون واتخذ قرارات أفضل مع Loomio
+    get_started_today: ابدأ اليوم مجانًا
+    tired_of_infinite: "هل سئمت من سلاسل البريد الإلكتروني اللامتناهية والاجتماعات المطولة التي يبدو أنها لم تصل إلى قرار جماعي أو نتيجة؟"
+    sounds_like_you_need: "يبدو أنك بحاجة إلى Loomio: منصة تعاون تعمل على تغيير جذري لكيفية اتخاذ المجموعات للقرارات ومناقشة الأفكار والتعاون عبر الإنترنت.  قل وداعًا للاجتماعات المملّة ورسائل البريد الإلكتروني التي تعيق انسداد البريد الوارد وجرّب أدوات صنع القرار في Loomio مجانًا!"
+    how_about_a_real_example: "ماذا عن مثال حقيقي؟"
+    make_a_decision_right_now: اتخذ القرار الآن
+    change_our_current_website_host: "نستضيف المؤتمر.  سيتم تحديد التواريخ والمكان لاحقًا"
+    integrates_with: يتكامل مع
+    mission_driven: شركة مدفوعة بالبعثة
+    open_source: برنامج مفتوح المصدر
+    worker_owned: تعاونية مملوكة للعمال
+    social_enterprise: مؤسسة إجتماعية
+    proud_supporters: أنصار فخور للمجتمعات حول العالم
+    key_software: البرنامج وراء العديد من المنظمات التعاونية
+    learn_more: اعرف المزيد عنا
+    paul_martin_bio: جمعية لو كاربون (Low Carbon) هي مجموعة تدعم وتستثمر في مشاريع الطاقة المتجددة المبتكرة في كورنوال ، المملكة المتحدة
+    manon_cuille_bio: Zero Waste France هي منظمة غير ربحية من المجموعات المحلية في جميع أنحاء فرنسا مكرسة لممارسة وتشجيع أسلوب حياة خالٍ من النفايات.  لقد استخدموا Loomio لتنظيم أكثر من 2000 حدث.
+    james_bloemendal_bio: مجموعة Ian Martin هي شركة توظيف تستخدم أحدث التقنيات مع تقييمات الشخصية / الثقافة / المهارات لربط المطابقات حيث يمكنهم تنمية حياتهم المهنية.
+    start_a_group_for_free: ابدأ مجموعة مجانًا
+    get_started: 'ابدأ '
+    pricing: التكلفة
+    james_bloemendal_pricing_quote: '"مع Loomio ، نتخذ قرارات أفضل وأكثر شمولاً مع اجتماعات أقل."'
+    james_bloemendal_pricing_title: "- جيمس بلومندال ، مدير المنتج ، مجموعة Ian Martin"
+    basic_plan: الخطة الأساسية
+    one_dollar: "$1"
+    per_month_per_person: شهريا لكل شخص
+    per_year_per_person_html: لكل <strong>سنة</strong>،لكل شخص
+    free_trial: تجربة مجانية
+    basic_plan_includes: تتضمن الخطة الأساسية
+    unlimited_threads: سلاسل وقرارات غير محدودة
+    enhanced_facilitation: أدوات تسهيل محسنة
+    slack_integration: تكامل الركود
+    data_export: تصدير البيانات
+    pro_plan: خطة احترافية
+    four_dollars: "$4"
+    pro_plan_includes: تتضمن الخطة الاحترافية
+    all_basic_plan_features: جميع ميزات الخطة الأساسية
+    ms_teams_integration: تكامل فرق MS
+    onelogin_integration: تكامل OneLogin
+    priority_support_html: <b>افضلية</b>دعم
+    setup_support: دعم الإعداد
+    16_percent_off: ادفع سنويًا واحصل على شهرين مجانًا
+    prices_in_usd: الأسعار بالدولار الأمريكي ، بالإضافة إلى ضريبة المبيعات عند الاقتضاء
+    need_something_more_html: هل تحتاج إلى شيء آخر؟<a href="/contact" target="_blank">تواصل معنا</a>
+    happy_to_offer: 'يسعدنا أن نقدم لك سعرًا خاصا! '
+    we_want_to_help: عرض معدلات المتطوعين لدينا
+    we_respect_your_privacy: نحن نحترم خصوصيتك ولن نبيع بياناتك أبدًا أو نضع إعلانات في Loomio.
+    looking_good: تبدو جيدة ، المتطوعين!
+    volunteer_plan: خطة التطوع والمجتمع
+    apply_now: قدم الآن
+    volunteer_plan_includes: "تشمل خطة التطوع والمجتمع:"
+    must_apply_via: يجب أن تقدم المجموعات عبر نموذج المتطوعين.
+    minimum_10_dollars: الحد الأدنى 10 دولارات في الشهر
+    minimum_40_dollars: الحد الأدنى 40 دولارًا في الشهر
+    minimum_10_dollars_per_year: الحد الأدنى 10 دولارات في السنة
+    have_group_apply_now: تقدم بطلب الآن إذا كان لديك بالفعل مجموعة
+    jody: جودي كونور
+    jody_reason: أعتقد أن المشاعر رائعة ، لكني قلق من أنه ليس لدينا الموارد اللازمة لتحقيق ذلك.
+    mary: ماري أوكيف
+    mary_reason: معذرة يا فريق ، سأكون بعيدًا في ذلك الوقت ، لكن سعيدًا جميعًا لتقرر بدوني.
+    greg: جريج كان
+    greg_reason: نعم - أعتقد أن هذه طريقة جيدة للمساهمة وإظهار دعمنا.
+    rob: روب جوثري
+    rob_reason: متحمس جدا لهذا.  استفد من فرص التواصل!
+    eager_for_more: هل تتطلع إلى المزيد؟
+  bcorp:
+    title_html: |
+        كيف يمكن لشركتي<img src="/assets/new_marketing/bcorp_b.png" class="b-corp-b-image">اكثر B-Corp ؟
+    title: كيف يمكن لشركتي B المزيد من B-Corp؟
+    subtitle_html: |
+        <span class="boldish text--orange">Loomio</span>هو تطبيق جماعي لصنع القرار يساعد في ممارسات شركتك المتعلقة ب<span class="boldish">الشفافية</span> و<span class="boldish">المساءلة</span> ، بالإضافة إلى استبيان تقييم الأثر الخاص بك.
+    new_level_decision: مستوى جديد من صنع القرار
+    building_blocks: أدوات تيسير Loomio هي اللبنات الأساسية لآلاف عمليات الحوكمة المختلفة التي يمكن أن تدعم رحلتك B
+    collaborate_purposefully: تعاون بشكل هادف
+    into_action: حول المناقشة إلى أفعال وقم بإشراك أشخاص هادئين ومتنوعين ونائيين
+    engage: إشراك العديد من أصحاب المصلحة
+    share: شارك قراراتك ومناقشاتك الرئيسية حتى مع غير المساهمين
+    keep: احتفظ بسجل
+    preserve: الاحتفاظ بسجل كامل للمشاركة والقرارات لتحليلها لاحقًا
+    transparent: الحوكمة الشفافة
+    easy_to_share: مع Loomio ، من السهل مشاركة عملية اتخاذ القرار - ودعوة أطراف مختلفة ، حتى غير المساهمين ، إلى المحادثات الرئيسية.
+    all_discussions: جميع مناقشاتك وتقارير التأثيرات ومؤشرات الأداء العام في منصة شاملة وسهلة الفهم.
+    true_accountability: المساءلة الحقيقية
+    establish: إنشاء عمليات وإيقاعات تعاونية ، مما يسهل على العاملين لديك معرفة كيف يمكنهم إحداث فرق حقيقي في بيئة عملهم والتأثير الإيجابي الذي تسببه جهودهم في العالم.
+    facilitation_tools: أدوات تيسير Loomio تساعد على اتخاذ القرارات الكبيرة والصغيرة.  أي شيء من إستراتيجيات العشر سنوات الكلية إلى القرارات الجزئية اليومية ، كل ذلك في مجموعات فرعية مميزة خاصة بهم ، سهل التحقق والمشاركة.
+    better_world: هل يشعر موظفوك أنهم يجعلون العالم أفضل؟  هل مجتمعك على دراية بالتأثير الذي تحدثه نيابة عنه؟
+    time_to_up: هل حان الوقت لترتقي بلعبة صنع القرار؟
+    try_loomio_for_free: جرب Loomio مجانًا
+    real_example: هل تبحث عن مثال حقيقي؟
+    cogo: المستهلكون الواعون (يُطلق عليهم الآن اسم CoGo) هي مؤسسة اجتماعية تستخدم Loomio لتوجيه حوكمتهم بطريقة تعكس مُثل شركتهم.
+    like_what_you_saw: 'أعجبك مارأيت؟ '
+    try_loomio_now: جرب Loomio الآن
+  private_host:
+    title: "مضيف خاص Loomio"
+    pricex_html: '<strong>%{price}</strong>/سنة'
+    price_per_user: 'يشمل 1000 مستخدم.  هل تحتاج إلى المزيد من المستخدمين؟  لنتحدث. '
+    unlimited_groups: مجموعات غير محدودة
+    description: نسخة Loomio الخاصة بك ، مخصصة لتلبية احتياجات مؤسستك ، والتي تديرها Loomio.
+    custom_domain_and_brand: اسم المجال الخاص بك والعلامة التجارية والشعار ولوحة الألوان
+    private_database: قاعدة بيانات خاصة وتخزين الملفات
+    hosted_in_aws: مستضاف في اختيارك لمركز بيانات AWS
+    single_sign_on_support: دعم الدخول الموحّد (SSO)
+    use_your_own_analytics: استخدم تحليلات Google الخاصة بك أو أوقف تشغيلها
+    disable_feartres_or_rewrite_text: قم بتعطيل الميزات أو إعادة كتابة النص داخل التطبيق
+    customisation_additional_cost: قد يؤدي تسجيل الدخول الواحد وتكوين الميزة إلى تحمل تكلفة إضافية
+    active_users_are: المستخدمون النشطون هم الأشخاص الذين يتفاعلون مع Loomio مرتين أو أكثر شهريًا.
+    prices_in_us_dollars: الأسعار بالدولار الأمريكي ، بالإضافة إلى ضريبة المبيعات حيثما ينطبق ذلك.
+    contact_us: تواصل معنا للبدء
+  navigation:
+    about_us: عنا
+    blog: المدونة
+    community: المجتمع
+    features: الميزات
+    resources: الموارد
+    resources_dropdown: القائمة المنسدلة للموارد
+    resources_submenu: القائمة الفرعية للموارد
+    header_menu_label: القائمة الرأسية
+    case_studies: دراسات الحالة
+    customer_stories: قصص العملاء
+    help: المساعدة
+    help_center: مركز المساعدة
+    guides_and_tips: "أدلة ونصائح"
+    developers: المطورون
+    coop_handbook: كتيب تعاوني
+    learn: تعلم
+    about: عن
+    pricing: التكلفة
+    partners: الشركاء
+    contact: 'تواصل '
+    login: 'تسجيل الدخول '
+    sign_in: تسجيل الدخول
+    start_group: 'ابدأ مجموعة '
+    home: الصفحة الرئيسية
+    terms_of_service: شروط الخدمة
+    privacy: الخصوصية
+    gdpr: الامتثال GDPR
+    translation: الترجمة
+    news: 'أخبار '
+    newsletter: النشرة الإخبارية
+    twitter: تويتر
+    facebook: فايسبوك
+    trademark_statement: © 2020 Loomio Cooperative Limited. كل الحقوق محفوظة. "Loomio" هي علامة تجارية مسجلة لشركة Loomio Cooperative Limited.
+    not_slack: لم يتم إنشاء Loomio من قبل شركة Slack Technologies، Inc.
+    loomio_school: مدرسةLoomio
+    company_handbook: كتيب الشركة
+    explore: اكتشف
+  titles:
+    new_tab: 'يفتح في صفحة جديدة '
+    start_group: ابدأ نموذج المجموعة
+    about_us: صفحة عنا
+    pricing: صفحة التسعير
+    contact: 'نموذج التواصل '
+    sign_in: 'نموذج تسجيل الدخول '
+    terms_of_service: صفحة شروط الخدمة
+    privacy: صفحة الخصوصية
+    translation: دليل الترجمة
+    home: الصفحة الرئيسية
+  loomio_org:
+    golden_feature: ميزة الذهب
+    slogan: اتخذ قرارات بدون اجتماعات
+    description: يساعد Loomio مجموعات من الأشخاص على اتخاذ القرارات معًا ، عبر الإنترنت
+  subscriptions:
+    plan: خطة
+    organization: المنظمة
+    current_plan: الخطة الحالية
+    upgrade_your_org: ترقية مؤسستك
+    which_plan: ما الخطة التي تريدها؟
+    small_upto: صغير - حتى 50 شخص
+    medium_upto: متوسط ​​- يصل إلى 500 شخص
+    large_upto: كبير - يصل إلى 5000 شخص
+    group_too_big: تحتوي مجموعتك على عدد كبير جدًا من الأعضاء لهذه الخطة
+    pay_monthly: 'الدفع الشهري '
+    pay_yearly: 'الدفع السنوي '
+    upgrade_to_small_monthly: 'الدفع الشهري '
+    small_monthly_price: '49 دولارًا في الشهر'
+    upgrade_to_small_yearly: الترقية إلى Small وادفع سنويًا
+    small_yearly_price: '490 دولارًا سنويًا (وفر 98 دولارًا)'
+    upgrade_to_medium_monthly: الترقية إلى متوسط ​​والدفع شهريًا
+    medium_monthly_price: '149 دولارًا في الشهر'
+    upgrade_to_medium_yearly: الترقية إلى Medium والدفع سنويًا
+    medium_yearly_price: '1490 دولارًا سنويًا (وفر 298 دولارًا)'
+    upgrade_to_large_monthly: الترقية إلى Large والدفع شهريًا
+    large_monthly_price: '449 دولارًا في الشهر'
+    upgrade_to_large_yearly: الترقية إلى Large والدفع سنويًا
+    large_yearly_price: '4490 دولارًا سنويًا (وفر 898 دولارًا)'
+    active: 'نشيط '
+    expired: منتهية الصلاحية
+    trialing: المحاكمة
+  landing:
+    try_loomio: جرّب Loomio
+    check_description: "احسب عدد الأشخاص الذين أكملوا مهمة ما ، أو اطلب متطوعين"

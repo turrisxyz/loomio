@@ -1,0 +1,527 @@
+en:
+  subscription_levels:
+    free: Free
+    gold: Gold
+    pro: Pro
+    plus: Plus
+    nonprofit: Pro Nonprofit
+    starter: Starter
+    community: Community
+
+  plan_names:
+    free: Free
+    trial: Trial
+    small-monthly: Small (monthly)
+    small-yearly: Small (yearly)
+    medium-monthly: Medium (monthly)
+    medium-yearly: Medium (yearly)
+    large-monthly: Large (monthly)
+    large-yearly: Large (yearly)
+    standard-loomio-plan: Gold (monthly)
+    standard-plan-yearly: Gold (yearly)
+    pro-loomio-plan: Pro (monthly)
+    pro-plan-yearly: Pro (yearly)
+    plus-plan: Plus (monthly)
+    plus-plan-yearly: Plus (yearly)
+    was-paid: Legacy
+    was-gift: Unpaid
+    pp-basic-monthly: Basic Monthly
+    pp-basic-annual: Basic Annual
+    pp-pro-annual: Pro Annual
+    pp-pro-monthly: Pro Monthly
+    pp-community-annual: Community Annual
+    ap-active-monthly: Active User Monthly
+    ap-active-annual: Active User Annual
+    2021-starter-monthly: Loomio Starter monthly
+    2021-pro-monthly: Loomio Pro Annual
+    2021-nonprofit-monthly: Loomio Pro Nonprofit
+    2021-starter-annual: Loomio Starter Annual
+    2021-pro-annual: Loomio Pro
+    2021-nonprofit-annual: Loomio Pro Nonprofit Annual
+    2021-community-lifetime: Loomio community lifetime
+
+
+  subscription_success_modal:
+    heading: Thanks for upgrading!
+    receipt: You'll receive an email with a link to the billing portal, where you can change, upgrade or cancel your subscription, and access statement history.
+    got_questions_then_contact_us_html: If you have any questions, please <a href="/contact" target="_blank">contact us</a>.
+    sign_off: ❤️  from the Loomio team.
+    return_to_loomio: Return to Loomio
+
+  premium_feature:
+    premium_feature: Gold feature
+
+  export_group_data_link:
+    download_group_data_export: Group report (XLS or HTML)
+
+  member_emails_button:
+    show_member_emails: Show member emails
+    helptext: Administrators on groups of a gold plan or above may view the email addresses of their group's members
+
+  community_applications:
+    title: Community & Volunteer Application
+    declaration: "I confirm this is a volunteer community group"
+    get_a_group_html: |
+      You need a group to continue. Click here to <a href="/start_new" target="_blank">start a group</a>, then reload this page.
+    eligible_html: |
+      <h2>Is your group eligible?</h2>
+      <p>Volunteer and community groups have no paid staff and are supported by members giving their time to achieve a social or environmental purpose.</p>
+      <p>We look forward to helping you make even more of a difference!</p>
+    choose_group: Choose your group
+    help_html: |
+      <p>When you click 'Submit' below, you will be taken to a page where you can purchase a community plan for your group.</p>
+      <p>We do not monitor this form, so if you have any questions or want to purchase at a later date, please <a href="/contact" target="_blank">contact us</a>.</p>
+
+  pricing_page:
+    rates_for_member_funded_orgs: Special rates for community and volunteer groups
+    apply_to_get_member_funded_rates_html: If you represent a community and volunteer group, with no paid staff, <a href="%{url}">apply here</a> for special rates.
+    more_subscription_help_html: Visit <a href="%{url}">help.loomio.org</a> for more information about pricing and subscription management.
+    volunteer_sign_in_html: To apply for our Volunteer & Community Plan, you must be <a href="/dashboard" target="_blank">signed in</a> and belong to a <a href="/start_group">group</a>. Reload this page once you've signed in.
+    manage: Manage
+    upgrade: Upgrade
+    change_plan: Change plan
+    choose_plan: Choose plan
+    preview_change: Preview change
+
+  non_profit_pricing:
+    mark_johnston_quote: "“Loomio is the perfect tool to allow distributed (time and place) discussion and decision making
+    to take place and provide a repository for decisions that have been made.”"
+    mark_johnston_title: "Mark Johnston, Vancouver Community Lab"
+    main_pricing_page: "See the main pricing page"
+
+  pricing:
+    save_x_pay_annually_html: "Save $%{amount} by paying annually!"
+    simple_html: "One price, no matter the size of your group."
+    pay_annually_and_save: "Pay annually and save up to 33%!"
+    loomio_active: "Loomio Active"
+    loomio_enterprise: "Loomio Enterprise"
+    us_dollar: "US$"
+    per_month: " /month"
+    per_year: " /year"
+    monthly: "monthly"
+    annually: "annually"
+    10_active_users: "Includes 10 active users"
+    one_time_payment: "One-time payment"
+    lifetime_subscription: "Lifetime subscription"
+    unlimited_members: "Unlimited members"
+    unlimited_discussions: "Unlimited discussions and decisions"
+    unlimited_subgroups: "Unlimited subgroups"
+    dedicated_expert: Dedicated Loomio expert
+    implementation_support: Implementation support
+    nonprofits_only: "Available to nonprofits only"
+    integrate_slack: "Integrate Slack and Microsoft Teams"
+    training_webinars: Online training webinars
+    199_credit: $199 credit for another group
+    premium_features_coming_soon: Premium features (coming soon)
+    sso: "Single Sign On (SAML)"
+    30_day_free_trial: "30 day free trial"
+    additional_users_3_dollars: "Additional users $3 each"
+    get_in_touch_to_discuss: "Get in touch to discuss:"
+    private_host: "Private host"
+    white_label: "White label"
+    custom_domain: "Custom domain name"
+    custom_data_center: "Custom data center"
+    very_large_groups: "Very large groups"
+    lets_talk: "Let's talk!"
+    excludes_sales_tax: "Prices exclude sales tax (where applicable)"
+    not_profits: "Nonprofits"
+    find_out_more: "Find out more"
+    volunteer_groups: "Volunteer community group?"
+    volunteer_groups_definition: "We have a special rate for community groups with no paid staff."
+    see_our_volunteer_pricing: "See our community group plan"
+    apply_here: "Apply here"
+    services: "Services"
+    services_definition: "We deliver services to help you tackle more complex collaborations:"
+    training: "Training packages & webinars"
+    priority_support: "Priority customer support"
+    pay_monthly: "Pay monthly"
+    pay_annually: "Pay annually"
+
+  marketing:
+    pages:
+      pricing: Loomio pricing
+    upgrade:
+      show: Loomio plans
+    buy_now: Buy now
+    loomio_solves_real_problems: Loomio helps groups solve real problems
+    next_step: "The next step in your collaboration journey:"
+    slogan_html: |
+      Everybody
+        <transition name="slogan-transition" mode="out-in">
+          <span class="text--black" v-if="num == 0" key="inclusive">heard.</span>
+          <span class="text--black" v-if="num == 1" key="better" display="none">cares.</span>
+          <span class="text--black" v-if="num == 2" key="quality" display="none">cared for.</span>
+          <span class="text--black" v-if="num == 3" key="timely" display="none">trusts.</span>
+        </transition>
+    collaborate: Collaborate and make better decisions with Loomio
+    get_started_today: Get started today for free
+    tired_of_infinite: "Tired of infinite email chains and lengthy meetings that never seem to reach a group decision or result?"
+    sounds_like_you_need: "Sounds like you need Loomio: a collaboration platform radically transforming how groups make decisions, discuss ideas and collaborate online. Say goodbye to tedious meetings and inbox-clogging emails and try Loomio’s decision-making tools for free!"
+    how_about_a_real_example: "How about a real example?"
+    make_a_decision_right_now: Make a decision right now
+    change_our_current_website_host: "We host the conference; dates and venue to be confirmed later"
+    integrates_with: Integrates with
+    mission_driven: A mission-driven company
+    open_source: Open-source software
+    worker_owned: Worker-owned cooperative
+    social_enterprise: Social enterprise
+    proud_supporters: Proud supporters of communities around the world
+    key_software: The software behind many collaborative organizations
+    learn_more: Learn more about us
+    paul_martin_quote_html: '<a href="https://blog.loomio.org/2019/06/19/funding-community-renewable-projects/" target="_blank">“We run our entire loan assessment process through Loomio, saving many hours we would otherwise need to spend in meetings.”</a>'
+    paul_martin_title: "— Paul Martin, Director, Low Carbon Society, UK"
+    paul_martin_bio: The Low Carbon Society is a group supporting and investing in innovative renewable energy projects in Cornwall, UK
+    manon_cuille_quote_html: '<a href="https://blog.loomio.org/2019/07/30/catalyzing-the-zero-waste-movement-in-france/" target="blank">“Loomio offers a sense of centralized community even though group members are spread across the country.”</a>'
+    manon_cuille_title: "— Manon Cuillé, Head of Citizen Mobilization, Zero Waste France"
+    manon_cuille_bio: Zero Waste France is a nonprofit organization of local groups throughout France dedicated to practicing and encouraging a zero-waste lifestyle. They have used Loomio to organize over 2,000 events.
+    james_bloemendal_quote_html: '<a target="_blank" href="https://blog.loomio.org/2019/11/14/creating-the-workplace-of-the-future/"> “Loomio has led to better decisions, higher engagement, fewer meetings, and faster implementation.”</a>'
+    james_bloemendal_title: "James Bloemendal, Product Manager, Ian Martin Group, Canada"
+    james_bloemendal_bio: The Ian Martin Group is a recruitment company that uses leading-edge technology with personality/culture/skills assessments to to connect matches where they can grow their careers.
+    start_a_group_for_free: Start a group for free
+    get_started: Get started
+    pricing: Pricing
+    james_bloemendal_pricing_quote: '"With Loomio, we make better & more inclusive decisions with fewer meetings."'
+    james_bloemendal_pricing_title: "— James Bloemendal, Product Manager, Ian Martin Group"
+    basic_plan: Basic plan
+    one_dollar: "$1"
+    per_month_per_person: per month, per person
+    per_month_per_active_user: per month, per active user
+    per_year_per_active_user: per year, per active user
+    per_year_per_person_html: per <strong>year</strong>, per person
+    free_trial: Free trial
+    start_free_trial: Start free trial
+    basic_plan_includes: Basic plan includes
+    unlimited_threads: Unlimited threads & decisions
+    enhanced_facilitation: Enhanced facilitation tools
+    slack_integration: Slack integration
+    email_support: Customer support and training
+    data_export: Data export
+    pro_plan: Pro plan
+    four_dollars: "$4"
+    pro_plan_includes: Pro plan includes
+    all_basic_plan_features: All Basic plan features
+    ms_teams_integration: MS Teams integration
+    onelogin_integration: OneLogin integration
+    priority_support_html: <b>Priority</b> support
+    setup_support: Setup support
+    training: Training for customers
+    16_percent_off: Pay yearly and get 2 months free
+    prices_in_usd: Prices in USD, plus sales tax where applicable
+    need_something_more_html: Need something else? <a href="/contact" target="_blank">Contact us</a>
+    are_you_part: Are you part of a volunteer organization with no paid staff?
+    happy_to_offer: We're happy to offer you a special rate!
+    we_want_to_help: View our volunteer rates
+    for_volunteers_only: For volunteer community groups only
+    we_respect_your_privacy: We respect your privacy and will never sell your data or put advertising into Loomio.
+    learn_more_about_security: Learn more about Loomio's security and GDPR compliance
+    volunteer_orgs: Volunteer community groups
+    no_ongoing_costs: One payment and it's yours forever - no ongoing costs.
+    we_believe: We believe in your work! Here is a special deal.
+    looking_good: Looking good, volunteers!
+    volunteer_groups_are: Volunteer community groups are supported by members to achieve a purpose. They do not have any paid staff.
+    volunteer_plan: Volunteer & Community Plan
+    apply_now: Apply now
+    volunteer_plan_includes: "Volunteer & Community Plan includes:"
+    must_apply_via: Groups must apply via the volunteer form.
+    minimum_10_dollars: Minimum $10 per month
+    minimum_40_dollars: Minimum $40 per month
+    minimum_10_dollars_per_year: Minimum $10 per year
+    have_group_apply_now: Apply now if you already have a group
+    jody: Jody Connor
+    jody_reason: I think the sentiment is great, but I'm worried that we don't have the resources to actually make this happen.
+    mary: Mary O'Keefe
+    mary_reason: Sorry team, I'll be away in that time, but happy for you all to decide without me.
+    greg: Greg Kan
+    greg_reason: Yup - I think this is a good way to contribute and show our support.
+    rob: Rob Guthrie
+    rob_reason: Very excited about this. Bring on the networking opportunities!
+    eager_for_more: Eager for more?
+    active_plan: Active plan
+    webhook_integrations: Webhook integrations (Slack, MS Teams, Mattermost, Zapier and more)
+    sso_support: SAML single sign-on
+    active_plan_includes: Active plan includes
+    thirty_dollars: "$30"
+    per_month: per month
+    per_year: per year
+    includes_first_10: Includes 10 active users
+    subsequent_users: $3 per additional active user
+    what_is_active_user: Read more about how our billing works
+    three_dollars: "$3"
+    per_active_user_per_month: per active user per month
+    thirty_dollars_minimum: "$30 minimum per month"
+
+  bcorp:
+    title_html: |
+      How can my company <img src="/assets/new_marketing/bcorp_b.png" class="b-corp-b-image"> more B-Corp?
+    title: How can my company B more B-Corp?
+    subtitle_html: |
+      <span class="boldish text--orange">Loomio</span> is a collective decision making app that helps with your company's <span class="boldish">transparency</span> and <span class="boldish">accountability</span> practices, as well as your B Impact Assessment questionnaire.
+    new_level_decision: A new level of decision making
+    building_blocks: Loomio's facilitation tools are the building blocks of thousands of different governance processes that can support your B journey
+    collaborate_purposefully: Collaborate purposefully
+    into_action: Turn discussion into action and include quiet, diverse and remote people
+    engage: Engage many stakeholders
+    share: Share your decisions and key discussions even with non-shareholders
+    keep:  Keep a record
+    preserve: Preserve a full record of participation and decisions for later analysis
+    transparent: Transparent Governance
+    easy_to_share: With Loomio it's easy to share your decision making process — and invite different parties, even non-shareholders, to key conversations.
+    all_discussions: All your discussions, impact reports and overall performance indicators in an inclusive and easy-to-grasp platform.
+    true_accountability: True Accountability
+    establish: Establish collaborative processes and rhythms, making it easy for your workers to see how they can make a real difference in their work environment and the positive impact their effort is causing in the world.
+    facilitation_tools: Loomio's facilitation tools helps decisions big and small. Anything from macro 10-year strategies to micro day to day decisions, all in their own distinct subgroups, easy to check and to share.
+    better_world: Do your employees feel they are making the world better? Is your community aware of the impact you're generating on their behalf?
+    time_to_up: Is it time to up your decision making game?
+    try_loomio_for_free: Try Loomio for free
+    real_example: Looking for a real example?
+    cogo: Conscious Consumers (now renamed CoGo) is a social enterprise that uses Loomio to guide their governance in a way that reflects their company's ideals.
+    like_what_you_saw: Like what you saw?
+    try_loomio_now: Try Loomio now
+
+  private_host:
+    title: "Loomio private host"
+    pricex_html: '<strong>%{price}</strong> / year'
+    price_per_user: Includes 1000 users. Need more users? Let's talk.
+    unlimited_groups: Unlmited groups
+    description: Your own Loomio instance, customised to meet the needs of your organisation, managed by Loomio.
+    custom_domain_and_brand: Your own domain name, brand, logo and colour palette
+    private_database: Private database and file storage
+    hosted_in_aws: Hosted in your choice of AWS data center
+    single_sign_on_support: Single Sign On (SSO) support
+    use_your_own_analytics: Use your own Google analytics or turn it off
+    disable_feartres_or_rewrite_text: Disable features or rewrite text within the app
+    customisation_additional_cost: Single Sign On and feature configuration may incur additional cost
+    active_users_are: Active users are people engaging on Loomio two or more times per month.
+    prices_in_us_dollars: Prices are in US dollars, plus sales tax where applicable.
+    contact_us: Contact us to get started
+
+  navigation:
+    about_us: About us
+    blog: Blog
+    community: Community
+    features: Features
+    resources: Resources
+    resources_dropdown: Resources dropdown
+    resources_submenu: Resources submenu
+    header_menu_label: Header menu
+    case_studies: Case studies
+    customer_stories: Customer stories
+    help: Help
+    help_center: Help center
+    guides_and_tips: "Guides & tips"
+    developers: Developers
+    coop_handbook: Co-op handbook
+    learn: Learn
+    about: About
+    pricing: Pricing
+    partners: Partners
+    contact: Contact
+    login: Login
+    sign_in: Sign in
+    start_group: Start group
+    home: Home
+    terms_of_service: Terms of Service
+    privacy: Privacy
+    gdpr: GDPR compliance
+    translation: Translation
+    news: News
+    newsletter: Newsletter
+    twitter: Twitter
+    facebook: Facebook
+    trademark_statement: © 2020 Loomio Cooperative Limited. All rights reserved. “Loomio” is a registered trademark of Loomio Cooperative Limited.
+    not_slack: Loomio is not created by, affiliated with, or supported by Slack Technologies, Inc.
+    loomio_school: Loomio school
+    company_handbook: Company handbook
+    explore: Explore
+
+  titles:
+    new_tab: Opens in new tab
+    start_group: Start group form
+    about_us: About us page
+    pricing: Pricing page
+    contact: Contact form
+    sign_in: Sign in form
+    terms_of_service: Terms of service page
+    privacy: Privacy page
+    translation: Translation guide
+    home: Home page
+
+  loomio_org:
+    golden_feature: Gold feature
+    slogan: Make decisions without meetings
+    description: Loomio helps groups of people make decisions together, online
+
+  faq:
+    title: Frequently Asked Questions
+    payment_methods:
+      question: What payment methods do you accept?
+      answer: We accept all major credit or debit cards via our payment gateway (Visa, Mastercard, American Express). All payments are processed in USD and deducted from your credit card in the currency of your credit card.
+    credit_card_required_for_trial:
+      question: Will I have to provide my credit card details up front if I want to start a trial only?
+      answer: No, we do not require any payment information until you choose to purchase a plan.
+    what_currency:
+      question: What currency will my credit card be charged in?
+      answer: Loomio is priced in USD, and when your credit card is charged the amount will be charged in the currency of your card including sales tax, if applicable.
+    will_i_get_receipt:
+      question: Will I receive a receipt?
+      answer: When you have finished going through the purchase process, we will automatically send you a receipt statement via email to your billing contact email address. You can also view billing information in the billing portal once your account is set up.
+    non_profit_discount:
+      question: Does my organization qualify for the Pro Nonprofit plan?
+      answer_html: |
+        <p>We love nonprofits, and have created the Loomio Pro Nonprofit plan for you. This is a 50% discount on our Loomio Pro price.</p>
+
+        <p>Nonprofit organizations can upgrade to this plan for immediate subscription to Loomio. We'll then send you an email with a link to validate your organization’s nonprofit status via our partner <a href="https://meet.techsoup.org/about-us/techsoup-global-network.html">TechSoup</a>.</p>
+
+        <p><a href="https://www.techsoup.global/techsoup-local-ngo-definitions">View TechSoup's nonprofit validation criteria for your country.</a></p>
+    am_i_community:
+      question: How do I know if I am a community group?
+      answer: The Community Lifetime plan is available for community groups and organizations run by volunteers, who have no paid staff. Non-profit organizations with paid staff are eligible for our Pro Nonprofit plan.
+    can_i_upgrade_to_pro:
+      question: Can I upgrade to Loomio Pro after purchasing Loomio Starter?
+      answer: To upgrade to Loomio Pro simply choose to upgrade your plan and we will automatically apply a prorated credit of any pre-paid subscription fees from the new payment required for the Loomio Pro plan.
+    i_have_a_discount_code:
+      question: I have a discount code, where do I apply it?
+      answer: After you have chosen the plan you wish to purchase, click the upgrade button, and you will be taken to our billing portal to set up the payment. Here you can add a discount code to receive a reduction off the final price.
+    who_owns_the_data:
+      question: Who owns my group’s data?
+      answer: |
+        You do! Unlike some other services, we're not in the advertising business. You are the customer, not the product, and you're in charge.
+        Loomio is open source software, and your data is portable and exportable. You can download a CSV and open it in a spreadsheet or even export your entire group history and run it on your own Loomio server - if you have the skillset, time and resources.
+        However you have our promise that we'll run our loomio.org service for our customers until the end of the internet.
+    where_is_loomio_org_hosted:
+      question: Where is Loomio.org hosted?
+      answer_html: |
+        Our loomio.org service is hosted in the USA, however if you’d like .EU or .NZ hosting, please <a target="_blank" href="https://www.loomio.org/contact">contact us</a>.
+    can_we_trust_you:
+      question: Why should we trust Loomio?
+      answer: |
+        We've been in business for more than 8 years. We have great relationships with our customers. We're a worker-owned cooperative - which means the people who create Loomio also have ownership in it.
+        We work with investors who support our social mission, and are committed to ensuring we provide the highest level of privacy and protection for our customer’s data.
+        To the best of our knowledge, we've never had an attacker steal any of our customers' data.
+    is_there_training:
+      question: |
+        What is Loomio Pro support?
+      answer_html: |
+        <p>With the purchase of a Loomio Pro plan you will receive a dedicated Loomio expert to interact with for any ongoing support you might need.</p>
+        <ol>
+        <li>When you upgrade, you will be invited to a one hour implementation session on how to get the most out of Loomio. It’s for you, and the people you would like included, to become confident in using Loomio to meet your needs.</li>
+        <li>Within the first 90 days, having the opportunity to put into practice the steps identified in the first call, you can schedule another time to follow up with your dedicated Loomio expert to refine your use of Loomio.</li>
+        </ol>
+
+        <p>We’ll keep in contact with you with opportunities to see how Loomio could work better for you, and introduce new features. Pro plan customers enjoy priority support all year round, to answer questions, help onboard new users, and more.</p>
+        <p>We also offer bespoke training packages customised to suit your organization’s needs.</p>
+
+        <p><a href="https://help.loomio.org/en/subscriptions/pro_support/">Find out more about Loomio Pro support and training</a></p>
+    what_support_for_pro:
+      question: What Loomio support will my Loomio Pro group get?
+      answer: |
+        Loomio Pro plan customers receive pro support; a personal account manager is assigned who will invite you for a call to help implement Loomio for your organization, provide access to pro training webinars where anyone from your organization can get the help they need to use Loomio successfully.
+
+    can_I_have_my_own_server:
+      question: Do you offer private or bespoke servers?
+      answer_html: |
+        We can run a private Loomio install for your organization and have done this regularly. <a target="_blank" href="https://www.loomio.org/contact">Talk to us!</a>
+
+    refunds_policy:
+      question: What if I'm not happy with the service?
+      answer: We welcome any and all feedback you may have, and are committed to making Loomio world class. Should you have an issue please do let us know immediately and we’ll be in touch.
+
+    is_it_secure:
+      question: Is my data secure?
+      answer_html: |
+        Keeping customer data safe and secure is a huge responsibility and a top priority. We work hard to protect our customers from the latest threats.
+        See <a href="https://help.loomio.org/en/user_manual/privacy/">Privacy and Security Information</a> for details on how we protect your data. Your input and feedback on our security is always appreciated.
+
+    deletion_policy:
+      question: What happens to my data if I stop using Loomio?
+      answer_html: |
+        You won’t be able to access your account once you cancel your plan, so make sure you <a href="https://help.loomio.org/en/user_manual/groups/data_export/">download everything you want to keep</a> beforehand. After 3 months, we’ll permanently delete your account data from our servers and logs.
+
+  subscriptions:
+
+    assistance_required_html: |
+      Your current subscription status is a bit unusual. Please <a href="/contact">contact us</a> to upgrade your subscription.
+      
+    change_plan_page:
+      plan_price: New plan (excluding tax and coupons)
+      balance_in_cents: Current balance
+      credit_on_current_plan: Credit on current plan
+      change_complete: Subscription changed successfully!
+      owner_required: 'Sorry, only %{name} can change the subscription plan'
+      accept_and_proceed: Accept and proceed
+      change_plan_to: 'Change plan to: %{name}'
+      preview_of_charges: Preview of charges (in USD)
+      charge_in_cents: Amount due before
+      prorated_adjustment_in_cents: Prorated adjustment
+      payment_due_in_cents: Total charge
+      credit_applied_in_cents: Remaining credit
+      amount_due: Amount due (before tax)
+      credit_remaining: Credit remaining
+
+    plan: plan
+    organization: Organization
+    current_plan: Current plan
+    current_plan_info_html: |
+      Your current plan: <strong>%{name}</strong>
+      is due to renew on <strong id='renewAt'>%{date}</strong>
+      for <strong>$<span id="subtotal">loading</span></strong> USD
+      (plus sales tax if applicable)
+    new_plans_available: We have recently introduced new subscription plans, you can change to a new plan at any time. Any remaining credit on your previous plan will be carried to your new plan.
+    visit_portal_to_change_html: |
+      Visit the <a href="%{link}" target="_blank">billing portal</a> to cancel your plan or change billing details
+    these_are_current_plans: These are the plans we currently offer
+    community_only_for_no_paid_staff_html: |
+      Our community plan is available to organizations with no paid staff.
+      Other organizations can choose from our <a href="%{link}">standard plans</a>
+
+    upgrade_your_org: Upgrade your organization
+    your_loomio_plans: Your Loomio subscription plans
+    upgrade_group_html: Upgrade <strong>%{name}</strong>
+    one_of_the_best: One of the best decisions you'll make today
+    choose_the_plan_for_your_group: Choose the Loomio plan below that works for your group
+    change_your_plan: Change your Loomio plan
+    which_plan: Which plan would you like?
+    small_upto: Small - up to 50 people
+    medium_upto: Medium - up to 500 people
+    large_upto: Large - up to 5000 people
+    group_too_big: Your group has too many members for this plan
+    pay_monthly: Pay monthly
+    pay_yearly: Pay annually
+    upgrade_to_small_monthly: Pay monthly
+    small_monthly_price: '$49 per month'
+    upgrade_to_small_yearly: Upgrade to Small and pay annually
+    small_yearly_price: '$490 per year (save $98)'
+    upgrade_to_medium_monthly: Upgrade to Medium and pay monthly
+    medium_monthly_price: '$149 per month'
+    upgrade_to_medium_yearly: Upgrade to Medium and pay annually
+    medium_yearly_price: '$1490 per year (save $298)'
+    upgrade_to_large_monthly: Upgrade to Large and pay monthly
+    large_monthly_price: '$449 per month'
+    upgrade_to_large_yearly: Upgrade to Large and pay annually
+    large_yearly_price: '$4490 per year (save $898)'
+    active: Active
+    expired: Expired
+    trialing: Trialing
+
+  landing:
+    better_decisions: "Loomio helps your group make better decisions together"
+    discuss_decide: "Discuss, decide and collaborate online. Free your organization from tedious meetings and endless email chains."
+    try_loomio: Try Loomio
+    watch_demo: Watch demo
+    already_using_loomio_html: "Already using Loomio? <a href='/users/sign_in'>Sign in</a>"
+    serious_discussions: "A place for your organization’s serious discussions"
+    own_time: "With Loomio, people participate on the web, email or mobile, in their own time. Discussions stay on topic, and Loomio suits a variety of discussion formats and styles."
+    polling_tools: "When you’re ready to make a decision, get feedback, or move from talk to action, Loomio’s polling tools are at your fingertips."
+    decision_tools: "Get the best out of your team with Loomio’s effective decision tools"
+    time_poll: "Time poll: "
+    time_poll_description: "Choose a date for your event that suits everyone"
+    proposal: "Proposal: "
+    proposal_description: "Find out what your group thinks about a course of action"
+    check: "Check: "
+    check_description: "Count how many people have completed a task, or ask for volunteers"
+    rank_choices: "Rank choices: "
+    rank_choices_description: "Prioritise among options"
+    learn_more: "Learn more about Loomio’s decision tools →"
+    quick_tour: "Take a quick tour"
+    ready_to_engage: "Ready to engage your team?"
+    talk_to_sales: "Talk to sales"

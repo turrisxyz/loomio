@@ -1,0 +1,18 @@
+da:
+  plan_names:
+    free: Gratis
+  pricing:
+    find_out_more: "Få mere at vide"
+    services: "Faciliteter"
+  marketing:
+    social_enterprise: Socialt foretagende
+    pricing: Priser
+  navigation:
+    help: Hjælp
+    start_group: Opret gruppe
+    privacy: Fortrolighed
+  titles:
+    contact: Kontakt formular
+    home: Hjem
+  landing:
+    try_loomio: Prøv Loomio

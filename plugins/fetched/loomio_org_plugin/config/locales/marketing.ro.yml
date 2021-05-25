@@ -1,0 +1,23 @@
+ro:
+  subscription_levels:
+    free: Gratuit
+  plan_names:
+    free: Gratuit
+    trial: Versiune de testare
+  pricing:
+    find_out_more: "Afla mai multe"
+    services: "Servicii"
+  marketing:
+    social_enterprise: Intreprindere sociala
+    get_started: Incepe
+    pricing: Tarif
+  navigation:
+    help: Ajutor
+    sign_in: Login
+  titles:
+    new_tab: Deschide intr-o pagina noua
+    home: Pagina de start
+  subscriptions:
+    organization: Organizație
+  landing:
+    try_loomio: Incearca Loomio

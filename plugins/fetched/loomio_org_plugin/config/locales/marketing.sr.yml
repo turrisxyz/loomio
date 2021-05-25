@@ -1,0 +1,30 @@
+sr:
+  pricing:
+    find_out_more: "Saznaj više"
+    services: "Usluge"
+  marketing:
+    social_enterprise: Socijalna preduzuća
+    get_started: Počni
+    pricing: Cene
+  navigation:
+    about_us: O nama
+    blog: Blog
+    resources: Resursi
+    case_studies: Studije slučaja
+    help: Pomoć
+    guides_and_tips: "Smernice i saveti"
+    developers: Programeri
+    about: O nama
+    pricing: Cene
+    contact: Kontakt
+    login: Prijava
+    start_group: Kreiraj grupu
+    home: Početna
+    terms_of_service: Uslovi Korišćenja
+    privacy: Privatnost
+    translation: Prevod
+    newsletter: Bilten
+    twitter: Twitter
+    facebook: Facebook
+  landing:
+    try_loomio: Probaj Lumio

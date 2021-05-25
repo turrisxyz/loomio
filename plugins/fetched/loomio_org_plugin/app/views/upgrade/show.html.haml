@@ -1,0 +1,81 @@
+%main.main--landing{role: "main"}
+
+  - subscription = @group.subscription
+  %section.inner--landing
+    - if subscription.plan == 'trial'
+      %h1.text-h3.text-center.my-8= t(:"subscriptions.one_of_the_best")
+      %h2.text-h5.text-center= t(:"subscriptions.choose_the_plan_for_your_group")
+    - else
+      %h1.text-h2.my-8.text-center= t(:"subscriptions.change_your_plan")
+  .inner.my-8.text-center
+    %h2.text-h4= @group.name
+
+  - if subscription.plan != 'trial'
+    - if subscription.assistance_required?
+      .inner.my-8.text-center
+        %p=raw t('subscriptions.assistance_required_html')
+    - else
+      .inner.my-8.text-center
+        %p=raw t('subscriptions.current_plan_info_html', name: t('plan_names.'+subscription.plan), date: subscription.renews_at&.to_date)
+
+        %p=t('subscriptions.new_plans_available')
+        -if subscription.management_link
+          %p=raw t('subscriptions.visit_portal_to_change_html', link: subscription.management_link)
+        %h2.text-center=t('subscriptions.these_are_current_plans')
+        :javascript
+          fetch('/upgrade/cost?group_id=#{@group.id}').then((result) => {
+            result.json().then( (data) => {
+              // console.log(data)
+              // document.getElementById('subtotal').textContent=parseFloat(data['subtotal_in_cents'])/parseFloat(100)
+              document.getElementById('subtotal').textContent=parseFloat(data['total_amount_due_in_cents'] - data['total_tax_in_cents'])/parseFloat(100)
+              document.getElementById('renewAt').textContent=(new Date(Date.parse(data['next_assessment_at']))).toISOString().slice(0,10)
+            })
+          })
+
+
+  -# pay method, choose group
+  - if @pay != 'community'
+    .mb-8
+      = render 'pages/pay_frequency'
+  - else
+    %section.inner--landing.mb-10.text-center
+      %p=raw t('subscriptions.community_only_for_no_paid_staff_html', link: '?pay=monthly')
+
+  %section.inner--landing.mb-4
+    .viewport-l-row.justify-center
+      - @plans.each_pair do |key, plan|
+        = render 'pages/plan_box', plan: plan, button: ((subscription.plan == 'trial') ? :buy_now : :change_plan), plan_key: key
+
+  .sales-tax--pricing.text-center.mb-4
+    = t(:'marketing.prices_in_usd')
+
+  - if @pay != 'community'
+    %section.inner--landing.pricing--second-tier.mb-12.px-8
+      %h3.text-h4.text-center.my-8= t(:'pricing.volunteer_groups')
+      %p.text-center
+        = t(:'pricing.volunteer_groups_definition')
+        %a{href: "?pay=community"}= t(:'pricing.see_our_volunteer_pricing')
+
+  = render 'pages/testimonials'
+  = render 'pages/pricing_faq'
+
+  :javascript
+    const checkbox = document.getElementById('communitycheckbox')
+    const link = '#{subscription.management_link}'
+
+
+    if (checkbox) {
+      const awaiting = document.getElementById('confirm-to-continue')
+      awaiting.style.display = null
+      const btn = document.querySelectorAll('.community.buy-now-btn, .community.change-plan-btn')[0]
+      btn.style.display = 'none'
+      checkbox.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+          btn.style.display = null
+          awaiting.style.display = 'none'
+        }else{
+          btn.style.display = 'none'
+          awaiting.style.display = null
+        }
+      })
+    }

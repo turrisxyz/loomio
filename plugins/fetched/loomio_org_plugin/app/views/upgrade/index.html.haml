@@ -1,0 +1,20 @@
+%main{role: "main"}
+  .inner.subscriptions-list
+    -# %h3.body-large.pb-8.pt-8= t(:"subscriptions.upgrade_your_org")
+    %h3.body-large.pb-8.pt-8= t(:"subscriptions.your_loomio_plans")
+    %ul
+      - @groups.order(:id).each do |group|
+        %li
+          %strong= group.name
+          \-
+          #{t(:"plan_names.#{subscription_for(group).plan}")} #{t(:"subscriptions.plan")}
+          - if subscription_for(group).state == 'trialing'
+            (#{t(:"subscriptions.trialing")})
+          - elsif subscription_for(group).is_active?
+            (#{t(:"subscriptions.active")})
+          - else
+            (#{t(:"subscriptions.expired")})
+          - if ["was-gift", "was-paid", "free", "trial"].include?(subscription_for(group).plan) or (!subscription_for(group).is_active?) or (subscription_for(group).state == 'trialing')
+            %a{href: "/upgrade/#{group.id}"}= t :'pricing_page.choose_plan'
+          - else
+            %a{href: "/upgrade/#{group.id}"}= t :'pricing_page.change_plan'

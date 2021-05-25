@@ -1,0 +1,36 @@
+eo:
+  subscription_levels:
+    free: Senpaga
+    gold: Oro
+    plus: Pli
+  plan_names:
+    free: Senpaga
+    trial: Provo
+  subscription_success_modal:
+    sign_off: ❤️  el la teamo de Loomio.
+  pricing_page:
+    upgrade: Ĝisdatigi
+  pricing:
+    find_out_more: "Eltrovu pli"
+    services: "Servoj"
+  marketing:
+    social_enterprise: Socia entrepreno
+    pricing: Prezo
+  navigation:
+    blog: Blogo
+    features: Trajtoj
+    help: Helpo
+    developers: Programistoj
+    learn: Lerni
+    about: Pri
+    contact: Kontakto
+    login: Ensaluti
+    sign_in: Registriĝi
+    privacy: Privateco
+  titles:
+    new_tab: Malfermas en novan langeton
+    home: Ĉefpaĝo
+  subscriptions:
+    organization: Organizaĵo
+  landing:
+    try_loomio: Provu uzi Loomio-n

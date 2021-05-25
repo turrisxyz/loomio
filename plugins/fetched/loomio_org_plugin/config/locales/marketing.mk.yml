@@ -1,0 +1,9 @@
+mk:
+  pricing:
+    find_out_more: "Дознај повеќе"
+    services: "Сервиси"
+  marketing:
+    social_enterprise: Општествено претпријатие
+    pricing: Ценовник
+  landing:
+    try_loomio: Пробај го Loomio

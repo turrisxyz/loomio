@@ -1,0 +1,26 @@
+%main{role: "main"}
+  .flex-column.justify-center.align-center
+    .inner.inner.max-width-1024
+      %h1= t(:"community_applications.title")
+      - if @groups.empty?
+        = t(:"community_applications.get_a_group_html")
+      - else
+        = t(:"community_applications.eligible_html")
+        %hr
+        %br
+        = form_with(url: "/community_applications", method: :post, class: "application-form") do
+          .flex-column
+            .flex-column
+              = label_tag(:group_survey_group_id, t(:"community_applications.choose_group"))
+              = select_tag "group_survey[group_id]", options_from_collection_for_select(@groups, "id", "name", "1"), required: true
+            %br
+            .flex-column
+              %span.mb-4= t :'community_applications.confirm_question'
+              .d-flex
+                = check_box_tag("group_survey[declaration]", nil, false, {required: true, class: 'checkbox'})
+                = label_tag(:group_survey_declaration, t(:'community_applications.declaration'), class: 'body-smaller')
+            %br
+            .flex-column
+              %span= t(:"community_applications.help_html")
+
+            = submit_tag("Submit", class: "btn--accent--raised mt-12")

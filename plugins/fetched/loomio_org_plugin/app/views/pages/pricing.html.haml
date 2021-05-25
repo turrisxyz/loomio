@@ -1,0 +1,25 @@
+%main.main--landing{role: "main"}
+  %section.inner--landing.hero-section--landing
+    %h1.hero-text--pricing.text-center=raw t(:'pricing.simple_html')
+
+    = render 'pay_frequency'
+  %section.inner--landing.mb-4
+    .viewport-l-row.justify-center
+      - @plans.each_pair do |key, plan|
+        = render 'pages/plan_box', plan: plan, button: :start_trial, plan_key: key
+
+    %p.mt-6.mb-4
+      .sales-tax--pricing.text-center
+        = t(:'marketing.prices_in_usd')
+        %br
+        %a{href: "https://help.loomio.org/en/subscriptions/pricing/", target: "_blank"}= t (:'marketing.what_is_active_user')
+
+  %section.inner--landing.pricing--second-tier.mb-12.px-8
+    %h3.text-h4.text-center.my-8= t(:'pricing.volunteer_groups')
+    %p.text-center
+      = t(:'pricing.volunteer_groups_definition')
+      %a{href: "/pricing/community"}= t(:'pricing.see_our_volunteer_pricing')
+
+  = render 'pages/testimonials'
+  = render 'pages/pricing_faq'
+  .divider

@@ -1,0 +1,245 @@
+nl_NL:
+  subscription_levels:
+    free: Gratis
+    gold: Goud
+    pro: Pro
+    plus: Plus
+    community: Gemeenschap
+  plan_names:
+    free: Gratis
+    trial: Proef
+    small-monthly: Small (maandelijks)
+    small-yearly: Small (jaarlijks)
+    medium-monthly: Medium (maandelijks)
+    medium-yearly: Medium (jaarlijks)
+    large-monthly: Large (maandelijks)
+    large-yearly: Large (jaarlijks)
+    standard-loomio-plan: Gold (maandelijks)
+    standard-plan-yearly: Gold (jaarlijks)
+    pro-loomio-plan: Pro (maandelijks)
+    pro-plan-yearly: Pro (jaarlijks)
+    plus-plan: Plus (maandelijks)
+    plus-plan-yearly: Plus (jaarlijks)
+    was-paid: Legacy
+    was-gift: Onbetaald
+    pp-basic-monthly: Basic Maandelijks
+    pp-basic-annual: Basic Jaarlijks
+    pp-pro-annual: Pro Jaarlijks
+    pp-pro-monthly: Pro Maandelijks
+    pp-community-annual: Gemeenschap jaarlijks
+  subscription_success_modal:
+    heading: Bedankt om te upgraden!
+    receipt: Je zal een email ontvangen met een link naar het facturatieportaal, waar je je abonnement kan veranderen, upgraden of opzeggen en ook toegang hebt tot het factuuroverzicht.
+    got_questions_then_contact_us_html: Mocht je nog vragen hebben,  neem dan gerust  <a href="/contact">contact met ons op</a>.
+    sign_off: ❤️ van het Loomio team.
+    return_to_loomio: Terug naar Loomio
+  premium_feature:
+    premium_feature: Gold feature
+  export_group_data_link:
+    download_group_data_export: Groepsrapport (XLS of HTML)
+  member_emails_button:
+    show_member_emails: 'Toon e-mails van leden '
+    helptext: Beheerders van groepen met een gold abonnement of hoger mogen de e-mailadressen van groepsleden zien
+  community_applications:
+    title: Gemeenschaps- en vrijwilligersaanvraag
+    get_a_group_html: |
+        Je hebt een groep nodig om door te gaan. Klik hier om een <a href="/start_new" target="_blank">groep te starten</a>, ververs daarna de pagina.
+    choose_group: Kies je groep
+  pricing_page:
+    rates_for_member_funded_orgs: Speciale tarieven voor gemeenschaps- en vrijwilligersgroepen
+    more_subscription_help_html: Kijk op <a href="%{url}">help.loomio.org</a> voor meer informatie over tarieven en inschrijvingen.
+    volunteer_sign_in_html: Om het vrijwilligers- en gemeenschapsabonnement aan te kunnen vragen, moet je <a href="/dashboard" target="_blank">ingelogd zijn</a> en onderdeel zijn van een <a href="/start_group">groep</a>. Ververs deze pagina als je ingelogd bent.
+    manage: Beheren
+    upgrade: Upgrade
+    choose_plan: Kies plan
+  pricing:
+    unlimited_members: "Onbeperkt aantal leden"
+    lets_talk: "Laten we praten!"
+    find_out_more: "Lees meer"
+    services: "Diensten"
+    pay_monthly: "Betaal maandelijks"
+    pay_annually: "Betaal jaarlijks"
+  marketing:
+    buy_now: Koop nu
+    next_step: "De volgende stap in je samenwerkingstocht"
+    collaborate: Werk samen en maak betere beslissingen met Loomio
+    get_started_today: Ga vandaag nog aan de slag. Gratis.
+    tired_of_infinite: "Ook moe van eindeloze e-mail gesprekken en ellenlange vergaderingen waar nooit een resultaat of beslissing uit komt?"
+    sounds_like_you_need: "Klinkt alsof je Loomio nodig hebt: een samenwerkingsplatform dat op radicale wijze transformeert hoe groepen online samenwerken, ideeën bespreken en besluiten nemen. Zeg vaarwel tegen vervelende vergaderingen en volle inboxen, en probeer Loomio gratis!"
+    how_about_a_real_example: "Wat dacht je van een echt voorbeeld."
+    make_a_decision_right_now: Maak nu een beslissing
+    change_our_current_website_host: "We hosten de conferentie; data en locatie worden later bevestigd"
+    integrates_with: Integreert met
+    mission_driven: Een missie gedreven bedrijf
+    open_source: Open-source software
+    worker_owned: Een coöperatie die eigendom is van de medewerkers
+    social_enterprise: Sociale onderneming
+    proud_supporters: Trotse supporters van gemeenschappen over de hele wereld
+    key_software: De software achter veel samenwerkingsorganisaties
+    learn_more: Meer informatie over ons
+    paul_martin_bio: The Low Carbon Society is een groep die investeert in innovatieve energieprojecten in Cornwall, UK
+    manon_cuille_bio: Zero Waste France is een non-profit organisatie van lokale groepen in Frankrijk met als doel een afvalvrije levensstijl te bevorderen. Ze hebben Loomio gebruikt voor het organiseren van meer dan 2000 evenementen.
+    start_a_group_for_free: Start gratis een groep
+    get_started: Aan de slag
+    pricing: Prijzen
+    james_bloemendal_pricing_quote: '"Met Loomio maken we betere, meer inclusieve beslissingen met minder vergaderingen."'
+    james_bloemendal_pricing_title: "— James Bloemendal, Product Manager, Ian Martin Group"
+    basic_plan: Basic abonnement
+    one_dollar: "$1"
+    per_month_per_person: per maand, per persoon
+    per_year_per_person_html: per <strong>jaar</strong>, per persoon
+    free_trial: Gratis trial
+    basic_plan_includes: Basic abonnement bevat
+    unlimited_threads: Onbeperkt aantal threads & beslissingen
+    slack_integration: Slack integratie
+    data_export: Gegevensexport
+    pro_plan: Pro abonnement
+    four_dollars: "$4"
+    pro_plan_includes: Pro abonnement bevat
+    all_basic_plan_features: Alle Basic abonnement functies
+    ms_teams_integration: MS Teams integratie
+    onelogin_integration: OneLogin integratie
+    priority_support_html: <b>Prioriteitsondersteuning</b>
+    setup_support: Setup support
+    16_percent_off: Betaal jaarlijks en krijg 2 maanden gratis
+    prices_in_usd: Prijzen in USD, plus btw waar van toepassing
+    need_something_more_html: Iets anders nodig? <a href="/contact" target="_blank">Neem contact met ons op</a>
+    happy_to_offer: We bieden je graag een speciaal tarief aan!
+    we_want_to_help: Bekijk onze vrijwilligerstarieven
+    we_respect_your_privacy: We respecteren je privacy en zullen nooit je data verkopen of advertenties plaatsen in Loomio.
+    looking_good: Ziet er goed uit, vrijwilligers!
+    volunteer_plan: Vrijwilligers- & Gemeenschapsabonnement
+    apply_now: Meld je nu aan
+    volunteer_plan_includes: "Vrijwilligers- en Gemeenschapsabonnement bevat:"
+    must_apply_via: Groepen moet inschrijven via het vrijwilligersformulier.
+    minimum_10_dollars: Minimaal $10 per maand
+    minimum_40_dollars: Minimaal $40 per maand
+    minimum_10_dollars_per_year: Minimaal $10 per jaar
+    have_group_apply_now: Meld je nu aan als je al een groep hebt
+    jody: Jody Connor
+    jody_reason: Ik vind het een goed idee, maar ik ben bang dat we niet de middelen hebben om dit te doen.
+    mary: Mary O'Keefe
+    mary_reason: Sorry team, ik ben er dan niet, maar jullie mogen gerust voor mij beslissen.
+    greg: Greg Kan
+    greg_reason: 'Yup - Ik denk dat dit een goede manier is om bij te dragen en onze steun te laten zien. '
+    rob: Rob Guthrie
+    rob_reason: Geweldig. Laat de netwerk gelegenheden maar komen!
+    eager_for_more: Zin in meer?
+  bcorp:
+    new_level_decision: Een nieuw niveau van besluitvorming
+    collaborate_purposefully: Werk doelmatig samen
+    into_action: 'Vertaal discussies naar acties en betrek collega''s die minder uitgesproken zijn, of misschien op een andere locatie. '
+    engage: Betrek veel belanghebbenden
+    share: 'Deel je besluiten en discussies, zelfs met niet aandeelhouders. '
+    keep: Houd een verslag bij
+    preserve: 'Houd een volledig verslag bij van deelname en beslissingen voor latere analyse. '
+    transparent: Transparant bestuur
+    easy_to_share: 'Met Loomio is het makkelijk je besluitvormingsproces te delen en verschillende partijen te betrekken bij belangrijke gesprekken. '
+    all_discussions: 'Al je discussies, impactrapporten en algemene prestatie-indicatoren op een makkelijk te begrijpen platform. '
+    true_accountability: Echte verantwoording
+    establish: Breng samenwerkingsprocessen en -ritmes tot stand, zodat je medewerkers kunnen zien hoe ze echt het verschil kunnen maken in hun werkomgeving en de positieve impact die hun inspanningen hebben in de wereld.
+    facilitation_tools: 'Loomio helpt bij grote en kleine beslissingen. Van macro 10-jaar strategieën tot dagelijkse microbeslissingen, allemaal in eigen subgroepen, makkelijk te checken en te delen. '
+    better_world: Hebben je medewerkers het gevoel dat ze de wereld beter maken? Is jouw gemeenschap bewist van de impact die je hebt namens hen?
+    time_to_up: Is het tijd om je besluitvormingsprocessen te verbeteren?
+    try_loomio_for_free: Probeer Loomio gratis
+    real_example: Op zoek naar een echt voorbeeld?
+    cogo: 'Conscious Consumers (CoGo) is een social enterprise. Ze gebruiken Loomio om het bedrijf te besturen op een manier die hun waarden reflecteert. '
+    like_what_you_saw: Leuk?
+    try_loomio_now: Probeer Loomio nu
+  private_host:
+    title: "Loomio privé host"
+    pricex_html: '<strong>%{price}</strong> / jaar'
+    price_per_user: 1000 gebruikers inbegrepen. Meer gebruikers nodig? Laten we praten.
+    unlimited_groups: Onbeperkt aantal groepen
+    description: Je eigen versie van Loomio, gecustomized om te voldoen aan de behoeften van jouw organisatie, beheerd door Loomio.
+    custom_domain_and_brand: Je eigen domeinnaam, merk, logo en kleurenpalet.
+    private_database: 'Privédatabase en bestandsopslag. '
+    hosted_in_aws: Gehost in een AWS datacentrum van jouw keuze
+    single_sign_on_support: Single Sign On (SSO) support
+    use_your_own_analytics: 'Gebruik je eigen Google analytics of zet het uit. '
+    disable_feartres_or_rewrite_text: Zet features uit of herschrijf tekst in de app
+    customisation_additional_cost: Single Sign On en feature configuratie brengt mogelijk extra kosten met zich mee
+    active_users_are: 'Actieve gebruikers maken meer dan twee maal per maand gebruik van Loomio. '
+    prices_in_us_dollars: Prijzen zijn in US Dollars, plus btw waar van toepassing.
+    contact_us: Neem contact met ons op om te beginnen
+  navigation:
+    about_us: Over ons
+    blog: Blog
+    community: Gemeenschap
+    features: Features
+    resources: Bronnen
+    resources_dropdown: Hulpmiddelen uitrollen
+    resources_submenu: Hulpmiddelen submenu
+    header_menu_label: Koppen menu
+    case_studies: Voorbeelden
+    customer_stories: Customer stories
+    help: Help
+    help_center: Helpcentrum
+    guides_and_tips: "Handleidingen & Tips"
+    developers: Ontwikkelaars
+    coop_handbook: Co-op handboek
+    learn: Leren
+    about: Over
+    pricing: Prijsplan
+    partners: Partners
+    contact: Contact
+    login: Inloggen
+    sign_in: Inloggen
+    start_group: Start groep
+    home: Home
+    terms_of_service: Gebruiksvoorwaarden
+    privacy: Privacy
+    gdpr: AVG compliance
+    translation: Vertaling
+    news: Nieuws
+    newsletter: Nieuwsbrief
+    twitter: Twitter
+    facebook: Facebook
+    loomio_school: Loomio school
+    company_handbook: Bedrijfshandboek
+    explore: Verkennen
+  titles:
+    new_tab: Opent in nieuwe tab
+    start_group: Start groep formulier
+    about_us: Over ons pagina
+    pricing: Prijsplan pagina
+    contact: Contactformulier
+    sign_in: Inlogformulier
+    terms_of_service: Algemene gebruiksvoorwaarden pagina
+    privacy: Privacy pagina
+    translation: Vertalingshandleiding
+    home: Homepage
+  loomio_org:
+    golden_feature: Gold feature
+    slogan: Neem besluiten zonder vergaderingen
+    description: Loomio helpt groepen mens om samen besluiten te nemen, online
+  subscriptions:
+    plan: abonnement
+    organization: Organizatie
+    current_plan: Huidige abonnement
+    upgrade_your_org: Upgrade je organisatie
+    which_plan: Welk abonnement wil je?
+    small_upto: Small - tot 50 personen
+    medium_upto: Medium - tot 500 personen
+    large_upto: Large - tot 5000 personen
+    group_too_big: Je groep heeft te veel leden voor dit abonnement
+    pay_monthly: Betaal maandelijks
+    pay_yearly: Betaal jaarlijks
+    upgrade_to_small_monthly: Betaal maandelijks
+    small_monthly_price: '$49 per maand'
+    upgrade_to_small_yearly: Upgraden naar Small en betaal jaarlijks
+    small_yearly_price: '$490 per jaar (bespaar $98)'
+    upgrade_to_medium_monthly: Upgraden naar Medium en betaal maandelijks
+    medium_monthly_price: '$149 per maand'
+    upgrade_to_medium_yearly: Upgraden naar Medium en betaal jaarlijks
+    medium_yearly_price: '$1490 per jaar (bespaar $298)'
+    upgrade_to_large_monthly: Upgraden naar Large en betaal per maand
+    large_monthly_price: '$449 per maand'
+    upgrade_to_large_yearly: Upgraden naar Large en betaal jaarlijks
+    large_yearly_price: '$4490 per jaar (bespaar $898)'
+    active: Actief
+    expired: Verlopen
+    trialing: Proberen
+  landing:
+    try_loomio: Probeer Loomio
+    check_description: "Tel hoeveel mensen een taak hebben vervolledigd, of vraag naar vrijwilligers"

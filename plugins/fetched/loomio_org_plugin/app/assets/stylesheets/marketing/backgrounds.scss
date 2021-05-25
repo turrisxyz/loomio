@@ -1,0 +1,33 @@
+.bg-white {
+  background-color: white;
+}
+.bg-grey {
+  background-color: #F1F1F1;
+}
+.bg-blue {
+  background-color: $accent-color;
+}
+.bg-light-blue {
+  background-color: rgba($accent-color, .4);
+  // background-color: rgba($accent-color, .09);
+}
+.bg-light-orange {
+  background-color: rgba($primary-color, 0.3);
+}
+.bg-orange {
+  background-color: $primary-color;
+}
+
+.bg-orange-pattern {
+  background-image: url('new_marketing/pattern_test04.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-blue-pattern {
+  background-image: url('new_marketing/pattern_test03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

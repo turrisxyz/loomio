@@ -1,0 +1,15 @@
+ja:
+  subscription_levels:
+    free: 無料
+  plan_names:
+    free: 無料
+    trial: トライヤル
+  pricing:
+    find_out_more: "詳細を見る"
+    services: "サービス"
+  marketing:
+    pricing: 価格設定
+  subscriptions:
+    organization: 組織
+  landing:
+    try_loomio: Loomioを試しましょう

@@ -1,0 +1,64 @@
+%main.main--landing{role: "main"}
+  %section.inner--landing.hero-section--landing
+    .viewport-l-row
+      .flex-column
+        %h1.hero-text--landing= t(:'landing.better_decisions')
+        %p.my-8.text-subtitle-1= t(:'landing.discuss_decide')
+        %p.mt-3.mb-4
+          %a.mr-2.btn--primary--landing{href: "/start_group", target: "_blank"}= t(:'marketing.start_free_trial')
+          %a.btn--secondary--landing{href: "https://www.youtube.com/embed/Zlzuqsunpxc", target: "_blank"}= t(:'landing.watch_demo')
+        %p
+          %small
+            = t(:'landing.already_using_loomio_html')
+      .gutter-large
+      .flex-column
+        .hero-image--landing
+          = image_tag 'loomio_org/happy-workspace-crop-harder.png', alt: "Hand drawn cartoon of 3 happy people sitting around a table, collaborating."
+
+  .divider
+
+  %section.narrow--landing.mt-16.mb-16
+    %h2.text-h4.my-8= t(:'landing.serious_discussions')
+    %p= t(:'landing.own_time')
+    %p= t(:'landing.polling_tools')
+
+  .contrast-panel
+    %section.inner--landing.pt-8.pb-6
+      %h2.mt6.text-h4.my-8= t(:'landing.decision_tools')
+      .viewport-l-row
+        .flex-column
+          %ul.ticks--landing
+            %li
+              %strong= t(:'landing.time_poll')
+              %span= t(:'landing.time_poll_description')
+            %li
+              %strong= t(:'landing.proposal')
+              %span= t(:'landing.proposal_description')
+            %li
+              %strong= t(:'landing.check')
+              %span= t(:'landing.check_description')
+            %li
+              %strong= t(:'landing.rank_choices')
+              %span= t(:'landing.rank_choices_description')
+          %p
+            %a{href: "https://help.loomio.org/en/user_manual/polls/proposal_types/"}= t(:'landing.learn_more')
+        .gutter-large
+        .flex-column
+          .decision-tools-image--landing
+            = image_tag 'landing/decision-types.png', loading: :lazy, alt: "Hand-drawn cartoon pictures of a calendar with naughts and crosses on it, a pie graph with 3 sections labelled: tick, question mark and cross. And rightmost, a bar chart of poll results on an easle"
+
+  = render 'pages/testimonials'
+  .divider
+
+  %section.narrow--landing.mt-14.mb-16
+    %h2.text-h4.my-8= t(:'landing.quick_tour')
+    .iframe-container.iframe-border--landing
+      = render 'pages/demo'
+
+  %section.action-panel
+    %section.inner--landing.pt-14.pb-16
+      %h1.text-h4.my-8= t(:'landing.ready_to_engage')
+      .d-flex.justify-center.mb-8
+        %a.mr-2.btn--primary--action--landing{href: "/start_group", target: "_blank"}= t(:'marketing.try_loomio_for_free')
+        %a.btn--secondary--action--landing{href: "/pricing"}= t(:'navigation.pricing')
+        %a.btn--secondary--action--landing{href: "/contact"}= t(:'landing.talk_to_sales')

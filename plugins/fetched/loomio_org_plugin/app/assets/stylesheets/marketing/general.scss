@@ -1,0 +1,541 @@
+
+.height-auto {
+  height: auto;
+}
+
+.first-screen {
+  height: 150vh;
+}
+
+.full-screen {
+  height: auto;
+  @media screen and (min-width: $viewport-m) {
+    height: 100vh;
+  }
+}
+
+.full-screen-and-quarter {
+  height: auto;
+  @media screen and (min-width: $viewport-m) {
+    height: 125vh;
+  }
+}
+
+.full-screen-and-half {
+  height: auto;
+  @media screen and (min-width: $viewport-m) {
+    height: 150vh;
+  }
+}
+
+.half-screen {
+  height: auto;
+  min-height: 300px;
+  @media screen and (min-width: $viewport-m) {
+    height: 50vh;
+  }
+}
+
+.quarter-screen {
+  height: auto;
+  @media screen and (min-width: $viewport-m) {
+    height: 25vh;
+  }
+}
+
+.gutter-small {
+  min-height: 8px;
+  @media screen and (min-width: $viewport-m) {
+    min-height: inherit;
+    min-width: 8px;
+  }
+}
+
+.gutter {
+  min-height: 16px;
+  @media screen and (min-width: $viewport-l) {
+    min-height: inherit;
+    min-width: 16px;
+  }
+}
+
+.gutter-large {
+  height: 32px;
+  @media screen and (min-width: $viewport-l) {
+    // min-height: inherit;
+    width: 32px;
+  }
+}
+
+.gutter-xlarge {
+  height: 64px;
+  @media screen and (min-width: $viewport-l) {
+    // min-height: inherit;
+    width: 64px;
+  }
+}
+
+.list-item-image {
+  height: 20px;
+  width: 20px;
+}
+
+.contained-image {
+  width: 100%;
+  height: auto;
+}
+
+.try-free-btn {
+  max-width: 100%;
+  @media screen and (min-width: $viewport-l) {
+    max-width: 50%;
+  }
+  @media screen and (min-width: $viewport-xl) {
+    max-width: 30%;
+  }
+}
+
+.need-loomio {
+  max-width: 100%;
+  @media screen and (min-width: $viewport-xl) {
+    max-width: 50%;
+  }
+}
+
+.mission-driven-list-item {
+  height: 25px;
+  width: 25px;
+  min-width: 25px;
+}
+
+.mission-driven-list-item-text {
+  font-size: 20px;
+  font-weight: 300;
+  @media screen and (min-width: $viewport-m) {
+    font-size: 24px;
+  }
+}
+
+.drawn-loomio-logo {
+  width: auto;
+  max-height: 259px;
+}
+
+.transform-rotate {
+  animation: rotation 2s linear 0s infinite alternate;
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.free-trial {
+  max-width: 100%;
+  @media screen and (min-width: $viewport-l) {
+    max-width: 50%;
+  }
+  @media screen and (min-width: $viewport-xl) {
+    max-width: 40%;
+  }
+}
+
+// .parallax-hill {
+//   @media screen and (max-width: 1000px) {
+//     align-items: center;
+//   }
+//   @media screen and (min-width: 1000px) {
+//     background-image: url('new_marketing/loomio_originals_01.png');
+//     width: 100%;
+//     height: 100%;
+//     background-attachment: initial;
+//     background-position-x: right;
+//     background-position-y: center;
+//     background-repeat: no-repeat;
+//     background-size: 500px;
+//   }
+// }
+
+.parallax-table {
+  @media screen and (max-width: 1000px) {
+    align-items: center;
+  }
+  @media screen and (min-width: 1000px) {
+    background-image: url('new_marketing/loomio_originals_02.png');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position-x: 80%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }
+}
+
+.loomio-hill {
+  width: auto;
+  max-width: 250px;
+  @media screen and (min-width: $viewport-m) {
+    max-width: 350px;
+  }
+}
+
+.free-trial-header {
+  font-size: 72px;
+}
+
+.parallax-hands {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-image: url('new_marketing/hands-resized.gif');
+  background-attachment: initial;
+  background-position-y: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: $viewport-m) {
+    justify-content: flex-end;
+    background-attachment: fixed;
+    background-position-x: 75%;
+    background-position-y: 40%;
+  }
+}
+
+.parallax-phone {
+  background-image: url('new_marketing/loomio_originals_04.gif');
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position-x: 15%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+.loomio-team {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.nav-logo {
+  height: 33px;
+  min-width: 126px;
+}
+
+.nav-link-text {
+  font-size: 16px;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+.demo-option {
+  border-radius: 25px;
+  border: 2px solid $gray-light-5;
+  height: 120px;
+  width: 120px;
+  @media screen and (min-width: $viewport-l) {
+    height: 170px;
+    width: 170px;
+    padding: 10px;
+  }
+  // width: 200px;
+  // height: 150px;
+}
+
+.demo-stances {
+  max-width: 600px;
+}
+
+.demo-chart-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.demo-chart-option-icon {
+  height: 24px;
+  width: 24px;
+}
+
+// w x h
+// 435 × 532
+.try-decision-option {
+  height: 100px;
+  width: auto;
+  @media screen and (min-width: $viewport-l) {
+    height: 150px;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.demo-option:hover {
+  opacity: 1;
+}
+
+.tab-active {
+  opacity: 1;
+}
+
+.tab-inactive {
+  opacity: 0.8;
+}
+
+// 845 × 444
+.demo-chart {
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: $viewport-m) {
+    max-width: 600px;
+  }
+}
+
+.integration-logo {
+  // height: 80px;
+  // width: auto;
+  // max-height: 150px;
+  width: 200px;
+  height: auto;
+}
+
+.about-us {
+  max-width: 100%;
+  @media screen and (min-width: $viewport-xl) {
+    max-width: 60%;
+  }
+}
+
+.carousel {
+  max-width: 100%;
+
+  @media screen and (min-width: $viewport-l) {
+    max-width: 80%
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 60%;
+  }
+}
+
+.carousel-profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: contain;
+}
+
+.manon-cuille {
+  background-image: url('new_marketing/manon_cuille.png');
+}
+
+.james-bloemendal {
+  background-image: url('new_marketing/james_bloemendal.jpg');
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: $gray-mid-6;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots {
+  position: relative;
+  bottom: 10px;
+}
+
+.dot-active, .dot:hover {
+  background-color: $gray-mid-6;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.org-info {
+  background-color: rgba($gray-mid-6, 0.4);
+  padding: 8px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.delayed-fade {
+  -webkit-animation: 2s ease 0s normal forwards 1 delayed-fade;
+  animation: 2s ease 0s normal forwards 1 delayed-fade;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes delayed-fade {
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes delayed-fade {
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.to-fade {
+  visibility: hidden;
+}
+
+.slow-fade {
+  visibility: visible;
+  -webkit-animation-name: slow-fade;
+  -webkit-animation-duration: 1s;
+  animation-name: slow-fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes slow-fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes slow-fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.pricing-header {
+  font-size: 72px;
+  font-weight: 500;
+}
+.pricing-table {
+}
+
+.pricing-column {
+  min-width: 90%;
+  max-width: 90%;
+
+  @media screen and (min-width: $viewport-m) {
+    max-width: 40%;
+    min-width: 40%;
+  }
+
+  @media screen and (min-width: $viewport-xl) {
+    max-width: 30%;
+    min-width: 30%;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.white-check-image {
+  height: 40px;
+  width: 40px;
+}
+
+.application-form textarea {
+    width: 320px;
+    height: 100px;
+}
+
+.application-form select, input, textarea {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.application-form label {
+  margin-bottom: 16px;
+}
+
+.application-form .checkbox {
+  margin-right: 12px;
+}
+
+.upgrade-complete-splash {
+  width: 360px;
+  height: auto;
+}
+
+.subscriptions-list {
+  min-height: 50vh;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.iframe-container-4x3 {
+	padding-top: 75%;
+}
+
+.rounded-image {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.b-corp-form-image {
+  max-width: 100%
+}
+
+.high-five-image {
+  max-width: 100%;
+}
+
+.b-corp-b-image {
+  max-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}

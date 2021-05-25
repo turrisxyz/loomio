@@ -1,0 +1,78 @@
+!!!
+%html{'lang' => current_user.locale}
+  %head
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-54BPKP5');
+    %meta{charset: "UTF-8"}
+    -# = inline_stylesheet 'marketing'
+    = stylesheet_link_tag 'marketing'
+    %title= "Loomio - #{t(:"loomio_org.slogan")}"
+    %meta{:content => t(:"loomio_org.description"), :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "Loomio - #{t(:"loomio_org.slogan")}", :property => "og:title"}/
+    %meta{:content => "457851034283863", :property => "fb:app_id"}/
+    %link{rel: "shortcut icon", href: AppConfig.theme[:icon_src]}/
+    -# %link{href: "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap", rel: "stylesheet"}/
+
+  %body
+    %header.pt-6
+      .inner.viewport-m-row.align-center.justify-space-between{role: 'navigation'}
+        .d-flex.align-center.mt-2
+          %a{href: "/?frontpage"}
+            = image_tag 'marketing/loomio-logo-80h.png', class: 'nav-logo'
+        .d-flex.align-center.justify-space-between.nav-link-text.mt-2
+          -# %a.mr-6.text--blue{href: "/explore"}= t(:"navigation.explore")
+          %a.mr-6.text--blue{href: "https://blog.loomio.org/"}= t(:"navigation.blog")
+          %a.mr-6.text--blue{href: "https://help.loomio.org/"}= t(:"navigation.help")
+          %a.mr-6.text--blue{href: "/pricing"}= t(:"navigation.pricing")
+          %a.text--blue{href: "/users/sign_in/"}= t(:"navigation.login")
+
+    = yield
+
+    %footer.footer.body.text--dark-gray
+      .flex-column.mt-12
+        .inner.viewport-m-row.justify-space-around
+          .flex-column.justify-flex-start
+            %a{href: '/dashboard'}= t :'marketing.login'
+            %a{href: 'https://help.loomio.org/en/about'}= t :'marketing.about_us'
+            %a{href: '/contact'}= t :'navigation.contact'
+            %a{href: 'https://twitter.com/Loomio', target: '_blank', title: t(:"titles.new_tab")}= t :'navigation.twitter'
+            %a{href: 'https://www.facebook.com/Loomio/', target: '_blank', title: t(:"titles.new_tab")}= t :'navigation.facebook'
+
+          .flex-column.justify-flex-start
+            %a{href: "https://help.loomio.org/", target: '_blank'}= t :'navigation.help'
+            %a{href: "https://blog.loomio.org/", target: '_blank'}= t :'navigation.blog'
+            %a{href: "https://www.loomio.org/community", target: '_blank'}= t :'navigation.community'
+            %a{href: "https://github.com/loomio/loomio/", target: "_blank"}= t :'navigation.developers'
+            %a{href: 'https://loomio.coop/', target: '_blank'}= t :'navigation.company_handbook'
+
+          .flex-column.justify-flex-start
+            %a{href: '/pricing', target: '_blank'}= t :'navigation.pricing'
+            %a{href: '/terms_of_service', target: '_blank'}= t :'navigation.terms_of_service'
+            %a{href: '/privacy', target: '_blank'}= t :'navigation.privacy'
+            %a{href: '/gdpr', target: '_blank'}= t :'navigation.gdpr'
+        .flex-column.inner.body-smaller.mt-12
+          .footer__trademark-statement
+            = t :'navigation.trademark_statement'
+          .footer__trademark-statement.mb-12
+            = t :'navigation.not_slack'
+
+    = javascript_include_tag 'angular_ahoy'
+    = render 'application/matomo'
+    :javascript
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+         for(let registration of registrations) {
+          registration.unregister()
+        } })
+
+        caches.keys().then(function(cacheNames) {
+          cacheNames.forEach(function(cacheName) {
+            caches.delete(cacheName);
+          });
+        });
+      }

@@ -1,0 +1,22 @@
+%main.main--landing{role: "main"}
+
+  %section.inner--landing.hero-section--landing
+    .viewport-l-row.align-center.justify-center
+      .flex-column
+        .text-h4.text-center= t(:'marketing.volunteer_plan')
+        -# %p.quote-citation.text-center= t(:'marketing.we_believe')
+        %h1.hero-text-smaller--pricing.text-center= t(:'marketing.no_ongoing_costs')
+
+  %section.inner--landing.mb-10.text-center
+    %p=raw t('subscriptions.community_only_for_no_paid_staff_html', link: '/pricing')
+  %section.inner--landing.mb-10
+    .viewport-l-row.justify-center
+      - @plans.each_pair do |key, plan|
+        = render 'plan_box', plan: plan, button: :start_trial, plan_key: key
+
+    .sales-tax--pricing.text-center
+      = t(:'pricing.excludes_sales_tax')
+      %br
+      %a{href: "https://help.loomio.org/en/subscriptions/pricing/", target: "_blank"}= t (:'marketing.what_is_active_user')
+
+  .divider

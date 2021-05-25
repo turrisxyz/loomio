@@ -1,0 +1,22 @@
+%main
+
+  .flex-column.inner.justify-center
+    .flex-column.justify-center
+      %h1= t(:"subscription_success_modal.heading")
+      = image_tag 'new_marketing/loomio_originals_02.png', class: 'upgrade-complete-splash'
+      %p= t(:"subscription_success_modal.receipt")
+      %p= t(:"subscription_success_modal.got_questions_then_contact_us_html")
+      %p= t(:"subscription_success_modal.sign_off")
+
+      %table
+        %tr
+          %td
+            %b= t(:'common.organization')
+          %td= @group.name
+        %tr
+          %td
+            %b= t(:'subscriptions.current_plan')
+          %td= t(:"plan_names.#{@group.subscription.plan}")
+
+      %p
+        %a{href: group_url(@group)}= t(:"subscription_success_modal.return_to_loomio")

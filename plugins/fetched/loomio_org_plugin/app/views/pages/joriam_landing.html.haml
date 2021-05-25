@@ -1,0 +1,176 @@
+%main{role: "main"}
+
+  .viewport-m-row.inner.first-screen.justify-center
+    .flex-column.parallax-hands
+      %span.my-8.body.text--orange= t(:'marketing.next_step')
+      %span.text--orange.body-xlarge#slogan= t(:'marketing.slogan_html')
+      .flex-column.full-screen.justify-center.pt-12
+        %span.mt-14.text--orange.body= t(:'marketing.collaborate')
+        %a.btn--primary.body.mt-12.clickable.try-free-btn{href: "/start_group", target: "_blank"}= t(:'marketing.get_started_today')
+
+  .d-flex.full-screen.justify-center.bg-orange-pattern.pb-16
+    .viewport-l-row.inner.justify-center.align-center.flex-1
+      .flex-column.flex-2.viewport-l-o2.need-loomio
+        %span.text--white.body.mt-6= t(:'marketing.tired_of_infinite')
+        %span.text--white.body.mt-6= t(:'marketing.sounds_like_you_need')
+      .d-flex.flex-1.justify-center.viewport-l-o1.mt-12.transform-rotate
+        = image_tag 'new_marketing/drawnloomiowhite.png', class: 'drawn-loomio-logo', loading: :lazy
+
+  .flex-column.height-auto.inner#try-decision.py-16
+    .flex-column
+      %span.mt-12.text-center.text--blue.body-large= t(:'marketing.how_about_a_real_example')
+      %span.mt-4.text-center.text--blue.body-smaller= t(:'marketing.make_a_decision_right_now')
+      %span.mt-12.text-center.text--dark-gray.body-smaller= t(:'marketing.change_our_current_website_host')
+    .d-flex.justify-center.mt-12{'v-show': "!tab"}
+      .d-flex.justify-center.align-center.clickable.demo-option.mr-2{'@click': "tab = 'agree'", ':class': "tab == 'agree' ? 'tab-active' : 'tab-inactive'"}
+        = image_tag 'new_marketing/button_agree_1.png', class: 'try-decision-option', loading: :lazy
+      .d-flex.justify-center.align-center.clickable.demo-option.mr-2{'@click': "tab = 'abstain'", ':class': "tab == 'abstain' ? 'tab-active' : 'tab-inactive'"}
+        = image_tag 'new_marketing/button_abst.png', class: 'try-decision-option', loading: :lazy
+      .d-flex.justify-center.align-center.clickable.demo-option.mr-2{'@click': "tab = 'disagree'", ':class': "tab == 'disagree' ? 'tab-active' : 'tab-inactive'"}
+        = image_tag 'new_marketing/button_disa.png', class: 'try-decision-option', loading: :lazy
+    .flex-column.justify-center.align-center.clickable.pt-4{'v-show': "tab", '@click': "tab = ''"}
+      = image_tag 'new_marketing/new_pie.png', class: 'demo-chart pb-10', loading: :lazy
+      .flex-column.justify-center.demo-stances
+        .d-flex.align-flex-start.pb-4
+          = image_tag 'new_marketing/jody_avatar.jpg', class: 'demo-chart-avatar mr-4', loading: :lazy
+          .flex-column.justify-flex-start
+            .d-flex.align-center
+              %span.body-small.text--blue.mr-2= t(:'marketing.jody')
+              = image_tag 'new_marketing/block.svg', class: 'demo-chart-option-icon', loading: :lazy
+            .d-flex
+              %span.body-smaller.pt-2= t(:'marketing.jody_reason')
+        .d-flex.align-flex-start.pb-4
+          = image_tag 'new_marketing/mary_avatar.jpg', class: 'demo-chart-avatar mr-4', loading: :lazy
+          .flex-column.justify-flex-start
+            .d-flex.align-center
+              %span.body-small.text--blue.mr-2= t(:'marketing.mary')
+              = image_tag 'new_marketing/abstain.svg', class: 'demo-chart-option-icon', loading: :lazy
+            .d-flex
+              %span.body-smaller.pt-2= t(:'marketing.mary_reason')
+        .d-flex.align-flex-start.pb-4
+          = image_tag 'new_marketing/greg_avatar.jpg', class: 'demo-chart-avatar mr-4', loading: :lazy
+          .flex-column.justify-flex-start
+            .d-flex.align-center
+              %span.body-small.text--blue.mr-2= t(:'marketing.greg')
+              = image_tag 'new_marketing/agree.svg', class: 'demo-chart-option-icon', loading: :lazy
+            .d-flex
+              %span.body-smaller.pt-2= t(:'marketing.greg_reason')
+        .d-flex.align-flex-start.pb-12
+          = image_tag 'new_marketing/rob_avatar.jpg', class: 'demo-chart-avatar mr-4', loading: :lazy
+          .flex-column.justify-flex-start
+            .d-flex.align-center
+              %span.body-small.text--blue.mr-2= t(:'marketing.rob')
+              = image_tag 'new_marketing/agree.svg', class: 'demo-chart-option-icon', loading: :lazy
+            .d-flex
+              %span.body-smaller.pt-2= t(:'marketing.rob_reason')
+      -# = image_tag 'new_marketing/new_votes.png', class: 'demo-chart delayed-fade'
+
+  .d-flex.half-screen.justify-center.bg-blue-pattern.py-16
+    .flex-column.justify-center.align-center.inner
+      %span.body.text--white= t(:'marketing.integrates_with')
+      = image_tag 'new_marketing/slack_logo_white.svg', class: 'slack-logo integration-logo py-4', loading: :lazy
+      = image_tag 'new_marketing/microsoft_teams.svg', class: 'teams-logo integration-logo py-6', loading: :lazy
+      = image_tag 'new_marketing/onelogin_logo.svg', class: 'one-login-logo integration-logo py-6', loading: :lazy
+
+  .flex-column.bg-orange-pattern.py-16
+    .flex-column.justify-center.align-center.inner.pb-12
+      %span.body-large.text--white= t(:'marketing.eager_for_more')
+    .iframe-container.flex-1.inner
+      = render 'pages/demo'
+
+  .d-flex.full-screen.justify-center.inner.py-16
+    .viewport-l-row.viewport-l-justify-center.flex-1
+      .d-flex.viewport-l-o1.justify-center.align-center.flex-1.pb-8
+        = image_tag 'new_marketing/loomio_team_2019.jpg', class: 'loomio-team', loading: :lazy
+      .gutter-large
+      .flex-column.viewport-l-o2.viewport-l-justify-center.flex-2.about-us
+        %span.text--black.body-large.mb-8= t(:'marketing.mission_driven')
+        .flex-column
+          .d-flex.align-center.mb-4
+            = image_tag 'new_marketing/loomio_originals_03', class: 'mission-driven-list-item pr-2', loading: :lazy
+            %span.mission-driven-list-item-text= t(:'marketing.open_source')
+          .d-flex.align-center.mb-4
+            = image_tag 'new_marketing/loomio_originals_03', class: 'mission-driven-list-item pr-2', loading: :lazy
+            %span.mission-driven-list-item-text= t(:'marketing.worker_owned')
+          .d-flex.align-center.mb-4
+            = image_tag 'new_marketing/loomio_originals_03', class: 'mission-driven-list-item pr-2', loading: :lazy
+            %span.mission-driven-list-item-text= t(:'marketing.social_enterprise')
+          .d-flex.align-center.mb-4
+            = image_tag 'new_marketing/loomio_originals_03', class: 'mission-driven-list-item pr-2', loading: :lazy
+            %span.mission-driven-list-item-text= t(:'marketing.proud_supporters')
+          .d-flex.align-center.mb-8
+            = image_tag 'new_marketing/loomio_originals_03', class: 'mission-driven-list-item pr-2', loading: :lazy
+            %span.mission-driven-list-item-text= t(:'marketing.key_software')
+        %a.btn--accent--raised.body-smaller.clickable.mt-4.mx-4{style: "max-width: 200px", href: "https://help.loomio.org/en/about/", target: "_blank"}= t(:'marketing.learn_more')
+
+  .flex-column.justify-center.align-center.bg-orange-pattern#carousel.py-16.text--white.body
+    .inner{style: "max-width: 800px"}
+      .viewport-m-row.my-16
+        .flex-column.viewport-m-o2
+          %span.mb-4= t(:'marketing.james_bloemendal_quote')
+          %span.body-smaller= t(:'marketing.james_bloemendal_title')
+          .org-info.mt-8.body-small= t(:'marketing.james_bloemendal_bio')
+        .d-flex.align-center.justify-center.viewport-m-o1
+          .carousel-profile-picture.mr-6.mb-4
+            = image_tag 'new_marketing/james_bloemendal.jpg', class: 'carousel-profile-picture', loading: :lazy
+
+      .viewport-m-row.my-16
+        .d-flex.align-center.justify-center
+          .carousel-profile-picture.mr-6.mb-4
+            = image_tag 'new_marketing/manon_cuille.png', class: 'carousel-profile-picture', loading: :lazy
+        .flex-column
+          %span.mb-4= t(:'marketing.manon_cuille_quote')
+          %span.body-smaller= t(:'marketing.manon_cuille_title')
+          .org-info.mt-8.body-small= t(:'marketing.manon_cuille_bio')
+
+      .viewport-m-row.my-16
+        .flex-column.viewport-m-o2
+          %span.mb-4= t(:'marketing.paul_martin_quote')
+          %span.body-smaller= t(:'marketing.paul_martin_title')
+          .org-info.mt-8.body-small= t(:'marketing.paul_martin_bio')
+        .d-flex.align-center.justify-center.viewport-m-o1
+          .carousel-profile-picture.mr-6.mb-4
+            = image_tag 'new_marketing/paul_martin.jpg', class: 'carousel-profile-picture', loading: :lazy
+
+  .d-flex.half-screen.justify-center.bg-blue-pattern.py-16
+    .flex-column.inner.justify-center.py-16
+      %span.text--white.text-center.body-large= t(:'marketing.start_a_group_for_free')
+      %a.btn--white--group-start.body.clickable.mt-12{href: "/start_group", target: "_blank"}= t(:'marketing.get_started')
+      %a.btn--white--group-start.body.clickable.mt-6{href: "/pricing", target: "_blank"}= t(:'marketing.pricing')
+
+%script{src: "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"}
+:coffeescript
+  document.addEventListener('DOMContentLoaded', () ->
+
+    new Vue
+      el: '#slogan'
+      data: ->
+        num: 1
+      mounted: ->
+        setInterval =>
+          @num = (@num + 1) % 4
+        , 3000
+
+    new Vue
+      el: '#try-decision'
+      data: ->
+        tab: ''
+
+    options = {
+      root: null
+      rootMargin: '0px'
+      threshold: 0.1
+    }
+
+    cb = (entries, observer) ->
+      entries.forEach((entry) ->
+        if (entry.isIntersecting)
+          entry.target.classList.add('slow-fade')
+        else
+          entry.target.classList.remove('slow-fade'))
+
+    observer = new IntersectionObserver(cb, options)
+    targets = Array.from(document.querySelectorAll('.to-fade'))
+    targets.forEach (target) -> observer.observe(target)
+
+  , false)

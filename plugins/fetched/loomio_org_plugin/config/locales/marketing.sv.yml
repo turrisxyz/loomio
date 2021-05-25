@@ -1,0 +1,47 @@
+sv:
+  pricing_page:
+    upgrade: Uppgradera
+  pricing:
+    lets_talk: "Låt oss samtala!"
+    find_out_more: "Läs mer"
+    services: "Tjänster"
+  marketing:
+    social_enterprise: Socialt företagande
+    pricing: Priser
+  navigation:
+    about_us: Om oss
+    blog: Blog
+    resources: Resurser
+    resources_dropdown: Resursers rullgardinsmeny
+    resources_submenu: Resurser undermeny
+    header_menu_label: Startmeny
+    case_studies: Fallstudier
+    help: Hjälp
+    guides_and_tips: "Beskrivningar och tips"
+    developers: Konstruktörer
+    coop_handbook: Handbok för kooperativ
+    about: Om oss
+    pricing: Priser
+    contact: Kontakt
+    login: Logga in
+    start_group: Startgrupp
+    home: Hem
+    terms_of_service: Servicevillkor
+    privacy: Integritet
+    translation: Översättning
+    newsletter: Nyhetsbrev
+    twitter: Twitter
+    facebook: Facebook
+  titles:
+    new_tab: Öppnas i en ny flik
+    start_group: Starta grupp-formulär
+    about_us: Om oss-sida
+    pricing: Sida för prissättning
+    contact: Kontaktformulär
+    sign_in: Inloggningsformulär
+    terms_of_service: Sida för Användarvillkor
+    privacy: Sida om Integritet och Sekretess
+    translation: Översättningsguide
+    home: Hemsida
+  landing:
+    try_loomio: Prova Loomio

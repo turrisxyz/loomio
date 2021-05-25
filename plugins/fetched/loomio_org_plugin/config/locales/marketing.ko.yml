@@ -1,0 +1,50 @@
+ko:
+  plan_names:
+    free: 무료
+    trial: 시도
+  pricing_page:
+    upgrade: 업그레이드
+  pricing:
+    find_out_more: "좀 더 알아보기"
+    services: "서비스"
+  marketing:
+    pricing: 비용
+  navigation:
+    about_us: 소개
+    blog: 블로그
+    resources: 자료
+    resources_dropdown: 자료메뉴펼쳐보기
+    resources_submenu: 자료하위메뉴
+    header_menu_label: 상위메뉴
+    case_studies: 운영사례
+    help: 도움말
+    guides_and_tips: "지침&팁"
+    developers: 개발자
+    coop_handbook: 협업핸드북
+    about: 소개
+    pricing: 비용
+    contact: 연락처
+    login: 로그인
+    start_group: 모임시작하기
+    home: 홈
+    terms_of_service: 서비스조건
+    privacy: 개인정보
+    translation: 번역
+    newsletter: 뉴스레터
+    twitter: 트위터
+    facebook: 페이스북
+  titles:
+    new_tab: 새로운 탭 열기
+    start_group: 초보자조직양식
+    about_us: 소개페이지
+    pricing: 비용페이지
+    contact: 연락처양식
+    sign_in: 서명양식
+    terms_of_service: 서비스조건페이지
+    privacy: 개인보호정책소개
+    translation: 번역지침
+    home: 홈페이지
+  subscriptions:
+    organization: 조직
+  landing:
+    try_loomio: 루미오 사용해보기
